@@ -1,0 +1,113 @@
+﻿import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import pimg1 from '../../images/clients/client_logo_1.webp';
+import pimg2 from '../../images/clients/client_logo_2.webp';
+import pimg3 from '../../images/clients/client_logo_3.webp';
+import pimg4 from '../../images/clients/client_logo_4.webp';
+import pimg5 from '../../images/clients/client_logo_5.webp';
+import pimg6 from '../../images/clients/client_logo_6.webp';
+import pimg7 from '../../images/clients/client_logo_7.webp';
+import pimg8 from '../../images/clients/client_logo_8.webp';
+import pimg9 from '../../images/clients/client_logo_9.webp';
+import pimg10 from '../../images/clients/client_logo_10.webp';
+import pimg11 from '../../images/clients/client_logo_11.webp';
+import pimg12 from '../../images/clients/client_logo_12.webp';
+import pimg13 from '../../images/clients/client_logo_13.webp';
+import pimg14 from '../../images/clients/client_logo_14.webp';
+
+const partners = [
+    { pImg: pimg1 },
+    { pImg: pimg2 },
+    { pImg: pimg3 },
+    { pImg: pimg4 },
+    { pImg: pimg5 },
+    { pImg: pimg6 },
+    { pImg: pimg7 },
+    { pImg: pimg8 },
+    { pImg: pimg9 },
+    { pImg: pimg10 },
+    { pImg: pimg11 },
+    { pImg: pimg12 },
+    { pImg: pimg13 },
+    { pImg: pimg14 },
+];
+
+const group1 = partners.slice(0, 7); // الصور من 0 إلى 6
+const group2 = partners.slice(7, 14); // الصور من 7 إلى 13
+
+const settings = {
+    dots: false,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 1025,
+            settings: {
+                slidesToShow: 6,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 450,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 350,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+    ],
+};
+
+const PartnerSection = ({ group }) => {
+    // اختر المجموعة بناءً على الخاصية الممررة (group)
+    const selectedGroup = group === "group1" ? group1 : group2;
+
+    return (
+        <div className="client_logo_carousel">
+            <Slider {...settings}>
+                {selectedGroup.map((partner, index) => (
+                    <div className="client_logo_item" key={index}>
+                        <img src={partner.pImg} alt={`Client Logo ${index + 1}`} />
+                    </div>
+                ))}
+            </Slider>
+        </div>
+    );
+};
+
+export default PartnerSection;
