@@ -44,7 +44,6 @@ const ContactSection = (props) => {
                             <div className="iconbox_content">
                                 <h3 className="iconbox_title">Email</h3>
                                 <p className="mb-0">info@osysware.com</p>
-                                <p className="mb-0">osyseg@gmail.com</p>
                             </div>
                         </div>
                     </div>
