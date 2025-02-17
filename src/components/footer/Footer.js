@@ -34,7 +34,7 @@ const Footer = () => {
                             </div>
                             <div className="iconbox_content">
                                 <h3 className="iconbox_title">Write to us</h3>
-                                <p className="mb-0">{companyName.toLowerCase()}eg@gmail.com</p>
+                                <p className="mb-0">info@osysware.com</p>
                             </div>
                         </div>
                         <div className="iconbox_block layout_icon_left">
