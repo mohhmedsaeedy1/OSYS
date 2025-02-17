@@ -43,7 +43,7 @@ const Footer = () => {
                             </div>
                             <div className="iconbox_content">
                                 <h3 className="iconbox_title">Call Us (Egypt)</h3>
-                                <p className="mb-0">+2015532500727</p>
+                                <p className="mb-0">+201070005260</p>
                             </div>
                         </div>
                         <div className="iconbox_block layout_icon_left">

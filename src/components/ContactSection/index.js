@@ -31,8 +31,8 @@ const ContactSection = (props) => {
                             </div>
                             <div className="iconbox_content">
                                 <h3 className="iconbox_title">Contact</h3>
-                                <p className="mb-0">+201070005260</p>
-                                <p className="mb-0">+201070005280</p>
+                                <p className="mb-0"> Sales   +201070005260</p>
+                                <p className="mb-0">Customer Service    +201070005280 </p>
                             </div>
                         </div>
                     </div>
