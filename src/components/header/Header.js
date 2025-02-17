@@ -58,13 +58,13 @@ const Header = (props) => {
                 section.scrollIntoView({ behavior: 'smooth' });
             }
         } else {
-            navigate('/'); 
+            navigate('/');
             setTimeout(() => {
                 const section = document.getElementById('partnersSection');
                 if (section) {
                     section.scrollIntoView({ behavior: 'smooth' });
                 }
-            }, 1); 
+            }, 1);
         }
     };
 
@@ -89,11 +89,11 @@ const Header = (props) => {
     return (
 
         <header className="site_header site_header_1">
-            <div className="header_top text-center">
+            {/* <div className="header_top text-center">
                 <div className="container">
                     <p className="m-0">Subscribe us and receive <b>20% bonus</b> discount on checkout. <Link onClick={ClickHandler} to="/pricing"><u>Learn more</u> <i className="fa-solid fa-angle-right"></i></Link></p>
                 </div>
-            </div>
+            </div>*/}
             <div className={`header_bottom stricky  ${isSticky ? 'stricked-menu stricky-fixed' : ''}`}>
                 <div className="container">
                     <div className="row align-items-center">
@@ -109,7 +109,7 @@ const Header = (props) => {
                             <nav className="main_menu navbar navbar-expand-lg">
                                 <div className="main_menu_inner collapse navbar-collapse justify-content-lg-center" id="main_menu_dropdown">
                                     <ul className="main_menu_list unordered_list justify-content-center">
-                                        <li className="">{/*"dropdown" كان في دروب داون هنا انا شلتها لو احتاجتها حطها بعد الكلاس نيم */ }
+                                        <li className="">{/*"dropdown" كان في دروب داون هنا انا شلتها لو احتاجتها حطها بعد الكلاس نيم */}
                                             <Link onClick={ClickHandler} className="nav-link" to="/" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Home
                                             </Link>
@@ -151,7 +151,7 @@ const Header = (props) => {
                                                                                 <small className="iconbox_title">Prices</small>
                                                                             </span>
                                                                             <span className="description mb-0">
-                                                                                 Pricing Plans
+                                                                                Pricing Plans
                                                                             </span>
                                                                         </Link>
                                                                     </div>
@@ -203,12 +203,12 @@ const Header = (props) => {
                                                                             </span>
                                                                         </Link>
                                                                     </div>
-                                                                   
+
                                                                 </div>
                                                             </div>
-                                                            
+
                                                         </div>
-                                                        
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -218,11 +218,11 @@ const Header = (props) => {
                                                 Products
                                             </Link>
                                             <ul className="dropdown-menu" aria-labelledby="portfolio_submenu">
-                                               
+
                                                 <li><Link onClick={ClickHandler} to="/portfolio_details/Explore-Our-IT-Solutions">Products Details</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="">{/*dropdown      لو حطيتها بين التاجات الدروب منيو هتشتغل*/ }
+                                        <li className="">{/*dropdown      لو حطيتها بين التاجات الدروب منيو هتشتغل*/}
                                             <Link onClick={ClickHandler} class="nav-link active" to="/service" id="services_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Services
                                             </Link>
@@ -433,10 +433,10 @@ const Header = (props) => {
                                                 </div>
                                             </div>
                                         </li>
-                                        
-                                            <li><Link onClick={ClickHandler} to="/blog">Blog</Link></li>    
-                                            
-                                        
+
+                                        <li><Link onClick={ClickHandler} to="/blog">Blog</Link></li>
+
+
                                         <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
                                     </ul>
                                 </div>

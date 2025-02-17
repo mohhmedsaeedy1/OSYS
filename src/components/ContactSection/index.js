@@ -24,6 +24,7 @@ const ContactSection = (props) => {
                             </div>
                         </div>
                     </div>
+
                     <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="iconbox_block text-center">
                             <div className="iconbox_icon">
