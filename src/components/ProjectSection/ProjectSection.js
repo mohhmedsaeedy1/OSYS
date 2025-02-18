@@ -12,8 +12,8 @@ const ProjectSection = (props) => {
     }
 
     return (
-        <section className="portfolio_section xb-hidden section_space pb-0">
-            <div className="container">
+        <section className="portfolio_section xb-hidden section_space pb-0" style={{ margin: "0", padding: "0", height: "auto" }}>
+            {/*  <div className="container">
                 <div className="heading_block">
                     <div className="row align-items-end">
                         <div className="col-lg-7">
@@ -45,9 +45,9 @@ const ProjectSection = (props) => {
                     modules={[Pagination, A11y]}
                     slidesPerView={1}
                     loop={true}
-                    spaceBetween= {30}
-                    allowTouchMove= {true}
-                    centeredSlides= {true}
+                    spaceBetween={30}
+                    allowTouchMove={true}
+                    centeredSlides={true}
                     pagination={{ clickable: true }}
                     speed={400}
                     parallax={true}
@@ -96,8 +96,8 @@ const ProjectSection = (props) => {
                         </span>
                     </Link>
                 </div>
-            </div>
-        </section>
+            </div>*/}
+        </section >
     );
 }
 

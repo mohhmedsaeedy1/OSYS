@@ -16,7 +16,7 @@ const Hero = () => {
                 <div className="row">
                     <div className="col-lg-7">
                         <div className="it_solution_hero_content" style={{ backgroundImage: `url(${Bg1})` }}>
-                            <div className="heading_focus_text mb-0 d-inline-flex align-items-center">👋 Hi We <span className="badge bg-secondary text-white">Are OSYS</span></div>
+                            <div className="heading_focus_text mb-0 d-inline-flex align-items-center">👋 Hi We <span className="badge bg-secondary text-white">Are felfel</span></div>
                             <h1>
                                 OSYS Innovates with Smart Digital Solutions
                             </h1>

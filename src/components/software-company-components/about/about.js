@@ -89,8 +89,8 @@ const About = (props) => {
                   OSYS <mark>Mission & Goal</mark>
                 </h2>
                 <p className="heading_description mb-0">
-                                  At OSYS, our mission is to enable businesses with cutting-edge software solutions that optimize workflows, fuel expansion, and achieve success. With dedication to quality and client happiness, we excel.
-                              </p>
+                  At OSYS, our mission is to enable businesses with cutting-edge software solutions that optimize workflows, fuel expansion, and achieve success. With dedication to quality and client happiness, we excel.
+                </p>
               </div>
             </div>
           </div>

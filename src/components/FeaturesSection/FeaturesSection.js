@@ -16,15 +16,15 @@ const FunFact = [
         icon: sIcon1,
     },
     {
-        title: '280',
+        title: '480',
         subTitle: 'Success Stories',
         symbol: '+',
         icon: sIcon2,
     },
     {
-        title: '5.6',
+        title: '940',
         subTitle: 'Companies Trust Us',
-        symbol: 'K+',
+        symbol: '+',
         icon: sIcon3,
     },
     {
@@ -83,7 +83,7 @@ const FeaturesSection = (props) => {
                             </div>
                             <div className="content_wrap">
                                 <h3 className="title_text mb-0">
-                                    <b className="d-block">500+</b> employees in 3 countries in The Middle East
+                                    <b className="d-block">We are located in</b> 3 countries in The Middle East
                                 </h3>
                             </div>
                         </div>
@@ -95,7 +95,7 @@ const FeaturesSection = (props) => {
                     <div className="heading_block text-center">
                         <div className="heading_focus_text mb-0">
                             <span className="badge bg-secondary text-white">Partnering with the Best</span>
-                            Trusted by Leading Brands
+                            Trusted by IT Solutions Providers
                         </div>
                     </div>
                     {/* قسم الشركاء الثاني */}
