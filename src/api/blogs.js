@@ -5,8 +5,8 @@ import blogImg3 from "../images/blog/blog_post_image_3.webp";
 import blogImg4 from "../images/blog/blog_post_image_12.webp";
 import blogImg5 from "../images/blog/blog_post_image_13.webp";
 import blogImg6 from "../images/blog/blog_post_image_14.webp";
-import blogImg7 from "../images/blog/blog_post_image_15.webp";
-import blogImg8 from "../images/blog/blog_post_image_16.webp";
+//import blogImg7 from "../images/blog/blog_post_image_15.webp";
+//import blogImg8 from "../images/blog/blog_post_image_16.webp";
 
 // images
 import blogsImg1 from "../images/blog/blog_post_image_1.webp";
@@ -95,8 +95,8 @@ const blogs = [
         authorTitle:'Art Director',
         create_at: '17 / 08 / 2024',
         comment:'95',
-        thumb:'Consulting',
-    },
+        thumb:'Consulting',},
+    /* 
     {
         id: '7',
         title: '5 ways to relieve stress during the holidays',
@@ -123,5 +123,6 @@ const blogs = [
         comment:'95',
         thumb:'Get Well',
     },
+    */
 ];
 export default blogs;
