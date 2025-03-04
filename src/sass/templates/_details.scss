@@ -15,7 +15,7 @@
 		font-weight: 500;
 		line-height: 32px;
 		margin-bottom: 38px;
-		font-family: 'Axiforma Medium';
+		font-family: 'DroidKufi-Bold';
 	}
 	hr {
 		margin: 30px 0;
@@ -149,7 +149,7 @@
 		align-items: center;
 		color: var(--bs-dark);
 		justify-content: center;
-		font-family: 'Axiforma Medium';
+		font-family: 'DroidKufi-Bold';
 		border: 1px solid var(--bs-dark);
 		transition: var(--bs-transition);
 	}
@@ -182,13 +182,14 @@
 }
 // Portfolio Details - End
 
-// Blog Details - Start
+// Details - Start
 .blog_details_section {
 	.details_item_info_title {
 		font-size: 26px;
 		line-height: 38px;
 	}
 }
+
 
 .blog_details_audio {
 	margin-bottom: 40px;
@@ -202,7 +203,7 @@
 		display: inline-flex;
 		padding: 5px 30px 5px 5px;
 		border: 1px solid transparent;
-		font-family: 'Axiforma Medium';
+		font-family: 'DroidKufi-Bold';
 		background-color: var(--bs-white);
 		&:hover {
 			border-color: var(--bs-primary);
@@ -244,7 +245,7 @@
 		font-weight: 600;
 		margin-bottom: 0;
 		line-height: 26px;
-		font-family: 'Axiforma SemiBold';
+		font-family: 'DroidKufi-Bold';
 	}
 	.author_designation {
 		font-size: 14px;
@@ -252,7 +253,7 @@
 		line-height: 30px;
 		margin-bottom: 12px;
 		color: var(--bs-body-color);
-		font-family: 'Axiforma Medium';
+		font-family: 'DroidKufi-Bold';
 	}
 	p {
 		font-size: 16px;
@@ -375,13 +376,13 @@
 		font-size: 20px;
 		font-weight: 600;
 		margin-bottom: 8px;
-		font-family: 'Axiforma SemiBold';
+		font-family: 'DroidKufi-Bold';
 	}
 	.comment_time {
 		line-height: 1;
 		font-size: 14px;
 		margin-bottom: 20px;
-		font-family: 'Axiforma Medium';
+		font-family: 'DroidKufi-Bold';
 	}
 	.comment_reply_btn {
 		top: 0;
@@ -393,7 +394,7 @@
 		border-radius: 50px;
 		color: var(--bs-dark);
 		padding: 10px 20px 9px;
-		font-family: 'Axiforma Bold';
+		font-family: 'DroidKufi-Bold';
 		background-color: var(--bs-white);
 		box-shadow: 0 4px 23px 0 rgba(174, 191, 210, 0.3);
 		&:hover {

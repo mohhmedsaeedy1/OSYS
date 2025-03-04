@@ -1,4 +1,4 @@
-/* 2.01 - Template CSS Animations - Start
+﻿/* 2.01 - Template CSS Animations - Start
 ================================================== */
 @keyframes fadeInDown {
   0% {
@@ -131,10 +131,19 @@
   margin: auto;
   width: 200px;
   height: 200px;
-  direction: ltr;
+  direction: rtl; /* تحويله للعربية */
   position: absolute;
   border-radius: 100%;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .1);
+}
+
+/* لو عاوز يكون مرن بناءً على لغة الموقع */
+html[dir="ltr"] .preloader .loader-circle {
+  direction: ltr;
+}
+
+html[dir="rtl"] .preloader .loader-circle {
+  direction: rtl;
 }
 .preloader .loader-line-mask {
   position: absolute;

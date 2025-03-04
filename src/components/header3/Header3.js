@@ -192,7 +192,7 @@ const Header3 = (props) => {
                                                                             <li>
                                                                                 <Link onClick={ClickHandler} to="/service-single/IT-Management-Services">
                                                                                     <span className="icon_list_text">
-                                                                                        IT Management Services
+                                                                                        خدمات إدارة تكنولوجيا المعلومات
                                                                                     </span>
                                                                                 </Link>
                                                                             </li>
@@ -206,7 +206,7 @@ const Header3 = (props) => {
                                                                             <li>
                                                                                 <Link onClick={ClickHandler} to="/service-single/IT-Management-Services">
                                                                                     <span className="icon_list_text">
-                                                                                        Website Development
+                                                                                        تطوير المواقع الإلكترونية
                                                                                     </span>
                                                                                 </Link>
                                                                             </li>
@@ -220,7 +220,7 @@ const Header3 = (props) => {
                                                                             <li>
                                                                                 <Link onClick={ClickHandler} to="/service-single/IT-Management-Services">
                                                                                     <span className="icon_list_text">
-                                                                                        UI/UX Design Services
+                                                                                        خدمات تصميم واجهة المستخدم
                                                                                     </span>
                                                                                 </Link>
                                                                             </li>
@@ -366,7 +366,7 @@ const Header3 = (props) => {
                                                                     </li>
                                                                 </ul>
 
-                                                                <p className="career_link m-0">Looking for new career? <Link onClick={ClickHandler} to="/">We’re Hiring</Link></p>
+                                                                <p className="career_link m-0">Looking for new career? <Link onClick={ClickHandler} to="/">نحن نوظف – اكتشف الفرص المتاحة لدينا!</Link></p>
                                                             </div>
                                                         </div>
                                                         <div className="col-lg-3">
@@ -402,7 +402,7 @@ const Header3 = (props) => {
                                                     </ul>
                                                 </li>
                                                 <li><Link onClick={ClickHandler} to="/contact">Help Center</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/">Careers <small className="badge bg-danger-subtle text-danger">We’re Hiring</small></Link></li>
+                                                <li><Link onClick={ClickHandler} to="/">Careers <small className="badge bg-danger-subtle text-danger">نحن نوظف – اكتشف الفرص المتاحة لدينا!</small></Link></li>
                                             </ul>
                                         </li>
                                         <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
@@ -419,7 +419,7 @@ const Header3 = (props) => {
                                 </li>
                                 <li>
                                     <Link onClick={ClickHandler} className="btn btn-light" to="/pricing">
-                                        <span className="btn_label" data-text="Get Started">Get Started</span>
+                                        <span className="btn_label" data-text="ابدأ الآن">ابدأ الآن</span>
                                         <span className="btn_icon">
                                             <i className="fa-solid fa-arrow-up-right"></i>
                                         </span>

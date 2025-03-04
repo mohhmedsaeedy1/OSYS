@@ -66,7 +66,7 @@
 			position: relative;
 			align-items: center;
 			color: var(--bs-dark);
-			font-family: 'Axiforma Medium';
+			font-family: 'DroidKufi-Bold';
 			min-height: 50px;
 			display: flex;
 			align-items: center;
@@ -106,7 +106,7 @@
 				font-weight: 900;
 				margin: 1px 0 0 3px;
 				transition: var(--bs-transition);
-				font-family: "Font Awesome 6 Pro";
+				font-family: "Font DroidKufi-Bold";
 			}
 		}
 	}
@@ -194,7 +194,7 @@
 			font-weight: 500;
 			margin: 29px 0 0;
 			line-height: 28px;
-			font-family: 'Axiforma Medium';
+			font-family: 'DroidKufi-Bold';
 		}
 	}
 
@@ -216,7 +216,7 @@
 			color: var(--bs-dark);
 			display: inline-block;
 			content: attr(data-text);
-			font-family: 'Axiforma Bold';
+			font-family: 'DroidKufi-Bold';
 		}
 
 		a {
@@ -277,7 +277,7 @@
 				line-height: 1;
 				font-size: 20px;
 				font-weight: 600;
-				font-family: 'Axiforma SemiBold';
+				font-family: 'DroidKufi-Bold';
 
 				a {
 					color: var(--bs-dark);
@@ -311,7 +311,7 @@
 		margin-bottom: 0;
 		color: var(--bs-white);
 		text-transform: uppercase;
-		font-family: 'Axiforma Medium';
+		font-family: 'DroidKufi-Bold';
 	}
 
 	h4 {
@@ -320,7 +320,7 @@
 		font-weight: 700;
 		margin: 10px 0 0;
 		color: var(--bs-white);
-		font-family: 'Axiforma SemiBold';
+		font-family: 'DroidKufi-Bold';
 	}
 
 	img {

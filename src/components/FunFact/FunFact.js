@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import CountUp, { useCountUp } from 'react-countup';
 import sIcon1 from '../../images/icon/c_01.svg'
 import sIcon2 from '../../images/icon/c_02.svg'

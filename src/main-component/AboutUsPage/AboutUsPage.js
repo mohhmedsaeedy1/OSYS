@@ -20,7 +20,7 @@ const AboutUsPage = (props) => {
         <Fragment>
             <Header />
             <main className="page_content about-page">
-                <PageTitle pageTitle={'About Us'} pagesub={' OSYS 😃'} pageTop={'About'}/>
+                <PageTitle pageTitle={'نبذه عنا'} pagesub={' OSYS 😃'} pageTop={''}/>
                 <section className="intro_about_section section_space bg-light">
                     <div className="intro_about_content">
                         <div className="container">
@@ -49,24 +49,18 @@ const AboutUsPage = (props) => {
                             <div className="row justify-content-lg-between">
                                 <div className="col-lg-4">
                                     <div className="heading_focus_text">
-                                        About
+                                        عنا
                                         <span className="badge bg-secondary text-white">
                                             🙂</span>
                                     </div>
                                     <h2 className="heading_text mb-0">
-                                        OSYS Software: Innovating Digital Transformation for Businesses
+                                        شركة OSYS للبرمجيات: الابتكار في التحول الرقمي للأعمال
                                     </h2>
                                 </div>
                                 <div className="col-lg-6">
                                     <p className="heading_description mb-0 justify-text">
-                                        OSYS Software is a pioneering technology company offering cutting-edge software solutions
-                                        designed to meet the unique needs of businesses across industries. With headquarters in Egypt
-                                        and an established presence in Saudi Arabia, we deliver comprehensive solutions, including ERP
-                                        systems, AI-driven applications, website development, hosting, and business analysis.
-                                        Our goal is to empower businesses to enhance their operations, comply with regional regulations,
-                                        and embrace innovation. Whether it’s streamlining processes, improving decision-making, or
-                                        driving growth, OSYS Software is your trusted partner in digital transformation.
-                                    </p>
+                                        OSYS Software هي شركة تقنية رائدة تقدم حلول برمجية متطورة مصممة لتلبية الاحتياجات الفريدة للشركات عبر مختلف القطاعات. مع مقرها الرئيسي في مصر وحضور راسخ في السعودية، نوفر حلولاً شاملة تشمل أنظمة ERP، تطبيقات مدعومة بالذكاء الاصطناعي، تطوير المواقع الإلكترونية، الاستضافة، وتحليل الأعمال. هدفنا هو تمكين الشركات من تحسين عملياتها، الامتثال للوائح الإقليمية، واحتضان الابتكار. سواء كان ذلك عبر تبسيط العمليات، تحسين اتخاذ القرار، أو تعزيز النمو، OSYS Software هي شريككم الموثوق في التحول الرقمي.
+   </p>
                                 </div>
                             </div>
                         </div>

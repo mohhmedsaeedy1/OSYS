@@ -18,7 +18,7 @@ const BlogDetails = (props) => {
         <Fragment>
             <Header />
             <main className="page_content about-page">
-                <PageTitle pageTitle={BlogDetails.title} pagesub={'Details 😍'} pageTop={'Blog'}/>
+                <PageTitle pageTitle={BlogDetails.title} pagesub={'تفاصيل اكثر عن مدوناتنا 😍'} pageTop={''}/>
                 <BlogSingle/>
             </main>
             <CtaSection />

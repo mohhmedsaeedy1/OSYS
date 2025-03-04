@@ -45,7 +45,7 @@ const TeamPage = (props) => {
 Get acquainted with the expert team of professionals at OSYS Software, dedicated to transforming the technological landscape. Comprising industry leaders with years of experience, we drive innovation and deliver exceptional IT solutions tailored to your needs. </p>
                                     </div>
                                     <Link onClick={ClickHandler} to={'/contact'} className="btn">
-                                        <span className="btn_label" data-text="Talk to an Expart">Talk to an Expart</span>
+                                        <span className="btn_label" data-text="تحدث مع خبير 🚀">تحدث مع خبير 🚀</span>
                                         <span className="btn_icon">
                                             <i className="fa-solid fa-arrow-up-right"></i>
                                         </span>

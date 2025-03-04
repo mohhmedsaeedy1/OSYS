@@ -1,6 +1,6 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
-import Homepage from '../HomePage/HomePage'
+﻿import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from '../HomePage/HomePage';
 import HomePage2 from '../HomePage2/HomePage2';
 import HomePage3 from '../HomePage3/HomePage3';
 import AboutUsPage from '../AboutUsPage/AboutUsPage';
@@ -16,8 +16,7 @@ import BlogDetails from '../BlogDetails/BlogDetails';
 import ContactPage from '../ContactPage/ContactPage';
 
 const AllRoute = () => {
-
-  return (
+    return (
     <div className="App">
       <BrowserRouter>
         <Routes>

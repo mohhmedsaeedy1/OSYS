@@ -19,7 +19,7 @@ const ServicePage = (props) => {
         <Fragment>
             <Header />
             <main className="page_content about-page">
-                <PageTitle pageTitle={'Our Services'} pagesub={'Services 😍'} pageTop={'Our Main'} />
+                <PageTitle pageTitle={'تعرف اكثر على خدماتنا'} pagesub={'خدماتنا 😍'} pageTop={''} />
                 <section className="about_section section_space bg-light">
                     <div className="container">
                         <div className="row align-items-center justify-content-lg-between">
@@ -32,18 +32,18 @@ const ServicePage = (props) => {
                                 <div className="about_content">
                                     <div className="heading_block">
                                         <div className="heading_focus_text">
-                                            We Are
-                                            <span className="badge bg-secondary text-white">IT Guidance 🙂</span>
+                                            
+                                            <span className="badge bg-secondary text-white"> إرشاداتنا لتكنولوجيا المعلومات 🙂</span>
                                         </div>
                                         <h2 className="heading_text">
-                                            Tailored IT Solutions for Your Success
+                                            الحلول التكنولوجية المصممة خصيصًا لنجاحك
                                         </h2>
                                         <p className="heading_description mb-0">
-                                            we understand that every business is unique, with its own set of challenges, goals, and aspirations. That's why we offer tailored IT solutions designed.
+                                            نحن نفهم أن كل عمل تجاري فريد من نوعه، وله تحدياته وأهدافه وطموحاته الخاصة. لهذا السبب نقدم حلول تكنولوجيا المعلومات المصممة خصيصًا.
                                         </p>
                                     </div>
                                     <Link onClick={ClickHandler} to={'/contact'} className="btn">
-                                        <span className="btn_label" data-text="Talk to an Expart">Talk to an Expart</span>
+                                        <span className="btn_label" data-text="تحدث مع خبير 🚀">تحدث مع خبير 🚀</span>
                                         <span className="btn_icon">
                                             <i className="fa-solid fa-arrow-up-right"></i>
                                         </span>

@@ -1,4 +1,4 @@
-
+﻿
 import React, { useState } from 'react';
 import fImg1 from '../../images/faq/faq_img.png'
 import {
@@ -87,7 +87,7 @@ const FaqSection = (props) => {
                                     </AccordionBody>
                                 </AccordionItem>
                                 <AccordionItem className='block'>
-                                    <AccordionHeader targetId="4" className='acc-btn'>How do I get started with your services?
+                                    <AccordionHeader targetId="4" className='acc-btn'>How do I ابدأ الآن with your services?
                                         <span className="arrow"></span>
                                     </AccordionHeader>
                                     <AccordionBody accordionId="4" className='acc_body'>

@@ -1,22 +1,24 @@
-import React from 'react';
+﻿import React from 'react';
 import sIcon1 from '../../images/icons/icon_clock.svg'
 import sIcon2 from '../../images/icons/icon_dart_board_2.svg'
 import sIcon3 from '../../images/icons/icon_target.svg'
 
 const Policy = [
     {
-        title: 'Our History',
-        subTitle: <span className="justify-text">Since 2015, OSYS has been a visionary and reliable software engineering partner for businesses across industries.</span>,
+        title: 'تاريخنا',
+        subTitle: <span className="justify-text">منذ عام 2015، كانت OSYS شريكاً استراتيجياً وموثوقاً في هندسة البرمجيات للشركات عبر مختلف القطاعات.</span>,
         icon: sIcon1,
     },
     {
-        title: 'Our Mission',
-        subTitle: <span className="justify-text">Deliver scalable and reliable software solutions tailored to client needs. Enable businesses to comply with regulations seamlessly.</span>,
+        title: 'رسالتنا',
+        subTitle: <span className="justify-text">تقديم حلول برمجية مرنة وموثوقة تتناسب مع احتياجات العملاء، مع تمكين الشركات من الامتثال للوائح بسلاسة.
+</span>,
         icon: sIcon2,
     },
     {
-        title: 'Our Vision',
-        subTitle: <span className="justify-text">To be a global leader in developing innovative, user-friendly, and reliable software solutions, fostering business growth and technological progress.</span>,
+        title: 'رؤيتنا',
+        subTitle: <span className="justify-text">أن نصبح رواداً عالميين في تطوير حلول برمجية مبتكرة، سهلة الاستخدام، وموثوقة، مما يعزز نمو الأعمال والتقدم التكنولوجي.
+</span>,
         icon: sIcon3,
     },
 

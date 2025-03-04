@@ -12,7 +12,7 @@ const ContactPage = (props) => {
         <Fragment>
             <Header />
             <main className="page_content about-page">
-                <PageTitle pageTitle={'Contact Us'} pagesub={'Us 😍'} pageTop={'Contact'} />
+                <PageTitle pageTitle={'تواصل معنا'} pagesub={'اتصل بتا 😍'} pageTop={''} />
                 <ContactSection />
                 <CtaSection />
             </main>

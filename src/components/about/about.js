@@ -29,15 +29,14 @@ const About = (props) => {
                         <div className="about_content">
                             <div className="heading_block">
                                 <div className="heading_focus_text">
-                                    We are 😃
+                                   نحن😃
                                     <span className="badge bg-secondary text-white">OSYS</span>
                                 </div>
                                 <h2 className="heading_text">
-                                    Our Commitment to Business Innovation
+                                    التزامنا بالابتكار في الأعمال
                                 </h2>
                                 <p className="heading_description mb-0 justify-text">
-                                    At OSYS, our commitment to innovation and client success drives everything we do. We believe in empowering businesses to thrive through cutting-edge solutions.
-                                </p>
+في OSYS يدفعنا التزامنا بالابتكار ونجاح العملاء في كل ما نقوم به. نحن نؤمن بتمكين الشركات من الازدهار من خلال حلول متطورة.                                </p>
                             </div>
                             <ul className="icon_list unordered_list_block mb-5">
                                 <li>
@@ -45,7 +44,7 @@ const About = (props) => {
                                         <i className="fa-solid fa-circle fa-fw"></i>
                                     </span>
                                     <span className="icon_list_text">
-                                        Streamline your operations with intelligent software solutions.
+                                        قم بتبسيط عملياتك باستخدام حلول برمجية ذكية.
                                     </span>
                                 </li>
                                 <li>
@@ -53,7 +52,7 @@ const About = (props) => {
                                         <i className="fa-solid fa-circle fa-fw"></i>
                                     </span>
                                     <span className="icon_list_text">
-                                        Transform challenges into opportunities for growth.
+                                        حوّل التحديات إلى فرص للنمو.
                                     </span>
                                 </li>
                                 <li>
@@ -61,14 +60,14 @@ const About = (props) => {
                                         <i className="fa-solid fa-circle fa-fw"></i>
                                     </span>
                                     <span className="icon_list_text">
-                                        Achieve compliance and efficiency seamlessly.
+                                        حقق الامتثال والكفاءة بسلاسة.
                                     </span>
                                 </li>
                             </ul>
                             <ul className="btns_group unordered_list p-0 justify-content-start">
                                 <li>
                                     <Link onClick={ClickHandler} to="/pricing" className="btn">
-                                        <span className="btn_label" data-text="Get Started">Get Started</span>
+                                        <span className="btn_label" data-text="ابدأ الآن">ابدأ الآن</span>
                                         <span className="btn_icon">
                                             <i className="fa-solid fa-arrow-up-right"></i>
                                         </span>

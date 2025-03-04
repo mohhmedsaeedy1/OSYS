@@ -26,7 +26,7 @@ const TeamSinglePage = (props) => {
         <Fragment>
             <Header />
             <main className="page_content about-page">
-                <PageTitle pageTitle={TeamDetails.name} pagesub={'  ethics😍'} pageTop={'Code of'} />
+                <PageTitle pageTitle={TeamDetails.name} pagesub={'  ميثاق القيم والاخلاقيات😍'} pageTop={''} />
                 <section className="team_details_section section_space bg-light">
                     <div className="container">
                         {/*  <div className="team_member_details_card">
@@ -78,16 +78,15 @@ const TeamSinglePage = (props) => {
                             </div>
                         </div>*/}
 
-                        <h3 className="details_item_info_title">Commitment to Ethical Excellence</h3>
+                        <h3 className="details_item_info_title">الالتزام بالتميز الأخلاقي</h3>
                         <div class="justify-text">
-                            At Osys Software, our journey toward becoming a leading tech firm is grounded in a commitment to ethical excellence. We deliver cutting-edge, AI-powered ERP systems, advanced analytics tools, and bespoke software solutions tailored to industries such as retail, manufacturing, agriculture, and legal services, while maintaining the highest ethical standards.
+                            في Osys Software، تستند رحلتنا نحو أن نصبح شركة تقنية رائدة إلى التزامنا بالتميز الأخلاقي. نحن نقدم أنظمة ERP مدعومة بالذكاء الاصطناعي، وأدوات تحليل متقدمة، وحلول برمجية مخصصة تلبي احتياجات صناعات مثل التجزئة، والتصنيع، والزراعة، والخدمات القانونية، مع الحفاظ على أعلى المعايير الأخلاقية.
 
-                            Our expertise in process optimization and seamless integration with compliance systems in Egypt and Saudi Arabia ensures not only operational excellence but also strict adherence to regulatory and ethical guidelines. We are dedicated to creating scalable, intuitive designs that prioritize client-centric innovation without compromising on transparency and integrity.
+                            تضمن خبرتنا في تحسين العمليات والتكامل السلس مع أنظمة الامتثال في مصر والسعودية ليس فقط تحقيق الكفاءة التشغيلية ولكن أيضًا الالتزام الصارم بالإرشادات التنظيمية والأخلاقية. نحن ملتزمون بتطوير تصميمات قابلة للتطوير وسهلة الاستخدام تركز على الابتكار الذي يخدم العملاء دون المساس بالشفافية والنزاهة.
 
-                            Real-time reporting insights empower our clients to make informed, strategic decisions, reflecting our values of honesty and accountability. By leveraging global scalability and specialized ERP tools, we enable businesses to achieve sustainable growth with fairness and respect for all stakeholders.
+                            توفر التقارير الفورية والتحليلات الدقيقة لعملائنا رؤية واضحة لاتخاذ قرارات استراتيجية مستنيرة، مما يعكس قيمنا القائمة على الصدق والمساءلة. ومن خلال إمكانيات التوسع العالمي وأدوات ERP المتخصصة، نُمكّن الشركات من تحقيق نمو مستدام مع ضمان العدل والاحترام لجميع الأطراف المعنية.
 
-                            Our leadership fosters a collaborative culture where ethical practices are at the core, empowering a skilled workforce to deliver world-class technology solutions responsibly. Osys Software’s unwavering focus on quality, innovation, and client satisfaction ensures we remain at the forefront of the tech industry, transforming challenges into ethically driven opportunities for success.
-                        </div>
+يقود فريقنا بيئة تعاونية تعتمد على الممارسات الأخلاقية كأساس، مما يُمكّن الكفاءات التقنية لدينا من تقديم حلول تقنية عالمية المستوى بمسؤولية. إن تركيز Osys Software الراسخ على الجودة والابتكار ورضا العملاء يضمن لنا البقاء في طليعة صناعة التكنولوجيا، وتحويل التحديات إلى فرص نجاح قائمة على المبادئ الأخلاقية.     </div>
 
                         {/*  <div className="row mb-5">
                             <div className="col-lg-3 col-md-6 col-sm-6">
@@ -136,14 +135,14 @@ const TeamSinglePage = (props) => {
                         <p>Armed with a Bachelor's degree in Computer Science, specializing in data structures, algorithms, and networks, and a Master's in Information Technology Management, I bring a solid foundation in software engineering and IT systems.
                         </p>*/}
                         <br></br>
-                        <h2 className="mb-2">Ethics We Uphold at Osys Software:</h2>
+                        <h2 className="mb-2">القيم الأخلاقية التي نلتزم بها في Osys Software:</h2>
                         <ul className="icon_list unordered_list_block justify-list">
                             <li>
                                 <span className="icon_list_icon">
                                     <i className="fa-solid fa-circle fa-fw"></i>
                                 </span>
                                 <span className="icon_list_text">
-                                    Innovation with Responsibility: Driving advancements while considering ethics.
+                                    الابتكار المسؤول: تطوير التكنولوجيا مع مراعاة الجوانب الأخلاقية.
                                 </span>
                             </li>
                             <li>
@@ -151,7 +150,7 @@ const TeamSinglePage = (props) => {
                                     <i className="fa-solid fa-circle fa-fw"></i>
                                 </span>
                                 <span className="icon_list_text">
-                                    Customer-Centric Approach: Prioritizing client needs without compromising .
+                                    نهج يركز على العملاء: إعطاء الأولوية لاحتياجات العملاء دون المساس بالمبادئ.
                                 </span>
                             </li>
                             <li>
@@ -159,7 +158,7 @@ const TeamSinglePage = (props) => {
                                     <i className="fa-solid fa-circle fa-fw"></i>
                                 </span>
                                 <span className="icon_list_text">
-                                    Community Engagement: Contributing positively to communities we serve.
+                                    المشاركة المجتمعية: المساهمة بشكل إيجابي في المجتمعات التي نخدمها.
                                 </span>
                             </li>
                             <li>
@@ -167,7 +166,7 @@ const TeamSinglePage = (props) => {
                                     <i className="fa-solid fa-circle fa-fw"></i>
                                 </span>
                                 <span className="icon_list_text">
-                                    Quality: Delivering solutions that meet the highest standards of excellence.
+                                    الجودة: تقديم حلول تلبّي أعلى معايير التميز.
                                 </span>
                             </li>
                             <li>
@@ -175,7 +174,7 @@ const TeamSinglePage = (props) => {
                                     <i className="fa-solid fa-circle fa-fw"></i>
                                 </span>
                                 <span className="icon_list_text">
-                                    Confidentiality: Safeguarding client and company data with utmost care.
+                                    السرية: حماية بيانات العملاء والشركة بأقصى درجات الحرص.
                                 </span>
                             </li>
                             <li>
@@ -183,7 +182,7 @@ const TeamSinglePage = (props) => {
                                     <i className="fa-solid fa-circle fa-fw"></i>
                                 </span>
                                 <span className="icon_list_text">
-                                    Collaboration: Encouraging teamwork built on trust and shared values.
+                                    التعاون: تعزيز بيئة عمل قائمة على الثقة والقيم المشتركة.
                                 </span>
                             </li>
                             <li>
@@ -191,7 +190,7 @@ const TeamSinglePage = (props) => {
                                     <i className="fa-solid fa-circle fa-fw"></i>
                                 </span>
                                 <span className="icon_list_text">
-                                    Sustainability: Committing to environmentally responsible practices.
+                                    الاستدامة: الالتزام بالممارسات البيئية المسؤولة.
                                 </span>
                             </li>
                             <li>
@@ -199,7 +198,7 @@ const TeamSinglePage = (props) => {
                                     <i className="fa-solid fa-circle fa-fw"></i>
                                 </span>
                                 <span className="icon_list_text">
-                                    Respect: Promoting a culture of mutual respect and understanding.
+                                    الاحترام: تعزيز ثقافة الاحترام المتبادل والتفاهم.
                                 </span>
                             </li>
                             <li>
@@ -207,7 +206,7 @@ const TeamSinglePage = (props) => {
                                     <i className="fa-solid fa-circle fa-fw"></i>
                                 </span>
                                 <span className="icon_list_text">
-                                    Accountability: Accept and own our decisions and responsibilities.
+                                    المساءلة: تحمل المسؤولية عن قراراتنا والتزاماتنا.
                                 </span>
                             </li>
                             <li>
@@ -215,7 +214,7 @@ const TeamSinglePage = (props) => {
                                     <i className="fa-solid fa-circle fa-fw"></i>
                                 </span>
                                 <span className="icon_list_text">
-                                    Integrity: Conduct all business dealings with honesty and clarity.
+                                    النزاهة: تنفيذ جميع المعاملات التجارية بصدق ووضوح.
                                 </span>
                             </li>
                             <li>
@@ -223,7 +222,7 @@ const TeamSinglePage = (props) => {
                                     <i className="fa-solid fa-circle fa-fw"></i>
                                 </span>
                                 <span className="icon_list_text">
-                                    Fairness: Ensuring equitable treatment of all clients, employees.
+                                    العدالة: ضمان معاملة جميع العملاء والموظفين بإنصاف.
                                 </span>
                             </li>
                             <li>
@@ -231,10 +230,11 @@ const TeamSinglePage = (props) => {
                                     <i className="fa-solid fa-circle fa-fw"></i>
                                 </span>
                                 <span className="icon_list_text">
-                                    Compliance: Adhering to all applicable laws and regulations.
+                                    الامتثال: الالتزام بجميع القوانين واللوائح المعمول بها.
                                 </span>
                             </li>
                         </ul>
+
                     </div>
                 </section>
                 <CtaSection />

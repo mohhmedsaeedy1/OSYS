@@ -16,17 +16,18 @@ const Hero = () => {
                 <div className="row">
                     <div className="col-lg-7">
                         <div className="it_solution_hero_content" style={{ backgroundImage: `url(${Bg1})` }}>
-                            <div className="heading_focus_text mb-0 d-inline-flex align-items-center">👋 Hi We <span className="badge bg-secondary text-white">Are felfel</span></div>
+                            <div className="heading_focus_text mb-0 d-inline-flex align-items-center">👋 مرحبًا، نحن  <span className="badge bg-secondary text-white"> OSYS</span></div>
                             <h1>
-                                OSYS Innovates with Smart Digital Solutions
+                                تُبدع OSYS من خلال حلول رقمية ذكية.
+
                             </h1>
                             <p>
-                                In today's dynamic market, OSYS empowers businesses with innovative, cost-effective IT solutions.
+                                في سوق اليوم الديناميكي، تمكّن OSYS الشركات من خلال حلول تكنولوجيا معلومات مبتكرة وفعالة من حيث التكلفة.
                             </p>
                             <ul className="btns_group unordered_list p-0 justify-content-start">
                                 <li>
                                     <Link className="btn" to="/pricing">
-                                        <span className="btn_label" data-text="Get Started">Get Started</span>
+                                        <span className="btn_label" data-text="ابدأ الآن">ابدأ الآن</span>
                                         <span className="btn_icon">
                                             <i className="fa-solid fa-arrow-up-right"></i>
                                         </span>
@@ -38,7 +39,7 @@ const Hero = () => {
                                             <img src={icon} alt="OSYS - Trustpilot Review" />
                                             <span>4.8</span>
                                         </div>
-                                        <div className="review_counter">From <b>200+</b> reviews</div>
+                                        <div className="review_counter">تقييم <b>200+</b> أكثر من</div>
                                     </div>
                                 </li>
                             </ul>
@@ -53,7 +54,7 @@ const Hero = () => {
                                 <div className="worldwide_clients">
                                     <div className="counter_value">150+</div>
                                     <p>
-                                        Worldwide Country has lots of clients
+                                        لدينا في دول العالم العديد من العملاء.
                                     </p>
                                     <ul className="avatar_group unordered_list">
                                         <li>
@@ -75,19 +76,19 @@ const Hero = () => {
                                 <ul className="categories unordered_list_block">
                                     <li>
                                         <Link to="/service-single/IT-Management-Services">
-                                            <span>ERP System</span>
+                                            <span>نظام ERP</span>
                                             <i className="fa-solid fa-plus"></i>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="/service-single/IT-Management-Services">
                                             <i className="fa-solid fa-plus"></i>
-                                            <span>Web Development</span>
+                                            <span>تطوير الويب</span>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="/service-single/IT-Management-Services">
-                                            <span>Analytics & Optimization</span>
+                                            <span>التحليلات والتحسينات</span>
                                             <i className="fa-solid fa-plus"></i>
                                         </Link>
                                     </li>
@@ -145,7 +146,7 @@ const Hero = () => {
                                                 </text>
                                             </svg>
                                             <p>
-                                                get 88% of the best services and growth business
+                                                احصل على 88% من أفضل الخدمات ونمو الأعمال.
                                             </p>
                                         </div>
                                     </div>

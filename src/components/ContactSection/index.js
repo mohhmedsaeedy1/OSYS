@@ -17,9 +17,9 @@ const ContactSection = (props) => {
                                 <img src={icon1} alt="Map Mark SVG Icon" />
                             </div>
                             <div className="iconbox_content">
-                                <h3 className="iconbox_title">Location</h3>
+                                <h3 className="iconbox_title">الموقع</h3>
                                 <p className="mb-0">
-                                    Elmarwa Mall, Ordinya, 10th of ramadan, ASH, Egypt
+                                    مول المروة، ألاردنيه، العاشر من رمضان، الشرقية، مصر
                                 </p>
                             </div>
                         </div>
@@ -31,9 +31,9 @@ const ContactSection = (props) => {
                                 <img src={icon2} alt="Calling SVG Icon" />
                             </div>
                             <div className="iconbox_content">
-                                <h3 className="iconbox_title">Contact</h3>
-                                <p className="mb-0"> Sales   +201070005260</p>
-                                <p className="mb-0">Customer Service    +201070005280 </p>
+                                <h3 className="iconbox_title">اتصل بنا</h3>
+                                <p className="mb-0"> المبيعات   +201070005260</p>
+                                <p className="mb-0">خدمة العملاء    +201070005280 </p>
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ const ContactSection = (props) => {
                                 <img src={icon3} alt="User Check SVG Icon" />
                             </div>
                             <div className="iconbox_content">
-                                <h3 className="iconbox_title">Email</h3>
+                                <h3 className="iconbox_title">البريد الإلكتروني</h3>
                                 <p className="mb-0">info@osysware.com</p>
                             </div>
                         </div>
@@ -54,9 +54,9 @@ const ContactSection = (props) => {
                                 <img src={icon4} alt="Calendar SVG Icon" />
                             </div>
                             <div className="iconbox_content">
-                                <h3 className="iconbox_title">Visit Between</h3>
-                                <p className="mb-0">Sun - Thr: 10.00AM-5.00PM</p>
-                                <p className="mb-0">Fri / Sat: Closed</p>
+                                <h3 className="iconbox_title">قم بزيارتنا بين</h3>
+                                <p className="mb-0">الاحد : الخميس  10.00AM-5.00PM</p>
+                                <p className="mb-0">الجمعه / السبت: مغلق</p>
                             </div>
                         </div>
                     </div>

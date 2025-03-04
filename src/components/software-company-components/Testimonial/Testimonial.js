@@ -18,30 +18,31 @@ const testimonial = [
     {
         id: '01',
         tImg: tImg1,
-        Title: 'Amazing software services',
-        Des: "The solutions they're providing is helping our business run more smoothly. We've been able to make quick developments with them, meeting our product vision within the timeline we set up. Listen to them because they can give strong advice about how to build good products.",
-        Name: 'Maverick Phoenix',
-        sub: 'Board Member, UNIQA',
-        country: 'Seattle, Ukraine',
+        Title: 'خدمات البرمجيات المدهشة',
+        Des: "الحلول التي يقدمونها تساعد أعمالنا على العمل بسلاسة أكبر. تمكنا من إجراء تطورات سريعة معهم، وحققنا رؤية المنتج في الوقت المحدد الذي وضعناه. استمع إليهم لأنهم يمكنهم تقديم نصائح قوية حول كيفية بناء منتجات جيدة.",
+        Name: 'مافريك فينيكس',
+        sub: 'عضو مجلس الإدارة، UNIQA',
+        country: 'سياتل، أوكرانيا',
     },
     {
         id: '02',
         tImg: tImg2,
-        Title: 'Amazing software services',
-        Des: "The solutions they're providing is helping our business run more smoothly. We've been able to make quick developments with them, meeting our product vision within the timeline we set up. Listen to them because they can give strong advice about how to build good products.",
-        Name: 'Maverick Phoenix',
-        sub: 'Board Member, UNIQA',
-        country: 'Seattle, Ukraine',
+        Title: 'حلول برمجية مبتكرة',
+        Des: "الحلول التي تقدمها هذه الشركة قد أثرت بشكل كبير على سير أعمالنا. استطاع فريق العمل إنجاز التطويرات بسرعة، وتوصلنا إلى أهدافنا في المدة المحددة. نوصي بشدة بالاستماع إليهم لأنهم يمتلكون المعرفة والخبرة لبناء منتجات قوية ومؤثرة.",
+        Name: 'سارة أندرسون',
+        sub: 'مديرة العمليات، TechForward',
+        country: 'لندن، المملكة المتحدة',
     },
+
     {
         id: '03',
         tImg: tImg3,
-        Title: 'Amazing software services',
-        Des: "The solutions they're providing is helping our business run more smoothly. We've been able to make quick developments with them, meeting our product vision within the timeline we set up. Listen to them because they can give strong advice about how to build good products.",
-        Name: 'Maverick Phoenix',
-        sub: 'Board Member, UNIQA',
-        country: 'Seattle, Ukraine',
-    },
+        Title: 'خدمات البرمجيات عالية الجودة',
+        Des: "لقد أثبتت الحلول التي يقدمها الفريق نجاحًا كبيرًا في تحسين العمليات لدينا. تمكننا من تسريع التقدم والوصول إلى أهدافنا بسرعة وفعالية. إذا كنت تبحث عن نصائح استراتيجية حول كيفية بناء حلول برمجية قوية، هؤلاء هم الفريق الذي تحتاجه.",
+        Name: 'ديفيد جونسون',
+        sub: 'مدير التكنولوجيا، InnovateTech',
+        country: 'نيويورك، الولايات المتحدة',
+    }
 ]
 
 const Testimonial = () => {
@@ -64,7 +65,7 @@ const Testimonial = () => {
             <div className="col-lg-4">
                 <div className="deals_winner_customers">
                     <h3 className="title_text">
-                        <mark>3,900+</mark> customers win deals with OSYS
+                        <mark>3,900+</mark>عميل فازوا بالصفقات مع OSYS.
                     </h3>
                     <div className="row">
                         <div className="col-6">
@@ -79,7 +80,7 @@ const Testimonial = () => {
                                     <li><i className="fa-solid fa-star fa-fw"></i></li>
                                     <li><i className="fa-solid fa-star fa-fw"></i></li>
                                 </ul>
-                                <div className="review_counter">From <b>200+</b> reviews</div>
+                                <div className="review_counter">اكثر من  <b>200+</b> تقييم</div>
                             </div>
                         </div>
                         <div className="col-6">
@@ -94,7 +95,7 @@ const Testimonial = () => {
                                     <li><i className="fa-solid fa-star fa-fw"></i></li>
                                     <li><i className="fa-solid fa-star fa-fw"></i></li>
                                 </ul>
-                                <div className="review_counter">From <b>300+</b> reviews</div>
+                                <div className="review_counter">اكثر من <b>300+</b> تقييم</div>
                             </div>
                         </div>
                     </div>

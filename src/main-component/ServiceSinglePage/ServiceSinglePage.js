@@ -27,7 +27,7 @@ const ServiceSinglePage = (props) => {
         <Fragment>
             <Header />
             <main className="page_content service-single-page">
-                <PageTitle pageTitle={ServiceDetails.title} pagesub={'Details 😍'} pageTop={'Services'} />
+                <PageTitle pageTitle={ServiceDetails.title} pagesub={'المزيد من خدماتنا 😍'} pageTop={''} />
                 <section className="service_details_section section_space bg-light">
                     <div className="container">
                         <div className="details_item_image position-relative">
@@ -40,41 +40,52 @@ const ServiceSinglePage = (props) => {
                         </div>
                         <h2 className="details_item_title">{ServiceDetails.title}</h2>
                         <p>
-                            {ServiceDetails.title} are the backbone of modern businesses, serving as the foundation upon which all digital operations rely. At our IT solution agency, we specialize in crafting robust and reliable network architectures tailored to meet the unique needs of our clients. From small businesses to large enterprises, we understand the critical importance of a well-designed network infrastructure in driving efficiency, security, and scalability. Our team of experienced professionals works closely with clients.
+                            {ServiceDetails.title} هي العمود الفقري للأعمال الحديثة، حيث تشكل الأساس الذي تعتمد عليه جميع العمليات الرقمية.
+                            في وكالتنا لحلول تكنولوجيا المعلومات، نحن متخصصون في تصميم بنى تحتية قوية وموثوقة للشبكات،
+                            مصممة خصيصًا لتلبية الاحتياجات الفريدة لعملائنا. بدءًا من الشركات الصغيرة وحتى المؤسسات الكبيرة،
+                            ندرك الأهمية الحيوية للبنية التحتية الشبكية المصممة جيدًا في تعزيز الكفاءة والأمان وقابلية التوسع.
+                            يعمل فريقنا من المهنيين ذوي الخبرة بشكل وثيق مع العملاء.
                         </p>
+
                         <p>
-                            We take a holistic approach to network design, considering factors such as bandwidth requirements, security protocols, scalability, and future growth potential. By leveraging industry best practices and cutting-edge technologies,
+                            نتبع نهجًا شاملاً في تصميم الشبكات، مع مراعاة عوامل مثل متطلبات النطاق الترددي،
+                            وبروتوكولات الأمان، وقابلية التوسع، وإمكانيات النمو المستقبلي.
+                            من خلال الاستفادة من أفضل الممارسات الصناعية وأحدث التقنيات،
                         </p>
+
                         <ProcessTechnology />
-                        <h3 className="details_item_info_title">Services Outcome</h3>
+
+                        <h3 className="details_item_info_title">نتائج الخدمات</h3>
+
                         <p className="mb-4">
-                            Here are six key points that can be associated with a digital Transformation gallery case global Digital Systems Engineer Services leader helping Fortune 500 companies on their innovation agenda:
+                            فيما يلي ست نقاط رئيسية يمكن ربطها بمعرض التحول الرقمي،
+                            وهي خدمات مهندس أنظمة رقمية عالمي يساعد شركات Fortune 500 في جدول أعمالها الابتكاري:
                         </p>
                         <div className="row mb-4">
                             <div className="col-lg-6">
                                 <ul className="icon_list unordered_list_block">
                                     <li>
                                         <span className="icon_list_icon">
-                                            <img src={icon} alt="Check SVG Icon"/>
+                                            <img src={icon} alt="رمز التحقق SVG" />
                                         </span>
                                         <span className="icon_list_text">
-                                            Scalability and Flexibility
+                                            القابلية للتوسع والمرونة
                                         </span>
                                     </li>
                                     <li>
                                         <span className="icon_list_icon">
-                                            <img src={icon} alt="Check SVG Icon"/>
+                                            <img src={icon} alt="رمز التحقق SVG" />
                                         </span>
                                         <span className="icon_list_text">
-                                            Security and Compliance
+                                            الأمان والامتثال
                                         </span>
                                     </li>
                                     <li>
                                         <span className="icon_list_icon">
-                                            <img src={icon} alt="Check SVG Icon"/>
+                                            <img src={icon} alt="رمز التحقق SVG" />
                                         </span>
                                         <span className="icon_list_text">
-                                            Performance Optimization
+                                            تحسين الأداء
                                         </span>
                                     </li>
                                 </ul>
@@ -83,26 +94,26 @@ const ServiceSinglePage = (props) => {
                                 <ul className="icon_list unordered_list_block">
                                     <li>
                                         <span className="icon_list_icon">
-                                            <img src={icon} alt="Check SVG Icon"/>
+                                            <img src={icon} alt="رمز التحقق SVG" />
                                         </span>
                                         <span className="icon_list_text">
-                                            User Experience
+                                            تجربة المستخدم
                                         </span>
                                     </li>
                                     <li>
                                         <span className="icon_list_icon">
-                                            <img src={icon} alt="Check SVG Icon"/>
+                                            <img src={icon} alt="رمز التحقق SVG" />
                                         </span>
                                         <span className="icon_list_text">
-                                            Security and Compliance
+                                            الأمان والامتثال
                                         </span>
                                     </li>
                                     <li>
                                         <span className="icon_list_icon">
-                                            <img src={icon} alt="Check SVG Icon"/>
+                                            <img src={icon} alt="رمز التحقق SVG" />
                                         </span>
                                         <span className="icon_list_text">
-                                            Training and Education
+                                            التدريب والتعليم
                                         </span>
                                     </li>
                                 </ul>

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom'
 import CountUp from 'react-countup';
 import Bg from '../../images/hero/business_consulting_hero_section_bg.jpg'
@@ -26,7 +26,7 @@ const Hero3 = (props) => {
                                 Empowering Businesses to Thrive: Strategic Consulting for Sustainable Success
                             </p>
                             <Link onClick={ClickHandler} className="creative_btn" to="/pricing">
-                                <span className="btn_label bg-primary">Get Started Today</span>
+                                <span className="btn_label bg-primary">ابدأ الآن Today</span>
                                 <span className="btn_icon">
                                     <i className="bg-primary fa-solid fa-arrow-up-right"></i>
                                     <i className="bg-primary fa-solid fa-arrow-up-right"></i>

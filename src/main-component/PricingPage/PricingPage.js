@@ -27,23 +27,23 @@ const PricingPage = (props) => {
         <Fragment>
             <Header />
             <main className="page_content about-page">
-                <PageTitle pageTitle={'Pricing Plan'} pagesub={' Prices😍'} pageTop={''} />
+                <PageTitle pageTitle={'خطط اسعارنا'} pagesub={' الاسعار😍'} pageTop={''} />
                 <PolicySection />
                   <section className="pricing_section section_space pb-0 bg-light">
                     <div className="container">
                         <div className="heading_block text-center">
                             <div className="heading_focus_text mb-2">
-                                Our
-                                <span className="badge bg-secondary text-white">Pricing 😍</span>
+                                
+                                <span className="badge bg-secondary text-white">اسعارنا المتميزه 😍</span>
                             </div>
                             <h2 className="heading_text mb-0">
-                                Best Plane for Business
+                                افضل خطه للاعمال
                             </h2>
                         </div>
                         <div className="pricing_toggle_btn text-center">
                             {/* <button type="button" onClick={handleToggle} className={isActive ? 'active' : ''}> </button>*/}
                             {/*   <span>Billed Monthly <small>-10%</small></span>*/}
-                                <span>Billed Yearly <small>-30%</small></span>
+                            <span>الفوترة سنويًا <small>-30%</small></span>
                             
                         </div>
                         <div className="row justify-content-center">
@@ -52,16 +52,16 @@ const PricingPage = (props) => {
                                     <div className="table_head">
                                         <div className="pricing_price_value bg-primary-subtle text-primary">
                                             <span className="pricing_monthly">
-                                                <del>$54</del> $48<small>.6</small> <sub>You'll Save <u>$5.4</u> Monthly</sub>
+                                                <del>$54</del> $48<small>.6</small> <sub>هتوفر<u>$5.4</u> شهريا</sub>
                                             </span>
                                             <span className="pricing_annually">
-                                                <del>$180</del> $160<small></small> <sub>You'll Save <u>$20</u> Annually</sub>
+                                                <del>$180</del> $160<small></small> <sub>هتوفر<u>$20</u> سنويا</sub>
                                             </span>
                                         </div>
                                         <div className="pricing_block_title">
-                                            <h3 className="pricing_package_title">standard Package</h3>
+                                            <h3 className="pricing_package_title">الباقة القياسية</h3>
                                             <p className="pricing_package_description mb-0">
-                                                Make your work easier with an integrated properly together.
+                                                اجعل عملك أسهل مع نظام متكامل ومترابط بشكل سليم.
                                             </p>
                                         </div>
                                     </div>
@@ -71,7 +71,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Software Development.
+                                                تطوير البرمجيات.
                                             </span>
                                         </li>
                                         <li>
@@ -79,7 +79,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Digital Product Design
+                                                تصميم المنتجات الرقمية.
                                             </span>
                                         </li>
                                         <li>
@@ -87,7 +87,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                IT Consulting.
+                                                استشارات تقنية المعلومات.
                                             </span>
                                         </li>
                                         <li>
@@ -95,7 +95,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Website Development.
+                                                تطوير المواقع الإلكترونية.
                                             </span>
                                         </li>
                                         <li>
@@ -103,7 +103,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Cybersecurity Services.
+                                                خدمات الأمن السيبراني.
                                             </span>
                                         </li>
                                         <li>
@@ -111,13 +111,14 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Cloud Services.
+                                                خدمات الحوسبة السحابية.
                                             </span>
                                         </li>
                                     </ul>
+
                                     <div className="text-center mt-4">
                                         <Link onClick={ClickHandler} className="btn btn-outline-light" to="/contact">
-                                            <span className="btn_label" data-text="Purchase Now">Purchase Now</span>
+                                            <span className="btn_label" data-text="اشترِ الآن">اشترِ الآن</span>
                                             <span className="btn_icon">
                                                 <i className="fa-solid fa-arrow-up-right"></i>
                                             </span>
@@ -131,24 +132,25 @@ const PricingPage = (props) => {
                             </div>
                             <div className="col-lg-6">
                                 <div className={`pricing_block ${isActive ? 'active' : ''}`}>
-                                    <div className="best_plan">
+                                    {/*<div className="best_plan">
                                         <img src={offerBanner} alt="Best Offer" />
-                                    </div>
+                                    </div>*/}
                                     <div className="table_head">
                                         <div className="pricing_price_value bg-primary-subtle text-primary">
                                             <span className="pricing_monthly">
-                                                <del>$60</del> $54 <sub>You'll Save <u>$6</u> Monthly</sub>
+                                                <del>$60</del> $54 <sub> هتوفر  <u>$6</u> شهريا</sub>
                                             </span>
                                             <span className="pricing_annually">
-                                                <del>$260</del> $220 <sub>You'll Save <u>$40</u> Annually</sub>
+                                                <del>$260</del> $220 <sub> هتوفر   <u>$40</u> سنويا</sub>
                                             </span>
                                         </div>
                                         <div className="pricing_block_title">
-                                            <h3 className="pricing_package_title">Premier Package</h3>
+                                            <h3 className="pricing_package_title">الباقة المميزة</h3>
                                             <p className="pricing_package_description mb-0">
-                                                Make your work easier with an integrated properly together.
+                                                اجعل عملك أسهل مع نظام متكامل ومترابط بشكل صحيح.
                                             </p>
                                         </div>
+
                                     </div>
                                     <ul className="icon_list unordered_list_block">
                                         <li>
@@ -156,7 +158,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Software Development.
+                                                تطوير البرمجيات.
                                             </span>
                                         </li>
                                         <li>
@@ -164,7 +166,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Digital Product Design
+                                                تصميم المنتجات الرقمية.
                                             </span>
                                         </li>
                                         <li>
@@ -172,7 +174,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                IT Consulting.
+                                                استشارات تقنية المعلومات.
                                             </span>
                                         </li>
                                         <li>
@@ -180,7 +182,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Website Development.
+                                                تطوير المواقع الإلكترونية.
                                             </span>
                                         </li>
                                         <li>
@@ -188,7 +190,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Cybersecurity Services.
+                                                خدمات الأمن السيبراني.
                                             </span>
                                         </li>
                                         <li>
@@ -196,13 +198,14 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Cloud Services.
+                                                خدمات الحوسبة السحابية.
                                             </span>
                                         </li>
                                     </ul>
+
                                     <div className="text-center mt-4">
                                         <Link onClick={ClickHandler} className="btn btn-outline-light" to="/contact">
-                                            <span className="btn_label" data-text="Purchase Now">Purchase Now</span>
+                                            <span className="btn_label" data-text="اشترِ الآن">اشترِ الآن</span>
                                             <span className="btn_icon">
                                                 <i className="fa-solid fa-arrow-up-right"></i>
                                             </span>

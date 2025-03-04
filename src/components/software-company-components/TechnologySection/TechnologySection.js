@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import classnames from 'classnames';
 
@@ -95,10 +95,10 @@ const TechnologySection = (props) => {
         <div className="section_space">
             <div className="heading_block text-center">
                 <div className="heading_focus_text has_underline d-inline-flex" style={{ backgroundImage: `url(${Bg})` }}>
-                    Our Technologies
+                    تقنياتنا
                 </div>
                 <h2 className="heading_text mb-0">
-                    We Use <mark>Technologies</mark>
+                    نحن نستخدم <mark>التقنيات</mark>
                 </h2>
             </div>
 
@@ -109,7 +109,7 @@ const TechnologySection = (props) => {
                             className={classnames({ active: activeTab === '1' })}
                             onClick={() => { toggle('1'); }}
                         >
-                            Web Platform
+                            منصة الويب
                         </NavLink>
                     </NavItem>
                     <NavItem>
@@ -117,8 +117,7 @@ const TechnologySection = (props) => {
                             className={classnames({ active: activeTab === '2' })}
                             onClick={() => { toggle('2'); }}
                         >
-
-                            Databases
+                            قواعد البيانات
                         </NavLink>
                     </NavItem>
                     <NavItem>
@@ -126,8 +125,7 @@ const TechnologySection = (props) => {
                             className={classnames({ active: activeTab === '3' })}
                             onClick={() => { toggle('3'); }}
                         >
-
-                            Cloud & DevOps
+                            الحوسبة السحابية و التطوير والعمليات
                         </NavLink>
                     </NavItem>
                     <NavItem>
@@ -135,8 +133,7 @@ const TechnologySection = (props) => {
                             className={classnames({ active: activeTab === '4' })}
                             onClick={() => { toggle('4'); }}
                         >
-
-                            Mobile Apps
+                            تطبيقات الهاتف المحمول
                         </NavLink>
                     </NavItem>
                     <NavItem>
@@ -145,7 +142,7 @@ const TechnologySection = (props) => {
                             onClick={() => { toggle('5'); }}
                         >
 
-                            Other Frameworks
+                            إطارات عمل أخرى
                         </NavLink>
                     </NavItem>
                 </Nav>

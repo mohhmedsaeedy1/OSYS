@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Services from '../../api/service'
 import { Link } from "react-router-dom";
 
@@ -12,11 +12,11 @@ const ServiceSection = (props) => {
             <div className="container">
                 <div className="heading_block text-center">
                     <div className="heading_focus_text">
-                        Our
-                        <span className="badge bg-secondary text-white">Specialize</span>
+                        
+                        <span className="badge bg-secondary text-white">تخصصاتنا</span>
                     </div>
                     <h2 className="heading_text mb-0">
-                        Featured Services
+                        الخدمات المميزة
                     </h2>
                 </div>
 
@@ -26,7 +26,7 @@ const ServiceSection = (props) => {
                             {service.title ?
                                 <div className="service_block">
                                     <div className="service_image">
-                                        <img src={service.sImg} alt="IT Management Services" />
+                                        <img src={service.sImg} alt="خدمات إدارة تكنولوجيا المعلومات" />
                                     </div>
                                     <div className="service_content">
                                         <h3 className="service_title"><Link onClick={ClickHandler} to={`/service-single/${service.slug}`}>{service.title}</Link>

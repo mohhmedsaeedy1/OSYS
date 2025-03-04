@@ -33,7 +33,7 @@ const Footer = () => {
                                 <img src={icon1} alt="Mail SVG Icon" />
                             </div>
                             <div className="iconbox_content">
-                                <h3 className="iconbox_title">Write to us</h3>
+                                <h3 className="iconbox_title">اكتبلنا </h3>
                                 <p className="mb-0">info@osysware.com</p>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                                 <img src={icon2} alt="Calling Check SVG Icon" />
                             </div>
                             <div className="iconbox_content">
-                                <h3 className="iconbox_title">Call Us (Egypt)</h3>
+                                <h3 className="iconbox_title">اتصل بنا (مصر)</h3>
                                 <p className="mb-0">+201070005260</p>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ const Footer = () => {
                                 <img src={icon3} alt="Map Mark Check SVG Icon" />
                             </div>
                             <div className="iconbox_content">
-                                <h3 className="iconbox_title">Our Office</h3>
+                                <h3 className="iconbox_title">مكتبنا</h3>
                                 <p
                                     className="mb-0"
                                     style={{
@@ -60,7 +60,7 @@ const Footer = () => {
                                         overflowWrap: "break-word"
                                     }}
                                 >
-                                    Elmarwa Mall, Ordinya, 10th of ramadan, ASH, Egypt
+                                    مول المروة، ألاردنيه، العاشر من رمضان، الشرقية، مصر
                                 </p>
                             </div>
                         </div>
@@ -72,11 +72,11 @@ const Footer = () => {
                             {/* قسم النشرة البريدية */}
                             <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="footer_widget pe-md-3">
-                                    <h2 className="footer_info_title">Newsletter</h2>
+                                    <h2 className="footer_info_title">النشرة الإخبارية</h2>
                                     <p>
-                                        Sign up to {companyName} weekly newsletter to get the latest updates.
+                                        اشترك في النشرة الإخبارية الأسبوعية لـ OSYS للحصول على أحدث التحديثات.
                                     </p>
-                                    <form className="footer_newslatter" onSubmit={SubmitHandler}>
+                                    {/*<form className="footer_newslatter" onSubmit={SubmitHandler}>
                                         <label htmlFor="footer_mail_input">
                                             <img src={icon4} alt="Mail SVG Icon" />
                                         </label>
@@ -89,7 +89,7 @@ const Footer = () => {
                                         <button type="submit">
                                             <i className="fa-solid fa-paper-plane"></i>
                                         </button>
-                                    </form>
+                                    </form>*/}
                                     <ul className="social_links_block unordered_list">
                                         <li>
                                             <a href="https://www.facebook.com/osyseg" target="_blank" rel="noopener noreferrer">
@@ -112,7 +112,7 @@ const Footer = () => {
                             {/* قسم الخدمات */}
                             <div className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="footer_widget">
-                                    <h3 className="footer_info_title">Services</h3>
+                                    <h3 className="footer_info_title">خدماتنا</h3>
                                     <ul className="icon_list unordered_list_block">
                                         {Services.slice(0, 6).map((service, srv) => (
                                             <li key={srv}>
@@ -129,29 +129,27 @@ const Footer = () => {
                             {/* قسم المعلومات */}
                             <div className="col-lg-2 col-md-6 col-sm-6">
                                 <div className="footer_widget">
-                                    <h3 className="footer_info_title">Information</h3>
+                                    <h3 className="footer_info_title">المعلومات</h3>
                                     <ul className="icon_list unordered_list_block">
-                                        <li><Link onClick={ClickHandler} to="/about">About {companyName}</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/service">Investors</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/about">Affiliate Program</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/portfolio">Career</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/pricing">Pricing Plan</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/about">عن {companyName}</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/service">المستثمرون</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/contact">تواصل معنا</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/about">برنامج الشراكة</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/portfolio">مجالنا</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/pricing">خطط الاسعار</Link></li>
                                     </ul>
                                 </div>
                             </div>
                             {/* قسم المنتجات */}
                             <div className="col-lg-2 col-md-6 col-sm-6">
                                 <div className="footer_widget">
-                                    <h3 className="footer_info_title">Product</h3>
+                                    <h3 className="footer_info_title">منتجاتنا</h3>
                                     <ul className="icon_list unordered_list_block">
-                                        <li><Link onClick={ClickHandler} to="/portfolio">Case Studies</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/pricing">Our Pricing</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/service">Features</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/about">Overview</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/blog">New Releases</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/pricing">
-                                        </Link></li>
+                                        <li><Link onClick={ClickHandler} to="/portfolio">دراسات الحالات</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/pricing">اسعارنا</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/service">المميزات</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/about">نظرة عامة</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/">الإصدارات الجديدة</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -164,11 +162,10 @@ const Footer = () => {
             <div className="footer_bottom">
                 <div className="container d-md-flex align-items-md-center justify-content-md-between">
                     <p className="copyright_text m-0">
-                        Copyright © {currentYear} {companyName}, All rights reserved.
+                        حقوق النشر © {currentYear} {companyName}، جميع الحقوق محفوظة.
                     </p>
                     <p className="copyright_text m-0">
-                        Developed by {companyName}
-                    </p>
+                        تطوير {companyName}                    </p>
                 </div>
             </div>
         </footer>

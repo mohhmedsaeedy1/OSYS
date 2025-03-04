@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import blog1 from '../../images/blog/blog_post_image_8.webp'
 import blog2 from '../../images/blog/blog_post_image_9.webp'
 import blog3 from '../../images/blog/blog_post_image_10.webp'
@@ -56,9 +56,8 @@ const BlogSingle = (props) => {
                     {BlogDetails.title}
                 </h2>
                 <p>
-                    Delve into the world of ERP systems with OSYS Software's industry experts. Backed by years of experience and deep insights, our professionals offer unparalleled perspectives into the transformative power of technology. Explore innovative solutions that redefine business efficiency and drive growth in today�s dynamic markets.
- </p>
-                <div className="row align-items-center">
+استكشف عالم أنظمة ERP مع خبراء OSYS Software. بفضل سنوات من الخبرة والرؤى العميقة، يقدم محترفونا منظورًا فريدًا حول القوة التحويلية للتكنولوجيا. اكتشف حلولًا مبتكرة تعيد تعريف كفاءة الأعمال وتعزز النمو في الأسواق الديناميكية اليوم </p>
+                {/*<div className="row align-items-center">
                     <div className="col-md-6">
                         <ul className="post_meta unordered_list">
                             <li>
@@ -92,43 +91,43 @@ const BlogSingle = (props) => {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div>*/}
                 <hr className="mb-0" />
                 <div className="section_space pb-0">
                     <div className="row">
                         <div className="col-lg-8">
-                            <div className="blog_details_audio">
+                            {/*<div className="blog_details_audio">
                                 <button className="audio_play_btn" type="button">
                                     <i className="fa-solid fa-play"></i>
                                     <span>6:24</span>
                                     <span>Listen to this article!</span>
                                 </button>
-                            </div>
+                            </div>*/}
                             <h3 className="details_item_info_title mb-5">
-                                Transforming Operational Excellence Driving Progress with Cutting-Edge IT Solutions Integration
- </h3>
+                                تحويل التميز التشغيلي ودفع التقدم من خلال دمج حلول تكنولوجيا المعلومات المتطورة
+                            </h3>
                             <div className="row mb-4">
                                 <div className="col-md-6 col-sm-6">
                                     <div className="details_item_image m-0">
-                                        <img src={blog2} alt="OSYS - Blog" />
+                                        <img src={blog2} alt="مدونة OSYS" />
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-sm-6">
                                     <div className="details_item_image m-0">
-                                        <img src={blog3} alt="OSYS - Blog" />
+                                        <img src={blog3} alt="مدونة OSYS" />
                                     </div>
                                 </div>
                             </div>
                             <p className="heading_description mb-3 justify-text">
-                                Gain unparalleled perspectives into the realm of IT innovations with OSYS's expert visionaries. Backed by years of expertise and an in-depth grasp of industry dynamics, our leaders deliver transformative insights that pave the way to digital mastery. From revolutionary technologies to forward-thinking strategies, they unveil guidance that both educates and inspires. Join us in exploring the complexities of IT solutions, tackling challenges with clarity and precision.
+                                اكتسب رؤى فريدة في عالم ابتكارات تكنولوجيا المعلومات مع خبراء OSYS. بدعم من سنوات من الخبرة وفهم عميق لديناميكيات الصناعة، يقدم قادتنا رؤى تحويلية تمهد الطريق نحو التميز الرقمي. بدءًا من التقنيات الثورية إلى الاستراتيجيات المستقبلية، يكشفون عن توجيهات تثري المعرفة وتلهم الفكر. انضم إلينا لاستكشاف تعقيدات حلول تكنولوجيا المعلومات والتعامل مع التحديات بوضوح ودقة.
                             </p>
                             <p className="heading_description mb-0 justify-text">
-                                Embark on an enlightening journey into the realm of IT solutions with OSYS's esteemed experts. Dive deep into the intricacies of technology as our seasoned professionals share their extensive knowledge and expertise. With a sharp focus on industry trends and a passion for innovation, our thought leaders deliver unmatched insights that illuminate the road to digital success.
+                                انطلق في رحلة استكشافية داخل عالم حلول تكنولوجيا المعلومات مع خبراء OSYS المتميزين. تعمق في تفاصيل التكنولوجيا بينما يشارك محترفونا المخضرمون معارفهم وخبراتهم الواسعة. مع التركيز الحاد على اتجاهات الصناعة والشغف بالابتكار، يقدم قادتنا الفكريون رؤى لا مثيل لها تضيء الطريق نحو النجاح الرقمي.
                             </p>
                             <br></br>
-                            <h3 className="details_item_info_title">Exclusive Insights</h3>
+                            <h3 className="details_item_info_title">رؤى حصرية</h3>
                             <p className="heading_description mb-0 justify-text">
-                                Experience a profound and comprehensive exploration into the world of IT solutions with OSYS's expert team. Go beyond the surface as we uncover the intricacies of technology, guided by the wisdom and expertise of our seasoned professionals. Be inspired, informed, and empowered to navigate the dynamic landscape of digital transformation with clarity and confidence. Unlock unparalleled knowledge and discover endless opportunities for success in the rapidly evolving realm of technology.
+                                استمتع باستكشاف شامل وعميق لعالم حلول تكنولوجيا المعلومات مع فريق الخبراء في OSYS. تجاوز السطح واكتشف تعقيدات التكنولوجيا، مسترشدًا بحكمة وخبرة محترفينا المخضرمين. كن ملهمًا، ومطلعًا، وقادرًا على التنقل في مشهد التحول الرقمي الديناميكي بوضوح وثقة. اكتشف معرفة لا مثيل لها وافتح أبواب الفرص غير المحدودة للنجاح في عالم التكنولوجيا سريع التطور.
                             </p>
 <br></br>
                             <div className="row align-items-center mb-5">
@@ -144,7 +143,7 @@ const BlogSingle = (props) => {
                                                 <i className="fa-solid fa-circle fa-fw"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Discovering Cutting-Edge Solutions
+                                                اكتشاف الحلول المتطورة
                                             </span>
                                         </li>
                                         <li>
@@ -152,15 +151,7 @@ const BlogSingle = (props) => {
                                                 <i className="fa-solid fa-circle fa-fw"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Revealing Next-Generation Technologie
-                                            </span>
-                                        </li>
-                                        <li> 
-                                            <span className="icon_list_icon">
-                                                <i className="fa-solid fa-circle fa-fw"></i>
-                                            </span>
-                                            <span className="icon_list_text">
-                                                Overcoming Operational Challenges
+                                                الكشف عن تقنيات الجيل القادم
                                             </span>
                                         </li>
                                         <li>
@@ -168,7 +159,15 @@ const BlogSingle = (props) => {
                                                 <i className="fa-solid fa-circle fa-fw"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Anticipating Industry Trends
+                                                التغلب على التحديات التشغيلية
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span className="icon_list_icon">
+                                                <i className="fa-solid fa-circle fa-fw"></i>
+                                            </span>
+                                            <span className="icon_list_text">
+                                                توقع اتجاهات الصناعة
                                             </span>
                                         </li>
 
@@ -177,7 +176,7 @@ const BlogSingle = (props) => {
                                                 <i className="fa-solid fa-circle fa-fw"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Spearheading Innovation Pathways
+                                                قيادة مسارات الابتكار
                                             </span>
                                         </li>
                                         <li>
@@ -185,7 +184,7 @@ const BlogSingle = (props) => {
                                                 <i className="fa-solid fa-circle fa-fw"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Enhancing Business Practices
+                                                تعزيز ممارسات الأعمال
                                             </span>
                                         </li>
                                         <li>
@@ -193,42 +192,42 @@ const BlogSingle = (props) => {
                                                 <i className="fa-solid fa-circle fa-fw"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Fostering Transformational Growth
+                                                تعزيز النمو التحويلي
                                             </span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <h3 className="details_item_info_title">3 Reasons to Invest at This Moment
-                                Here are three key reasons highlighting the value of optimizing IT infrastructure for efficiency and growth:</h3>
+                            <h3 className="details_item_info_title">3 أسباب للاستثمار في هذه اللحظة
+                                إليك ثلاثة أسباب رئيسية تسلط الضوء على قيمة تحسين البنية التحتية لتكنولوجيا المعلومات لتحقيق الكفاءة والنمو:
+                            </h3>
                             <p className="optimized_text mb-2">
-                                Here are three key reasons emphasizing the importance of optimizing IT infrastructure for efficiency and growth:
+                                إليك ثلاثة أسباب رئيسية تؤكد أهمية تحسين البنية التحتية لتكنولوجيا المعلومات لتحقيق الكفاءة والنمو:
                             </p>
                             <ul className="icon_list unordered_list_block mb-5">
                                 <li>
                                     <span className="icon_list_text">
-                                        <strong>1. Enhanced Operational Agility:</strong> Empower your business to adapt quickly to evolving market demands and operational challenges with streamlined IT processes.
+                                        <strong>1. تعزيز المرونة التشغيلية:</strong> تمكين عملك من التكيف بسرعة مع متطلبات السوق المتغيرة والتحديات التشغيلية من خلال عمليات تكنولوجيا معلومات مبسطة.
                                     </span>
                                 </li>
                                 <li>
                                     <span className="icon_list_text">
-                                        <strong>2. Resource Optimization & Cost Efficiency:</strong> Maximize the return on investment by reducing overhead costs and improving the allocation of resources.
+                                        <strong>2. تحسين الموارد وكفاءة التكلفة:</strong> تعظيم العائد على الاستثمار عن طريق تقليل التكاليف العامة وتحسين تخصيص الموارد.
                                     </span>
                                 </li>
                                 <li>
                                     <span className="icon_list_text">
-                                        <strong>3. Scalability and Innovation:</strong> Unlock potential for future growth and innovation with IT solutions designed to scale seamlessly alongside your business needs.
+                                        <strong>3. القابلية للتوسع والابتكار:</strong> فتح آفاق جديدة للنمو والابتكار من خلال حلول تكنولوجيا المعلومات المصممة للتوسع بسلاسة مع احتياجات عملك.
                                     </span>
                                 </li>
                             </ul>
-
                             <hr className="mt-0 mb-5" />
                             <div className="row">
                                 <div className="col-md-6">
                                     <ul className="tags_list unordered_list">
-                                        <li><Link onClick={ClickHandler} to={'/blog'}>Solution</Link></li>
-                                        <li><Link onClick={ClickHandler} to={'/blog'}>Consultants</Link></li>
-                                        <li><Link onClick={ClickHandler} to={'/blog'}>IT</Link></li>
+                                        <li><Link onClick={ClickHandler} to={'/blog'}>الحلول</Link></li>
+                                        <li><Link onClick={ClickHandler} to={'/blog'}>الاستشاريون</Link></li>
+                                        <li><Link onClick={ClickHandler} to={'/blog'}>تكنولوجيا المعلومات</Link></li>
                                     </ul>
                                 </div>
                                 <div className="col-md-6">
@@ -254,7 +253,6 @@ const BlogSingle = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <br></br>
                             {/* <div className="post_author_box">
                                 <div className="author_image">
                                     <img src={author} alt="OSYS - Blog Author" />
@@ -286,25 +284,25 @@ const BlogSingle = (props) => {
                                 </div>
                             </div>*/}
 
-                            <div className="other_posts_nav" style={{ marginBottom: '0', paddingBottom: '0' }}>
+                            {/* <div className="other_posts_nav" style={{ marginBottom: '0', paddingBottom: '0' }}>
     <Link onClick={ClickHandler} to={'/blog'}>
         <i className="fa-regular fa-arrow-left-long"></i>
         <span>
-            <strong>Exploring IT Solutions with OSYS</strong>
-            <small>Dec 24, 2024</small>
-        </span>
-    </Link>
-    <Link onClick={ClickHandler} to={'/blog'} href="blog.html">
-        <i className="fa-solid fa-grid-2"></i>
-    </Link>
-    <Link onClick={ClickHandler} to={'/blog'}>
-        <span>
-            <strong>Exploring IT Solutions with OSYS</strong>
-            <small>Dec 24, 2024</small>
-        </span>
+                                        <strong>استكشاف حلول تكنولوجيا المعلومات مع OSYS</strong>
+                                        <small>24 ديسمبر 2024</small>
+                                    </span>
+                                </Link>
+                                <Link onClick={ClickHandler} to={'/blog'} href="blog.html">
+                                    <i className="fa-solid fa-grid-2"></i>
+                                </Link>
+                                <Link onClick={ClickHandler} to={'/blog'}>
+                                    <span>
+                                        <strong>استكشاف حلول تكنولوجيا المعلومات مع OSYS</strong>
+                                        <small>24 ديسمبر 2024</small>
+                                    </span>
         <i className="fa-regular fa-arrow-right-long"></i>
     </Link>
-</div>
+                            </div>*/}
 
                             {/* <div className="comment_area">
                                 <h3 className="details_item_info_title mb-5">Comments (3)</h3>

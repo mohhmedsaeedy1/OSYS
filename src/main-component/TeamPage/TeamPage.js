@@ -21,7 +21,7 @@ const TeamPage = (props) => {
         <Fragment>
             <Header />
             <main className="page_content about-page">
-                <PageTitle pageTitle={'Team Member'} pagesub={'Members 😍'} pageTop={'Team'} />
+                <PageTitle pageTitle={'فريق العمل'} pagesub={'فريقنا 😍'} pageTop={''} />
                 <section className="about_section section_space bg-light">
                     <div className="container">
                         <div className="row align-items-center justify-content-lg-between">
@@ -34,18 +34,18 @@ const TeamPage = (props) => {
                                 <div className="about_content">
                                     <div className="heading_block">
                                         <div className="heading_focus_text">
-                                            Our Dedicated
-                                            <span className="badge bg-secondary text-white">Team 🙂</span>
+
+                                            <span className="badge bg-secondary text-white">فريقنا الملتزم والمتميز 🙂</span>
                                         </div>
                                         <h2 className="heading_text">
-                                            Get to Know Our Expert OSYS Team
+                                            تعرّف على فريق OSYS الخبير 🚀
                                         </h2>
                                         <p className="heading_description mb-0">
                                             Meet the Powerhouse Behind OSYS Software
 Get acquainted with the expert team of professionals at OSYS Software, dedicated to transforming the technological landscape. Comprising industry leaders with years of experience, we drive innovation and deliver exceptional IT solutions tailored to your needs. </p>
                                     </div>
                                     <Link onClick={ClickHandler} to={'/contact'} className="btn">
-                                        <span className="btn_label" data-text="Talk to an Expart">Talk to an Expart</span>
+                                        <span className="btn_label" data-text="تحدث مع خبير 🚀">تحدث مع خبير 🚀</span>
                                         <span className="btn_icon">
                                             <i className="fa-solid fa-arrow-up-right"></i>
                                         </span>

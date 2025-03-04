@@ -1,4 +1,4 @@
-/* 5.04 - Pricing Page - Start
+﻿/* 5.04 - Pricing Page - Start
 ================================================== */
 // Pricing Policy Section
 .pricing_policy_wrap {
@@ -55,13 +55,13 @@
 		justify-content: center;
 		background-color: #CCE3FF;
 		text-transform: uppercase;
-		font-family: 'Axiforma Bold';
+		font-family: 'DroidKufi-Bold';
 		small {
 			font-size: 12px;
 			font-weight: 500;
 			border-radius: 29px;
 			padding: 4px 7px 2px;
-			font-family: 'Axiforma Medium';
+			font-family: 'DroidKufi-Bold';
 			background-color: var(--bs-light);
 		}
 		span {
@@ -111,28 +111,32 @@
 		text-align: center;
 		border-radius: 20px;
 		padding: 34px 15px 30px;
-		font-family: 'Axiforma Bold';
+		font-family: ' Droid Arabic Kufi';
+
 		del {
 			font-size: 20px;
 			font-weight: 400;
 			color: var(--bs-body-color);
-			font-family: 'Axiforma Regular';
+			font-family: 'DroidKufi-Bold';
 		}
+
 		small {
 			font-size: 30px;
 			font-weight: 600;
-			font-family: 'Axiforma SemiBold';
+			font-family: 'DroidKufi-Bold';
 		}
+
 		sub {
 			display: block;
 			line-height: 1;
 			font-size: 14px;
 			font-weight: 400;
 			color: var(--bs-dark);
-			font-family: 'Axiforma Regular';
+			font-family: 'DroidKufi-Bold';
+
 			u {
 				font-weight: 600;
-				font-family: 'Axiforma SemiBold';
+				font-family: 'DroidKufi-Bold';
 			}
 		}
 	}
@@ -142,11 +146,12 @@
 		font-size: 26px;
 		margin-bottom: 10px;
 	}
+
 	.pricing_package_description {
 		font-size: 15px;
 		font-weight: 500;
 		line-height: 23px;
-		font-family: 'Axiforma Medium';
+		font-family: 'DroidKufi-Bold';
 	}
 
 	.icon_list {
@@ -154,9 +159,11 @@
 		display: block;
 		column-gap: 20px;
 		padding: 29px 0 25px;
-		>li {
+
+		> li {
 			padding: 5px 0;
 		}
+
 		i {
 			color: var(--bs-dark);
 		}
@@ -169,10 +176,12 @@
 	.pricing_monthly {
 		display: none;
 	}
+
 	&.active {
 		.pricing_annually {
 			display: none;
 		}
+
 		.pricing_monthly {
 			display: block;
 		}

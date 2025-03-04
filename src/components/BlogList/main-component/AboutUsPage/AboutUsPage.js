@@ -62,7 +62,7 @@ const AboutUsPage = (props) => {
                                         OSYS Software is a pioneering technology company offering cutting-edge software solutions
                                         designed to meet the unique needs of businesses across industries. With headquarters in Egypt
                                         and an established presence in Saudi Arabia, we deliver comprehensive solutions, including ERP
-                                        systems, AI-driven applications, website development, hosting, and business analysis.
+                                        systems, AI-driven applications, تطوير المواقع الإلكترونية, hosting, and business analysis.
                                         Our goal is to empower businesses to enhance their operations, comply with regional regulations,
                                         and embrace innovation. Whether it’s streamlining processes, improving decision-making, or
                                         driving growth, OSYS Software is your trusted partner in digital transformation.

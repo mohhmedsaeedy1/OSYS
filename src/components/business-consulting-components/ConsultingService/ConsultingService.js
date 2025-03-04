@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Services from '../../../api/service'
 import { Link } from "react-router-dom";
 import Bg from '../../../images/backgrounds/bg_image_3.webp'
@@ -49,7 +49,7 @@ const ConsultingService = (props) => {
 
                 <div className="btns_group pb-0">
                     <Link onClick={ClickHandler} className="creative_btn" to="/service">
-                        <span className="btn_label bg-primary">Get Started Today</span>
+                        <span className="btn_label bg-primary">ابدأ الآن Today</span>
                         <span className="btn_icon">
                             <i className="bg-primary fa-solid fa-arrow-up-right"></i>
                             <i className="bg-primary fa-solid fa-arrow-up-right"></i>

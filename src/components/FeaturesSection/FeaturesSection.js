@@ -11,25 +11,25 @@ import fimg from '../../images/about/about_image_1.webp';
 const FunFact = [
     {
         title: '10',
-        subTitle: 'Years of experience',
+        subTitle: 'سنوات من الخبرة',
         symbol: '+',
         icon: sIcon1,
     },
     {
         title: '480',
-        subTitle: 'Success Stories',
+        subTitle: 'قصص النجاح',
         symbol: '+',
         icon: sIcon2,
     },
     {
         title: '940',
-        subTitle: 'Companies Trust Us',
+        subTitle: 'شركات تثق بنا',
         symbol: '+',
         icon: sIcon3,
     },
     {
         title: '100',
-        subTitle: 'Results Guaranteed',
+        subTitle: 'نتائج مضمونة',
         symbol: '%',
         icon: sIcon4,
     },
@@ -43,8 +43,8 @@ const FeaturesSection = (props) => {
                 <div className="section_space pt-0">
                     <div className="heading_block text-center">
                         <div className="heading_focus_text mb-0">
-                            <span className="badge bg-secondary text-white">Brand We</span>
-                            Work With
+                            <span className="badge bg-secondary text-white"> العلامات التجارية</span>
+                            التي نعمل معها
                         </div>
                     </div>
                     {/* قسم الشركاء الأول */}
@@ -83,7 +83,7 @@ const FeaturesSection = (props) => {
                             </div>
                             <div className="content_wrap">
                                 <h3 className="title_text mb-0">
-                                    <b className="d-block">We are located in</b> 3 countries in The Middle East
+                                    <b className="d-block">نحن متواجدون</b> في 3 دول في الشرق الأوسط
                                 </h3>
                             </div>
                         </div>
@@ -94,8 +94,8 @@ const FeaturesSection = (props) => {
                 <div className="section_space pt-0">
                     <div className="heading_block text-center">
                         <div className="heading_focus_text mb-0">
-                            <span className="badge bg-secondary text-white">Partnering with the Best</span>
-                            Trusted by IT Solutions Providers
+                            <span className="badge bg-secondary text-white">شراكة مع الأفضل</span>
+                            موثوق به من قبل أفضل مزودي حلول تكنولوجيا المعلومات
                         </div>
                     </div>
                     {/* قسم الشركاء الثاني */}

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import wImg from '../../images/about/about_image_5.webp'
 import sIcon1 from '../../images/icons/icon_check_2.svg'
 import sIcon2 from '../../images/icons/icon_leaf.svg'
@@ -9,27 +9,27 @@ import sIcon6 from '../../images/icons/icon_microscope.svg'
 
 const Policy = [
     {
-        title: 'Quality Comes First',
+        title: 'الجودة تأتي أولاً',
         icon: sIcon1,
     },
     {
-        title: 'Flexible Cooperation',
+        title: 'التعاون المرن',
         icon: sIcon2,
     },
     {
-        title: 'On-time Delivery',
+        title: 'التسليم في الوقت المحدد',
         icon: sIcon3,
     },
     {
-        title: 'Transparent Costs',
+        title: 'تكاليف واضحة ومكشوفة وبسيطه',
         icon: sIcon4,
     },
     {
-        title: 'Qualified Developers',
+        title: 'مطورو البرامج المؤهلون',
         icon: sIcon5,
     },
     {
-        title: 'Quick Scale-up',
+        title: 'التوسع السريع',
         icon: sIcon6,
     },
 
@@ -52,11 +52,11 @@ const WhyUs = (props) => {
                         <div className="ps-lg-5">
                             <div className="heading_block">
                                 <div className="heading_focus_text">
-                                    <span className="badge bg-secondary text-white">Why Us</span>
-                                    Better
+                                    <span className="badge bg-secondary text-white">لماذا نحن </span>
+                                    نتميز عن الاخرين
                                 </div>
                                 <h2 className="heading_text mb-0">
-                                    Why Our Services are Better Than Others?
+                                    لماذا خدماتنا أفضل من غيرها؟
                                 </h2>
                             </div>
                             <ul className="service_facilities_group unordered_list">

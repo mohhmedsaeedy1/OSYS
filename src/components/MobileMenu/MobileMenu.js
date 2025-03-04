@@ -25,7 +25,7 @@ const scrollToSection = (sectionId, navigate, location) => {
         const menus = [
             {
                 id: 1,
-                title: 'Home',
+                title: 'الصفحة الرئيسية',
                 link: '/home',
             /*
             submenu: [
@@ -48,44 +48,44 @@ const scrollToSection = (sectionId, navigate, location) => {
             */    },
     {
         id: 3,
-        title: 'Company',
+        title: 'الشركة',
         action: (navigate, location) => scrollToSection("/about", navigate, location),
         submenu: [
             {
                 id: 322,
-                title: 'About',
+                title: 'نبذة عنا',
                 link: '/about'
             },
             {
                 id: 3222,
-                title: 'Prices',
+                title: 'الأسعار',
                 link: '/pricing'
             },
             {
                 id: 31,
-                title: "Partners",
+                title: "الشركاء",
                 action: (navigate, location) => scrollToSection("partnersSection", navigate, location),
             },
             {
                 id: 3454,
-                title: "Customers",
+                title: "العملاء",
                 action: (navigate, location) => scrollToSection("homeLogoSection", navigate, location),
             },
             {
                 id: 345,
-                title: 'Team',
+                title: 'فريقنا',
                 link: '/team'
             },
             {
                 id: 3454,
-                title: 'Code of ethics',
+                title: 'ميثاق القيم والأخلاقيات',
                 link: '/team-single/Atticus-Sterling'
             }
         ]
     },
     {
         id: 4,
-        title: 'Service',
+        title: 'خدماتنا',
         link: '/service',
                 // submenu: [
                 //     {
@@ -102,12 +102,12 @@ const scrollToSection = (sectionId, navigate, location) => {
             },
     {
         id: 5,
-        title: 'Products',
+        title: 'منتجاتنا',
         link: '/portfolio',
     } ,
     {
         id: 6,
-        title: 'Blog',
+        title: 'المدونات',
         link: '/blog',
     },
     {

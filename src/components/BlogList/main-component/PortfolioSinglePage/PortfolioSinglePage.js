@@ -44,117 +44,110 @@ const PortfolioSinglePage = (props) => {
         <Fragment>
             <Header />
             <main className="page_content about-page">
-                <PageTitle pageTitle={PortfolioDetails.title} pagesub={'Details 😃'} pageTop={'Products'} />
+                <PageTitle pageTitle={PortfolioDetails.title} pagesub={'تفاصيل منتجاتنا 😃'} pageTop={'تعرف على منجاتنا اكثر'} />
                 <section className="portfolio_details_section section_space bg-light">
                     <div className="container">
                         <h2 className="details_item_title">
-                            OSYS: Comprehensive ERP Solutions Transforming Industries
+                            تقدم OSYS: حلول ERP شاملة تحول الصناعات
                         </h2>
                         <div className="portfolio_image_wrap" style={styles.firstImage}>
                             <img src={psImg} alt="Portfolio Item" />
                         </div>
                         <br>
-                        </br> 
+                        </br>
                         <div className="portfolio_image_wrap" style={styles.otherImages}>
                             <img src={pImg7} alt="Portfolio Item" />
                         </div>
                         <br></br>
-                        <h2 className="details_item_title">1. Makateb: Transforming Professional Firms with Tailored ERP Solutions</h2>
+                        <h2 className="details_item_title">1. مكاتب: تحويل الشركات المهنية من خلال حلول ERP المخصصة</h2>
                         <p className="justify-text">
-                            Makateb, an advanced ERP solution crafted by OSYS, is designed to revolutionize the way law firms, accounting practices, and engineering offices operate. By integrating intelligent task management and automation, Makateb empowers firms to streamline workflows, enhance team performance, and achieve operational excellence while maintaining a focus on productivity and efficiency.
+                            مكاتب هو حل ERP متقدم تم تطويره بواسطة OSYS، مصمم لإحداث ثورة في طريقة عمل مكاتب المحاماة، ومكاتب المحاسبة، والمكاتب الهندسية. من خلال دمج إدارة المهام الذكية والأتمتة، يمكّن مكاتب الشركات من تبسيط سير العمل، وتعزيز أداء الفريق، وتحقيق التميز التشغيلي مع الحفاظ على التركيز على الإنتاجية والكفاءة.
                         </p>
                         <p className="mb-0 justify-text">
-                            Equipped with features like AI-powered automation, ready-made document templates, and comprehensive financial management, Makateb simplifies complex tasks such as contract renewals, invoicing, and performance tracking. Its seamless cross-departmental integration ensures unified collaboration, making it the go-to solution for professional firms seeking to modernize and optimize their operations.
+                            مزود بميزات مثل التحكم لتلقائى المدعوم بالذكاء الاصطناعي، وقوالب المستندات الجاهزة، والإدارة المالية الشاملة، يعمل مكاتب على تبسيط المهام المعقدة مثل تجديد العقود، وإصدار الفواتير، وتتبع الأداء. يضمن تكامله السلس بين الأقسام تحقيق تعاون موحد، مما يجعله الحل الأمثل للشركات المهنية التي تسعى إلى التحديث وتحسين عملياتها.
                         </p>
-                          <br></br>  <div className="portfolio_image_wrap" style={styles.otherImages}>
+                        <br></br>  <div className="portfolio_image_wrap" style={styles.otherImages}>
                             <img src={pImg8} alt="Portfolio Item" />
                         </div>
                         <br></br>
-                        <h2 className="details_item_title">2. Explore Simply: The Intuitive POS Solution for Retail and SMEs</h2>
+                        <h2 className="details_item_title">2. استكشف Simply: الحل الذكي لنقاط البيع لتجارة التجزئة والشركات الصغيرة والمتوسطة</h2>
                         <p className="justify-text">
-                            Simply, an intuitive Point of Sale (POS) system developed by OSYS, redefines the way retail shops and small-to-medium enterprises (SMEs) manage their operations. With a focus on simplicity and efficiency, Simply integrates seamlessly into OSYS's suite of solutions, empowering businesses to optimize daily tasks, enhance profitability, and deliver exceptional service to their customers.
+                            Simply، نظام نقاط بيع (POS) بديهي تم تطويره بواسطة OSYS، يعيد تعريف كيفية إدارة متاجر التجزئة والشركات الصغيرة والمتوسطة (SMEs) لعملياتها. بفضل تركيزه على البساطة والكفاءة، يندمج Simply بسلاسة مع مجموعة حلول OSYS، مما يمكّن الشركات من تحسين المهام اليومية، وتعزيز الربحية، وتقديم خدمة استثنائية لعملائها.
                         </p>
                         <p className="mb-0 justify-text">
-                            Equipped with advanced features like real-time sales management, automated inventory tracking, and comprehensive purchase monitoring, Simply ensures businesses operate at peak efficiency. Its web-based and desktop compatibility provides unparalleled flexibility, allowing businesses to manage operations from anywhere. Simply embodies OSYS's commitment to delivering transformative tools tailored for modern enterprises.
+                            مزود بميزات متقدمة مثل إدارة المبيعات في الوقت الفعلي، وتتبع المخزون المؤتمت، ومراقبة المشتريات الشاملة، يضمن Simply للشركات العمل بأقصى درجات الكفاءة. يتيح توافقه مع الويب وأجهزة سطح المكتب مرونة لا مثيل لها، مما يسمح للشركات بإدارة عملياتها من أي مكان. يجسد Simply التزام OSYS بتقديم أدوات تحويلية مصممة خصيصًا للمؤسسات الحديثة.
                         </p>
                         <br></br>    <div className="portfolio_image_wrap" style={styles.otherImages}>
                             <img src={pImg9} alt="Portfolio Item" />
                         </div>
                         <br></br>
-                        <h2 className="details_item_title">3. Innovative Solutions Highlight the Versatility of Farmo ERP
-                        </h2>
+                        <h2 className="details_item_title">3. الحلول المبتكرة تسلط الضوء على تعددية استخدامات Farmo ERP</h2>
                         <p className="justify-text">
-                            Farmo, a specialized ERP system designed by OSYS, revolutionizes farm management by offering advanced tools for livestock farming and agricultural production. Tailored to meet the needs of diverse farm types, Farmo empowers poultry farms, dairy operations, and crop producers to streamline workflows, monitor resources, and maximize efficiency in daily operations.
+                            Farmo، نظام ERP متخصص تم تطويره بواسطة OSYS، يُحدث ثورة في إدارة المزارع من خلال تقديم أدوات متقدمة لقطاع تربية المواشي والإنتاج الزراعي. مصمم لتلبية احتياجات مختلف أنواع المزارع، يمكّن Farmo مزارع الدواجن، والألبان، ومنتجي المحاصيل من تبسيط سير العمل، ومراقبة الموارد، وتحقيق أقصى كفاءة في العمليات اليومية.
                         </p>
                         <p className="mb-0 justify-text">
-                            With features like livestock lifecycle tracking, crop cycle planning, and automated expense management, Farmo ensures seamless resource optimization and profitability insights. Its customizable workflows and integrated financial tools enable farms to achieve compliance, productivity, and cost efficiency, embodying OSYS's dedication to delivering innovative solutions for modern agriculture.
+                            بفضل ميزات مثل تتبع دورة حياة المواشي، وتخطيط دورة المحاصيل، والإدارة المؤتمتة للنفقات، يضمن Farmo تحسين الموارد بسلاسة وتوفير رؤى دقيقة حول الربحية. تتيح سير العمل القابلة للتخصيص والأدوات المالية المتكاملة للمزارع تحقيق الامتثال، وزيادة الإنتاجية، وتحسين الكفاءة التشغيلية، مما يعكس التزام OSYS بتقديم حلول مبتكرة للزراعة الحديثة.
                         </p>
                         <br></br>     <div className="portfolio_image_wrap" style={styles.otherImages}>
                             <img src={pImg10} alt="Portfolio Item" />
                         </div>
                         <br></br>
-                        <h2 className="details_item_title">4. Cloud Migration and Integration: Masane3 ERP for Manufacturing
-                        </h2>
+                        <h2 className="details_item_title">4. ترحيل البيانات إلى السحابة والتكامل: Masane3 ERP لحلول التصنيع</h2>
                         <p className="justify-text">
-                            Masane3, an advanced ERP solution developed by OSYS, transforms manufacturing operations by streamlining production planning and optimizing workflows. Designed to serve a variety of industries, Masane3 provides manufacturers with tools to enhance operational control, monitor processes, and efficiently manage resources, from raw materials to finished products.
+                            Masane3، حل ERP متقدم تم تطويره بواسطة OSYS، يُحدث تحولًا في عمليات التصنيع من خلال تبسيط تخطيط الإنتاج وتحسين سير العمل. مصمم لخدمة مختلف الصناعات، يزوّد Masane3 المصنّعين بأدوات تعزز التحكم التشغيلي، ومراقبة العمليات، وإدارة الموارد بكفاءة، بدءًا من المواد الخام وحتى المنتجات النهائية.
                         </p>
                         <p className="mb-0 justify-text">
-                            With key features like detailed production scheduling, BOM and formula management, and precise cost calculation, Masane3 ensures seamless integration of financial, operational, and manufacturing workflows. Its scalability and adaptability make it the ideal solution for factories, assembly lines, and large-scale production facilities aiming for efficiency, accuracy, and profitability.
+                            بفضل ميزات رئيسية مثل جدولة الإنتاج التفصيلية، وإدارة قوائم المواد (BOM) والصيغ، وحساب التكاليف بدقة، يضمن Masane3 تكاملاً سلسًا بين العمليات المالية والتشغيلية والتصنيعية. تتيح مرونته وقابليته للتوسع استخدامه كحل مثالي للمصانع وخطوط الإنتاج والمنشآت الصناعية واسعة النطاق، مما يساعدها على تحقيق الكفاءة، والدقة، وزيادة الربحية.
                         </p>
 
                         <br></br>   <div className="portfolio_image_wrap" style={styles.otherImages}>
                             <img src={pImg11} alt="Portfolio Item" />
                         </div>
                         <br></br>
-                        <h2 className="details_item_title">5. AI Ledger: Revolutionizing Financial Management with Advanced AI Integration
-                        </h2>
+                        <h2 className="details_item_title">5. AI Ledger: ثورة في الإدارة المالية من خلال دمج الذكاء الاصطناعي المتقدم</h2>
                         <p className="justify-text">
-                            AI Ledger, an intelligent bookkeeping solution powered by OSYS, revolutionizes financial management with advanced AI-driven automation. Designed to support businesses of all sizes, AI Ledger simplifies document handling, transaction processing, and compliance tracking, ensuring real-time accuracy and efficiency across global operations.
+                            AI Ledger، حل محاسبي ذكي مدعوم من OSYS، يُحدث ثورة في الإدارة المالية من خلال أتمتة متقدمة تعتمد على الذكاء الاصطناعي. مصمم لدعم الشركات من جميع الأحجام، يعمل AI Ledger على تبسيط إدارة المستندات، ومعالجة المعاملات، وتتبع الامتثال، مما يضمن الدقة والكفاءة في الوقت الفعلي عبر العمليات العالمية.
                         </p>
                         <p className="mb-0 justify-text">
-                            With features like cloud integration, automated financial entry generation, and customized reporting, AI Ledger delivers unparalleled precision and flexibility. It’s the perfect solution for small businesses, multinational organizations, and accounting firms seeking to streamline workflows, reduce manual errors, and enhance client satisfaction.
+                            بفضل ميزات مثل التكامل السحابي، وإنشاء القيود المالية تلقائيًا، وإعداد التقارير المخصصة، يوفر AI Ledger دقة ومرونة لا مثيل لهما. يُعد الحل المثالي للشركات الصغيرة، والمؤسسات متعددة الجنسيات، ومكاتب المحاسبة التي تسعى إلى تبسيط سير العمل، وتقليل الأخطاء اليدوية، وتعزيز رضا العملاء.
                         </p>
                         <br></br>   <div className="portfolio_image_wrap" style={styles.otherImages}>
                             <img src={pImg12} alt="Portfolio Item" />
                         </div>
                         <br></br>
-                        <h2 className="details_item_title">6. Printo: Revolutionizing Printing Operations with Specialized ERP Solutions
-                        </h2>
+                        <h2 className="details_item_title">6. Printo: ثورة في عمليات الطباعة من خلال حلول ERP المتخصصة</h2>
                         <p className="justify-text">
-                            Printo, developed by OSYS, is an advanced ERP solution tailored specifically for printing companies and offices. By integrating all stages of the printing workflow—from customer orders to production and archiving—Printo empowers businesses to achieve operational excellence, ensuring precision and customer satisfaction at every step.
+                            Printo، الذي طورته OSYS، هو حل ERP متقدم مصمم خصيصًا لشركات ومكاتب الطباعة. من خلال دمج جميع مراحل سير عمل الطباعة، بدءًا من طلبات العملاء وحتى الإنتاج والأرشفة، يمكّن Printo الشركات من تحقيق التميز التشغيلي، مما يضمن الدقة ورضا العملاء في كل خطوة.
                         </p>
                         <p className="mb-0 justify-text">
-                            With key features like automated material calculation, seamless order integration, and real-time production monitoring, Printo streamlines daily operations while providing actionable insights through advanced reporting tools. Its robust file management and archiving system enable professional reprints and maintain compliance standards, making Printo the ultimate solution for modern printing businesses.
+                            بفضل ميزات رئيسية مثل الحساب التلقائي للمواد، والتكامل السلس للطلبات، والمراقبة الفورية للإنتاج، يعمل Printo على تبسيط العمليات اليومية وتقديم رؤى قابلة للتنفيذ من خلال أدوات التقارير المتقدمة. كما يتيح نظام إدارة الملفات والأرشفة القوي إعادة الطباعة الاحترافية مع الحفاظ على معايير الامتثال، مما يجعل Printo الحل الأمثل لشركات الطباعة الحديثة.
                         </p>
                         <br></br>   <div className="portfolio_image_wrap" style={styles.otherImages}>
                             <img src={pImg13} alt="Portfolio Item" />
                         </div>
                         <br></br>
-                        <h2 className="details_item_title">7. Transform Business Efficiency and Profitability with OSYS ERP
-                        </h2>
+                        <h2 className="details_item_title">7. يعمل على تعزيز كفاءة الأعمال والربحية مع OSYS ERP</h2>
                         <p className="justify-text">
-                            OSYS ERP is a fully integrated system designed to optimize operations for businesses across various industries. By automating tasks such as sales management, procurement tracking, and financial reporting, OSYS ERP empowers organizations to achieve greater efficiency, ensure compliance, and drive profitability. Its scalable and customizable modules make it adaptable for businesses of any size or complexity.
+                            OSYS ERP هو نظام متكامل بالكامل مصمم لتحسين العمليات في مختلف الصناعات. من خلال أتمتة المهام مثل إدارة المبيعات، وتتبع المشتريات، والتقارير المالية، يمكّن OSYS ERP الشركات من تحقيق كفاءة أعلى، وضمان الامتثال، وتعزيز الربحية. بفضل الوحدات القابلة للتطوير والتخصيص، يمكن تكييفه ليناسب الشركات بمختلف أحجامها وتعقيداتها.
                         </p>
                         <p className="mb-0 justify-text">
-                            With features like real-time inventory tracking, automated tax compliance, and robust human resource management, OSYS ERP streamlines daily operations while providing advanced analytics to support strategic decision-making. Tailored for industries such as retail, manufacturing, and professional services, OSYS ERP ensures seamless integration of workflows, delivering unparalleled operational control and growth potential.
+                            بفضل ميزات مثل تتبع المخزون في الوقت الفعلي، والامتثال الضريبي المؤتمت، والإدارة القوية للموارد البشرية، يعمل OSYS ERP على تبسيط العمليات اليومية، مع توفير تحليلات متقدمة لدعم اتخاذ القرارات الاستراتيجية. مصمم خصيصًا لقطاعات مثل التجزئة، والتصنيع، والخدمات المهنية، يضمن OSYS ERP تكاملًا سلسًا لسير العمل، مما يوفر تحكمًا تشغيليًا غير مسبوق وإمكانيات نمو هائلة.
                         </p>
                         <br></br>   <div className="portfolio_image_wrap" style={styles.otherImages}>
                             <img src={pImg14} alt="Portfolio Item" />
                         </div>
                         <br></br>
-                        <h2 className="details_item_title">8. Innovative OSYS Solutions for Business Growth
-                       </h2>
+                        <h2 className="details_item_title">8. حلول OSYS المبتكرة لتنمية الأعمال:</h2>
                         <p className="justify-text">
-
-                            Innovative OSYS Solutions for Business Growth
-                            OSYS Software, with its headquarters in Egypt and operations in Saudi Arabia, delivers comprehensive software solutions to businesses of all sizes. From ERP systems to AI-driven tools, OSYS ensures enhanced operational efficiency and compliance with local regulations. These tailored solutions streamline workflows, improve decision-making, and enable businesses to focus on growth and innovation.
+                            حلول OSYS المبتكرة لتنمية الأعمال
+                            تقدم OSYS Software، التي يقع مقرها الرئيسي في مصر وتعمل في السعودية، حلولًا برمجية متكاملة للشركات بمختلف أحجامها. بدءًا من أنظمة ERP وحتى الأدوات المدعومة بالذكاء الاصطناعي، تضمن OSYS رفع كفاءة العمليات التشغيلية والامتثال للوائح المحلية. تعمل هذه الحلول المخصصة على تبسيط سير العمل، وتحسين عملية اتخاذ القرار، وتمكين الشركات من التركيز على النمو والابتكار.
                         </p>
                         <p className="mb-0 justify-text">
-                            Through its scalable and user-friendly systems, OSYS Software supports industries ranging from manufacturing to agriculture and professional services. The company's expertise in tax compliance systems and integration with cloud platforms makes it a trusted partner in digital transformation.
+                            من خلال أنظمتها القابلة للتوسع وسهلة الاستخدام، تدعم OSYS Software مجموعة واسعة من القطاعات، بدءًا من التصنيع والزراعة وصولًا إلى الخدمات المهنية. وتُعد خبرتها في أنظمة الامتثال الضريبي والتكامل مع المنصات السحابية عاملًا رئيسيًا في جعلها شريكًا موثوقًا في التحول الرقمي.
                         </p>
                         <p className="mb-0">
-                            Unlock Efficiency, Unleash Potential
-                            With OSYS’s tailored software solutions, your business can experience a seamless blend of innovation and operational excellence.
+                            حقق الكفاءة، وأطلق العنان للإمكانات
+                            مع الحلول البرمجية المخصصة من OSYS، يمكن لعملك الاستمتاع بتكامل سلس بين الابتكار والتميز التشغيلي.
                         </p>
 
                         {/*  <h2 className="details_item_title">OSYS Cloud Migration and Integration Projectt</h2>

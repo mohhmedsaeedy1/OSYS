@@ -73,12 +73,12 @@ const BlogList = (props) => {
                                                 <ul className="category_btns_group unordered_list">
                                                     <li>
                                                         <Link onClick={ClickHandler} to={`/blog-single/${blogs[Bitem]?.slug || '#'}`}>
-                                                            Branding
+                                                            الهوية التجارية 🚀
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link onClick={ClickHandler} to={`/blog-single/${blogs[Bitem]?.slug || '#'}`}>
-                                                            UI/UX
+                                                            تجربة المستخدم (UX) وتصميم الواجهة (UI) 🎨🚀
                                                         </Link>
                                                     </li>
                                                 </ul>
@@ -101,7 +101,7 @@ const BlogList = (props) => {
                                                 </Link>
                                             </h3>
                                             <p className="mb-0">
-                                                Embark on an enlightening journey through the realm of IT solutions as we delve into the latest technological advancements shaping the digital landscape.
+                                                انطلق في رحلة استكشافية ملهمة عبر عالم حلول تكنولوجيا المعلومات، حيث نستكشف أحدث التطورات التقنية التي تعيد تشكيل المشهد الرقمي. 🚀💡
                                             </p>
                                         </div>
                                     </div>
@@ -167,8 +167,8 @@ const BlogList = (props) => {
                                         </h3>
                                         <p>{blog.description}</p>
                                         <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`} className="btn btn-dark">
-                                            <span className="btn_label" data-text="Read More">
-                                                Read More
+                                            <span className="btn_label" data-text="اقرأ المزيد">
+                                                اقرأ المزيد
                                             </span>
                                             <span className="btn_icon">
                                                 <i className="fa-solid fa-arrow-up-right"></i>

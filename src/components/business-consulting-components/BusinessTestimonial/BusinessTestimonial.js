@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Slider from "react-slick";
 import avatar1 from '../../../images/avatar/avatar_11.webp'
 import avatar2 from '../../../images/avatar/avatar_10.webp'
@@ -158,7 +158,7 @@ const BusinessTestimonial = () => {
                                 </p>
                             </div>
                             <Link onClick={ClickHandler} className="creative_btn" to="/pricing">
-                                <span className="btn_label bg-primary">Get Started Today</span>
+                                <span className="btn_label bg-primary">ابدأ الآن Today</span>
                                 <span className="btn_icon">
                                     <i className="bg-primary fa-solid fa-arrow-up-right"></i>
                                     <i className="bg-primary fa-solid fa-arrow-up-right"></i>

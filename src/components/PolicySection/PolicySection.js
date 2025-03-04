@@ -1,22 +1,22 @@
-import React from 'react';
+﻿import React from 'react';
 import sIcon1 from '../../images/icons/icon_user_check.svg'
 import sIcon2 from '../../images/icons/icon_headphone.svg'
 import sIcon3 from '../../images/icons/icon_dollar.svg'
 
 const Policy = [
     {
-        title: 'Expert Software Solutions',
-        subTitle: 'At OSYS, we take pride in our highly skilled team, delivering innovative software solutions tailored to diverse industries and unique business needs.',
+        title: 'حلول برمجية متخصصة',
+        subTitle: 'في OSYS، نفخر بفريقنا عالي الكفاءة الذي يقدم حلول برمجية مبتكرة ومخصصة لمختلف الصناعات واحتياجات الأعمال الفريدة.',
         icon: sIcon1,
     },
     {
-        title: 'Rapid Support Services',
-        subTitle: 'Our commitment to efficiency ensures industry-leading customer support, prioritizing swift resolutions to guarantee client satisfaction.',
+        title: 'خدمات دعم سريعة',
+        subTitle: 'التزامنا بالكفاءة يضمن دعمًا للعملاء بمستوى ريادي في الصناعة، مع التركيز على الحلول السريعة لضمان رضا العملاء.',
         icon: sIcon2,
     },
     {
-        title: 'Usage-Based Pricing',
-        subTitle: 'We provide competitive pricing plans, offering exceptional value and actively supporting your growth with cutting-edge technology.',
+        title: 'الاسعار حسب الاستخدام',
+        subTitle: 'نقدم خطط اسعار تنافسية توفر قيمة استثنائية، وندعم نموك بفعالية من خلال أحدث التقنيات.',
         icon: sIcon3,
     },
 

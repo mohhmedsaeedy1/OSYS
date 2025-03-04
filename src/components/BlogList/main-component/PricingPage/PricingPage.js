@@ -95,7 +95,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Website Development.
+                                                تطوير المواقع الإلكترونية.
                                             </span>
                                         </li>
                                         <li>
@@ -117,7 +117,7 @@ const PricingPage = (props) => {
                                     </ul>
                                     <div className="text-center mt-4">
                                         <Link onClick={ClickHandler} className="btn btn-outline-light" to="/contact">
-                                            <span className="btn_label" data-text="Purchase Now">Purchase Now</span>
+                                            <span className="btn_label" data-text="اشترِ الآن">اشترِ الآن</span>
                                             <span className="btn_icon">
                                                 <i className="fa-solid fa-arrow-up-right"></i>
                                             </span>
@@ -180,7 +180,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                Website Development.
+                                                تطوير المواقع الإلكترونية.
                                             </span>
                                         </li>
                                         <li>
@@ -202,7 +202,7 @@ const PricingPage = (props) => {
                                     </ul>
                                     <div className="text-center mt-4">
                                         <Link onClick={ClickHandler} className="btn btn-outline-light" to="/contact">
-                                            <span className="btn_label" data-text="Purchase Now">Purchase Now</span>
+                                            <span className="btn_label" data-text="اشترِ الآن">اشترِ الآن</span>
                                             <span className="btn_icon">
                                                 <i className="fa-solid fa-arrow-up-right"></i>
                                             </span>

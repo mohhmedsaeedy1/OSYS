@@ -1,13 +1,13 @@
-/* body fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+﻿/* استيراد الخطوط */
+@import url('https://fonts.googleapis.com/css2?family=Droid Arabic Kufi:wght@300;400;500;700&display=swap');
 
 @tailwind base;
 
 @layer base {
-    
-
     html {
-        font-family: 'Inter';
+        font-family: 'Tajawal', sans-serif;
+        direction: rtl; /* جعل الموقع يقرأ من اليمين إلى اليسار */
+        text-align: right;
     }
 
     h1,
@@ -16,54 +16,57 @@
     h4,
     h5,
     h6 {
-        font-family: "Futura PT";
+        font-family: "Tajawal", sans-serif;
+        text-align: right;
+    }
+
+    /* ضبط اتجاه الكتابة */
+    body {
+        direction: rtl;
+        text-align: right;
+    }
+
+    /* تحسين مظهر الأزرار */
+    button {
+        text-align: center;
+    }
+
+    /* دعم الخطوط العربية */
+    @font-face {
+        font-family: "Tajawal";
+        src: url('./fonts/Tajawal-Bold.woff');
     }
 
     @font-face {
-        font-family: "Futura PT";
-        src: url('./fonts/FuturaPT-Bold.woff');
+        font-family: "Tajawal";
+        src: url('./fonts/Tajawal-Medium.woff');
     }
 
     @font-face {
-        font-family: "Futura PT";
-        src: url('./fonts/FuturaPT-Medium.woff');
+        font-family: "Tajawal";
+        src: url('./fonts/Tajawal-Regular.woff');
     }
-
-    @font-face {
-        font-family: "Futura PT";
-        src: url('./fonts/FuturaPT-Demi.woff');
-    }
-
-    @font-face {
-        font-family: "Futura PT";
-        src: url('./fonts/FuturaPT-Demi.woff');
-    }
-
-    @font-face {
-        font-family: "Futura PT";
-        src: url('./fonts/FuturaPT-Heavy.woff');
-    }
-
-
 }
 
 @tailwind components;
 @tailwind utilities;
 
-
-.section-wrap{
-    @apply py-[120px] md:py-[90px] sm:py-[80px] relative  z-10
-}
-.wraper{
-    @apply mx-auto max-w-[1320px] xl:px-[12px]  lg:px-[12px] md:px-[20px] sm:px-[10px]
+/* تحسين التصميم للغة العربية */
+.section-wrap {
+    @apply py-[120px] md:py-[90px] sm:py-[80px] relative z-10;
 }
 
-.theme-btn-2{
-    @apply text-base text-[#59C378] inline-block px-5 py-2 border border-[#496451] bg-transparent transition-all hover:bg-[#59C378] hover:border-[transparent] hover:text-white
+.wraper {
+    @apply mx-auto max-w-[1320px] xl:px-[12px] lg:px-[12px] md:px-[20px] sm:px-[10px];
 }
 
+/* تعديل الأزرار */
+.theme-btn-2 {
+    @apply text-base text-[#59C378] inline-block px-5 py-2 border border-[#496451] bg-transparent transition-all hover:bg-[#59C378] hover:border-[transparent] hover:text-white;
+}
+
+/* دعم تنسيق RTL للأيقونات والعناصر */
 .clip-your-needful-style {
     -webkit-clip-path: polygon(0 0, 100% 0, 55% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 55% 100%, 0% 100%);
 }
-

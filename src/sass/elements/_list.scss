@@ -72,7 +72,7 @@
     padding: 8px 10px 6px;
     justify-content: center;
     color: var(--bs-body-color);
-    font-family: 'Axiforma Medium';
+    font-family: 'DroidKufi-Bold';
     border: 1px solid var(--bs-border-color);
     &:hover {
       color: var(--bs-white);
@@ -203,7 +203,7 @@
       padding: 16px 30px 13px;
       text-transform: uppercase;
       transition: var(--bs-transition);
-      font-family: 'Axiforma SemiBold';
+      font-family: 'DroidKufi-Bold';
       border-radius: var(--bs-border-radius);
       &:not(.active):hover {
         background-color: var(--bs-light);

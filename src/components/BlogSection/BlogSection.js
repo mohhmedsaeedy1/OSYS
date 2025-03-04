@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import blogs from '../../api/blogs'
 import { Link } from 'react-router-dom'
 import Bg from '../../images/shapes/bg_pattern_1.svg'
@@ -20,11 +20,11 @@ const BlogSection = (props) => {
             <div className="container">
                 <div className="heading_block text-center">
                     <div className="heading_focus_text">
-                        <span className="badge bg-secondary text-white">Blog</span>
-                        Updates
+                        <span className="badge bg-secondary text-white">المدونات</span>
+                        المحدثه
                     </div>
                     <h2 className="heading_text mb-0">
-                        Latest Articles Posts
+                        أحدث المقالات والمنشورات
                     </h2>
                 </div>
 
@@ -62,7 +62,7 @@ const BlogSection = (props) => {
                                         <span className="btn_icon">
                                             <i className="fa-solid fa-arrow-up-right"></i>
                                         </span>
-                                        <span className="btn_label">Read More</span>
+                                        <span className="btn_label">اقرأ المزيد</span>
                                     </Link>
                                 </div>
                             </div>

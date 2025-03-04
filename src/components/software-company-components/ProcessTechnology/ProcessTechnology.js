@@ -1,4 +1,4 @@
-
+﻿
 import React, { useState } from 'react';
 import Bg from '../../../images/shapes/shape_title_under_line.svg'
 import shape1 from '../../../images/shapes/shape_line_2.svg'
@@ -33,60 +33,60 @@ const FaqSection = (props) => {
                     <div className="col-lg-6">
                         <div className="heading_block">
                             <div className="heading_focus_text has_underline d-inline-flex" style={{ backgroundImage: `url(${Bg})` }}>
-                                Working Process
+                                عملية العمل
                             </div>
                             <h2 className="heading_text mb-0">
-                                Our <mark>Approach</mark>
+                                <mark>نهجنا</mark>
                             </h2>
                         </div>
                         <Accordion open={open} toggle={toggle} className="accordion" id="service_process_faq">
                             <AccordionItem className="accordion-item">
                                 <AccordionHeader targetId="1">
-                                    01. Discovery Phase
+                                    01. مرحلة الاكتشاف
                                 </AccordionHeader>
                                 <AccordionBody accordionId="1" className='acc_body'>
                                     <p className="m-0">
-                                        Data - driven diagnostic and predictive app for improving  outcomes Data driven diagnostic and predictive app for improving.
+                                        تطبيق تشخيصي وتنبئي قائم على البيانات لتحسين النتائج وتحليل البيانات لدعم التطوير.
                                     </p>
                                 </AccordionBody>
                             </AccordionItem>
                             <AccordionItem className="accordion-item">
                                 <AccordionHeader targetId="2">
-                                    02. Design and Development
+                                    02. التصميم والتطوير
                                 </AccordionHeader>
                                 <AccordionBody accordionId="2" className='acc_body'>
                                     <p className="m-0">
-                                        Data - driven diagnostic and predictive app for improving  outcomes Data driven diagnostic and predictive app for improving.
+                                        تطبيق تشخيصي وتنبئي قائم على البيانات لتحسين النتائج وتحليل البيانات لدعم التطوير.
                                     </p>
                                 </AccordionBody>
                             </AccordionItem>
                             <AccordionItem className="accordion-item">
                                 <AccordionHeader targetId="3">
-                                    03. Maintenance
+                                    03. الصيانة
                                 </AccordionHeader>
                                 <AccordionBody accordionId="3" className='acc_body'>
                                     <p className="m-0">
-                                        Data - driven diagnostic and predictive app for improving  outcomes Data driven diagnostic and predictive app for improving.
+                                        تطبيق تشخيصي وتنبئي قائم على البيانات لتحسين النتائج وتحليل البيانات لدعم التطوير.
                                     </p>
                                 </AccordionBody>
                             </AccordionItem>
                             <AccordionItem className="accordion-item">
                                 <AccordionHeader targetId="4">
-                                    04. Deployment
+                                    04. النشر والتطبيق
                                 </AccordionHeader>
                                 <AccordionBody accordionId="4" className='acc_body'>
                                     <p className="m-0">
-                                        Data - driven diagnostic and predictive app for improving  outcomes Data driven diagnostic and predictive app for improving.
+                                        تطبيق تشخيصي وتنبئي قائم على البيانات لتحسين النتائج وتحليل البيانات لدعم التطوير.
                                     </p>
                                 </AccordionBody>
                             </AccordionItem>
                             <AccordionItem className="accordion-item">
                                 <AccordionHeader targetId="5">
-                                    05. Testing and QA
+                                    05. الاختبار وضمان الجودة
                                 </AccordionHeader>
                                 <AccordionBody accordionId="5" className='acc_body'>
                                     <p className="m-0">
-                                        Data - driven diagnostic and predictive app for improving  outcomes Data driven diagnostic and predictive app for improving.
+                                        تطبيق تشخيصي وتنبئي قائم على البيانات لتحسين النتائج وتحليل البيانات لدعم التطوير.
                                     </p>
                                 </AccordionBody>
                             </AccordionItem>
@@ -95,17 +95,17 @@ const FaqSection = (props) => {
                     <div className="col-lg-5">
                         <Accordion open={open} toggle={toggle} className="accordion" id="service_process_faq">
                             <ul className="content_layer_group unordered_list_block text-center">
-                                <li><AccordionHeader targetId="1"><span>Discovery Phase</span></AccordionHeader></li>
-                                <li><AccordionHeader targetId="2"><span>Design and Development</span></AccordionHeader></li>
-                                <li><AccordionHeader targetId="3"><span>Maintenance</span></AccordionHeader></li>
-                                <li><AccordionHeader targetId="4"><span>Deployment</span></AccordionHeader></li>
-                                <li><AccordionHeader targetId="5"><span>Testing and QA</span></AccordionHeader></li>
+                                <li><AccordionHeader targetId="1"><span>مرحلة الاكتشاف</span></AccordionHeader></li>
+                                <li><AccordionHeader targetId="2"><span>التصميم والتطوير</span></AccordionHeader></li>
+                                <li><AccordionHeader targetId="3"><span>الصيانة</span></AccordionHeader></li>
+                                <li><AccordionHeader targetId="4"><span>النشر والتطبيق</span></AccordionHeader></li>
+                                <li><AccordionHeader targetId="5"><span>الاختبار وضمان الجودة</span></AccordionHeader></li>
                             </ul>
                         </Accordion>
                     </div>
                 </div>
-                <TechnologySection/>
-                <Testimonial/>
+                <TechnologySection />
+                <Testimonial />
             </div>
 
             <div className="decoration_item shape_image_1">

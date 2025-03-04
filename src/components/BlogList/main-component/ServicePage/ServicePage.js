@@ -43,7 +43,7 @@ const ServicePage = (props) => {
                                         </p>
                                     </div>
                                     <Link onClick={ClickHandler} to={'/contact'} className="btn">
-                                        <span className="btn_label" data-text="Talk to an Expart">Talk to an Expart</span>
+                                        <span className="btn_label" data-text="تحدث مع خبير 🚀">تحدث مع خبير 🚀</span>
                                         <span className="btn_icon">
                                             <i className="fa-solid fa-arrow-up-right"></i>
                                         </span>
