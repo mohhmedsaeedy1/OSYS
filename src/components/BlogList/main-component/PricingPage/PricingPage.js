@@ -29,7 +29,7 @@ const PricingPage = (props) => {
             <main className="page_content about-page">
                 <PageTitle pageTitle={'Pricing Plan'} pagesub={' Prices😍'} pageTop={''} />
                 <PolicySection />
-                  <section className="pricing_section section_space pb-0 bg-light">
+                <section className="pricing_section section_space pb-0 bg-light">
                     <div className="container">
                         <div className="heading_block text-center">
                             <div className="heading_focus_text mb-2">
@@ -43,8 +43,8 @@ const PricingPage = (props) => {
                         <div className="pricing_toggle_btn text-center">
                             {/* <button type="button" onClick={handleToggle} className={isActive ? 'active' : ''}> </button>*/}
                             {/*   <span>Billed Monthly <small>-10%</small></span>*/}
-                                <span>Billed Yearly <small>-30%</small></span>
-                            
+                            <span>Billed Yearly <small>-30%</small></span>
+
                         </div>
                         <div className="row justify-content-center">
                             <div className="col-lg-6">
@@ -208,12 +208,12 @@ const PricingPage = (props) => {
                                             </span>
                                         </Link>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section> 
+                </section>
                 {/*<div className="client_logo_section section_space bg-light">
                     <div className="container">
                         <div className="heading_block text-center">

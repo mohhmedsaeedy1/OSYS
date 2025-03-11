@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import PartnerSection from '../PartnerSection';
 import CountUp from 'react-countup';
 import sIcon1 from '../../images/icons/icon_head.svg';
@@ -7,35 +7,39 @@ import sIcon3 from '../../images/icons/icon_like.svg';
 import sIcon4 from '../../images/icons/icon_dart_board.svg';
 import Bg from '../../images/shapes/bg_pattern_1.svg';
 import fimg from '../../images/about/about_image_1.webp';
+import { useTranslation } from 'react-i18next'; // استيراد الدالة لاستخدام الترجمة
 
-const FunFact = [
-    {
-        title: '10',
-        subTitle: 'سنوات من الخبرة',
-        symbol: '+',
-        icon: sIcon1,
-    },
-    {
-        title: '480',
-        subTitle: 'قصص النجاح',
-        symbol: '+',
-        icon: sIcon2,
-    },
-    {
-        title: '940',
-        subTitle: 'شركات تثق بنا',
-        symbol: '+',
-        icon: sIcon3,
-    },
-    {
-        title: '100',
-        subTitle: 'نتائج مضمونة',
-        symbol: '%',
-        icon: sIcon4,
-    },
-];
+const FunFact = () => {
+    const { t } = useTranslation();
 
-const FeaturesSection = (props) => {
+    const funFacts = [
+        {
+            title: '10',
+            subTitle: t('years_of_experience'),
+            symbol: '+',
+            icon: sIcon1,
+        },
+        {
+            title: '480',
+            subTitle: t('success_stories'),
+            symbol: '+',
+            icon: sIcon2,
+        },
+        {
+            title: '940',
+            subTitle: t('companies_trust_us'),
+            symbol: '+',
+            icon: sIcon3,
+        },
+
+        {
+            title: '100',
+            subTitle: t('guaranteed_results'),
+            symbol: '%',
+            icon: sIcon4,
+        },
+    ];
+
     return (
         <section id="homeLogoSection" className="client_logo_section section_space" style={{ backgroundImage: `url(${Bg})` }}>
             <div className="container">
@@ -43,8 +47,8 @@ const FeaturesSection = (props) => {
                 <div className="section_space pt-0">
                     <div className="heading_block text-center">
                         <div className="heading_focus_text mb-0">
-                            <span className="badge bg-secondary text-white"> العلامات التجارية</span>
-                            التي نعمل معها
+                            <span className="badge bg-secondary text-white">{t('brands')}</span>
+                            {t('workingWith')}
                         </div>
                     </div>
                     {/* قسم الشركاء الأول */}
@@ -54,7 +58,7 @@ const FeaturesSection = (props) => {
                 <div className="row funfact_wrapper">
                     <div className="col-lg-8">
                         <div className="row">
-                            {FunFact.map((funfact, fitem) => (
+                            {funFacts.map((funfact, fitem) => (
                                 <div className="col-md-6" key={fitem}>
                                     <div className="funfact_block">
                                         <div className="funfact_icon">
@@ -83,7 +87,7 @@ const FeaturesSection = (props) => {
                             </div>
                             <div className="content_wrap">
                                 <h3 className="title_text mb-0">
-                                    <b className="d-block">نحن متواجدون</b> في 3 دول في الشرق الأوسط
+                                    <b className="d-block">{t('weArePresent')}</b> {t('in3Countries')}
                                 </h3>
                             </div>
                         </div>
@@ -94,8 +98,8 @@ const FeaturesSection = (props) => {
                 <div className="section_space pt-0">
                     <div className="heading_block text-center">
                         <div className="heading_focus_text mb-0">
-                            <span className="badge bg-secondary text-white">شراكة مع الأفضل</span>
-                            موثوق به من قبل أفضل مزودي حلول تكنولوجيا المعلومات
+                            <span className="badge bg-secondary text-white">{t('partnerWithBest')}</span>
+                            {t('trustedBy')}
                         </div>
                     </div>
                     {/* قسم الشركاء الثاني */}
@@ -106,4 +110,5 @@ const FeaturesSection = (props) => {
     );
 };
 
-export default FeaturesSection;
+// تأكد من تصدير الكود بعد تعريف جميع الوظائف
+export default FunFact;

@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,6 +16,7 @@ import pimg11 from '../../images/clients/client_logo_11.webp';
 import pimg12 from '../../images/clients/client_logo_12.webp';
 import pimg13 from '../../images/clients/client_logo_13.webp';
 import pimg14 from '../../images/clients/client_logo_14.webp';
+import { useTranslation } from 'react-i18next'; // استيراد الترجمة
 
 const partners = [
     { pImg: pimg1 },
@@ -94,6 +95,7 @@ const settings = {
 };
 
 const PartnerSection = ({ group }) => {
+    const { t } = useTranslation(); // استخدام الترجمة
     // اختر المجموعة بناءً على الخاصية الممررة (group)
     const selectedGroup = group === "group1" ? group1 : group2;
 
@@ -102,7 +104,7 @@ const PartnerSection = ({ group }) => {
             <Slider {...settings}>
                 {selectedGroup.map((partner, index) => (
                     <div className="client_logo_item" key={index}>
-                        <img src={partner.pImg} alt={`Client Logo ${index + 1}`} />
+                        <img src={partner.pImg} alt={t('clientLogo', { index: index + 1 })} /> {/* النص البديل المترجم */}
                     </div>
                 ))}
             </Slider>

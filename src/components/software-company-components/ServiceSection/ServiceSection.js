@@ -58,19 +58,19 @@ const ServiceSection = (props) => {
             </div>
 
             <div className="decoration_item shape_image_1">
-                <img src={shape1} alt="OSYS Shape"/>
+                <img src={shape1} alt="OSYS Shape" />
             </div>
             <div className="decoration_item shape_image_2">
-                <img src={shape2} alt="OSYS Shape"/>
+                <img src={shape2} alt="OSYS Shape" />
             </div>
             <div className="decoration_item shape_image_3">
-                <img src={shape3} alt="OSYS Shape"/>
+                <img src={shape3} alt="OSYS Shape" />
             </div>
             <div className="decoration_item shape_image_4">
-                <img src={shape4} alt="OSYS Shape Angle"/>
+                <img src={shape4} alt="OSYS Shape Angle" />
             </div>
             <div className="decoration_item shape_image_5">
-                <img src={shape5} alt="OSYS Shape Angle"/>
+                <img src={shape5} alt="OSYS Shape Angle" />
             </div>
         </section>
     );

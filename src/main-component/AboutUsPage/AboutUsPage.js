@@ -11,34 +11,29 @@ import WhyUs from './WhyUs';
 import FeaturesSection from '../../components/FeaturesSection/FeaturesSection';
 import TeamSection from '../../components/TeamSection/TeamSection';
 import CtaSection from '../../components/CtaSection/CtaSection';
-
+import { useTranslation } from 'react-i18next'; // استيراد الترجمة
 
 const AboutUsPage = (props) => {
+    const { t } = useTranslation();  // تفعيل الترجمة باستخدام useTranslation
+    const [isOpen, setOpen] = useState(false);
 
-    const [isOpen, setOpen] = useState(false)
     return (
         <Fragment>
             <Header />
             <main className="page_content about-page">
-                <PageTitle pageTitle={'نبذه عنا'} pagesub={' OSYS 😃'} pageTop={''}/>
+                <PageTitle pageTitle={t('about_us_title')} pagesub={t('about_us_subtitle')} pageTop={''} />
                 <section className="intro_about_section section_space bg-light">
                     <div className="intro_about_content">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-8">
                                     <div className="image_wrap">
-                                        <img src={aImg} alt="
-- About " />
+                                        <img src={aImg} alt={t('about_img_alt')} />
                                     </div>
                                 </div>
                                 <div className="col-lg-4">
                                     <div className="image_wrap position-relative">
-                                        <img src={aImg2} alt="OSYS - About" />
-                                        {/*<button className="video_btn ripple_effect" onClick={() => setOpen(true)}>
-                                            <span className="btn_icon">
-                                                <i className="fa-solid fa-play"></i>
-                                            </span>
-                                        </button>*/}
+                                        <img src={aImg2} alt={t('about_img2_alt')} />
                                     </div>
                                 </div>
                             </div>
@@ -49,18 +44,16 @@ const AboutUsPage = (props) => {
                             <div className="row justify-content-lg-between">
                                 <div className="col-lg-4">
                                     <div className="heading_focus_text">
-                                        عنا
-                                        <span className="badge bg-secondary text-white">
-                                            🙂</span>
+                                        {t('about_us_focus_text')}
                                     </div>
                                     <h2 className="heading_text mb-0">
-                                        شركة OSYS للبرمجيات: الابتكار في التحول الرقمي للأعمال
+                                        {t('about_us_heading')}
                                     </h2>
                                 </div>
                                 <div className="col-lg-6">
                                     <p className="heading_description mb-0 justify-text">
-                                        OSYS Software هي شركة تقنية رائدة تقدم حلول برمجية متطورة مصممة لتلبية الاحتياجات الفريدة للشركات عبر مختلف القطاعات. مع مقرها الرئيسي في مصر وحضور راسخ في السعودية، نوفر حلولاً شاملة تشمل أنظمة ERP، تطبيقات مدعومة بالذكاء الاصطناعي، تطوير المواقع الإلكترونية، الاستضافة، وتحليل الأعمال. هدفنا هو تمكين الشركات من تحسين عملياتها، الامتثال للوائح الإقليمية، واحتضان الابتكار. سواء كان ذلك عبر تبسيط العمليات، تحسين اتخاذ القرار، أو تعزيز النمو، OSYS Software هي شريككم الموثوق في التحول الرقمي.
-   </p>
+                                        {t('about_us_description')}
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -78,4 +71,5 @@ const AboutUsPage = (props) => {
         </Fragment>
     )
 };
+
 export default AboutUsPage;

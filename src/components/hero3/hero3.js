@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom'
 import CountUp from 'react-countup';
 import Bg from '../../images/hero/business_consulting_hero_section_bg.jpg'

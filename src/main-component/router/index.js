@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from '../HomePage/HomePage';
 import HomePage2 from '../HomePage2/HomePage2';

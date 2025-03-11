@@ -17,7 +17,7 @@
 		color: var(--bs-dark);
 		border-radius: 0 !important;
 		background-color: transparent;
-		font-family: 'DroidKufi-Bold';
+		font-family: 'Droid Arabic Kufi';
 
 		&:hover {
 			color: var(--bs-primary);
@@ -30,7 +30,7 @@
 			font-size: 16px;
 			background: none;
 			font-weight: 700;
-			font-family: 'Font DroidKufi-Bold';
+			font-family: 'Font Awesome 5 pro';
 		}
 
 		&.collapsed {
@@ -108,7 +108,7 @@
 		font-size: 45px;
 		position: absolute;
 		color: var(--bs-dark);
-		font-family: 'DroidKufi-Bold';
+		font-family: 'Droid Arabic Kufi';
 	}
 
 	.accordion-item,

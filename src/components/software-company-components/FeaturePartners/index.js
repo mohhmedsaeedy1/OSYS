@@ -1,69 +1,39 @@
-﻿import React from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import pimg1 from '../../../images/clients/client_logo_1.webp'
-import pimg2 from '../../../images/clients/client_logo_2.webp'
-import pimg3 from '../../../images/clients/client_logo_3.webp'
-import pimg4 from '../../../images/clients/client_logo_4.webp'
-import pimg5 from '../../../images/clients/client_logo_5.webp'
-import pimg6 from '../../../images/clients/client_logo_6.webp'
-import pimg7 from '../../../images/clients/client_logo_7.webp'
-import pimg8 from '../../../images/clients/client_logo_8.webp'
-import pimg9 from '../../../images/clients/client_logo_9.webp'
-import pimg10 from '../../../images/clients/client_logo_10.webp'
-import pimg11 from '../../../images/clients/client_logo_11.webp'
-import pimg12 from '../../../images/clients/client_logo_12.webp'
-import pimg13 from '../../../images/clients/client_logo_13.webp'
-import pimg14 from '../../../images/clients/client_logo_14.webp'
+import pimg1 from '../../../images/clients/client_logo_1.webp';
+import pimg2 from '../../../images/clients/client_logo_2.webp';
+import pimg3 from '../../../images/clients/client_logo_3.webp';
+import pimg4 from '../../../images/clients/client_logo_4.webp';
+import pimg5 from '../../../images/clients/client_logo_5.webp';
+import pimg6 from '../../../images/clients/client_logo_6.webp';
+import pimg7 from '../../../images/clients/client_logo_7.webp';
+import pimg8 from '../../../images/clients/client_logo_8.webp';
+import pimg9 from '../../../images/clients/client_logo_9.webp';
+import pimg10 from '../../../images/clients/client_logo_10.webp';
+import pimg11 from '../../../images/clients/client_logo_11.webp';
+import pimg12 from '../../../images/clients/client_logo_12.webp';
+import pimg13 from '../../../images/clients/client_logo_13.webp';
+import pimg14 from '../../../images/clients/client_logo_14.webp';
+import { useTranslation } from 'react-i18next'; // استيراد الترجمة
 
 const partners = [
-    {
-        pImg: pimg1,
-    },
-    {
-        pImg: pimg2,
-    },
-    {
-        pImg: pimg3,
-    },
-    {
-        pImg: pimg4,
-    },
-    {
-        pImg: pimg5,
-    },
-    {
-        pImg: pimg6,
-    },
-    { 
-        pImg: pimg7,
-    },
-    {
-        pImg: pimg8,
-    },
-    {
-        pImg: pimg9,
-    },
-    {
-        pImg: pimg10,
-    },
-    {
-        pImg: pimg11,
-    },
-    {
-        pImg: pimg12,
-    },
-    {
-        pImg: pimg13,
-    },
-    {
-        pImg: pimg14,
-    },
-    
-]
-const group1 = partners.slice(0, 7); // الصور من 0 إلى 6
-const group2 = partners.slice(7, 14); // الصور من 7 إلى 13
+    { pImg: pimg1 },
+    { pImg: pimg2 },
+    { pImg: pimg3 },
+    { pImg: pimg4 },
+    { pImg: pimg5 },
+    { pImg: pimg6 },
+    { pImg: pimg7 },
+    { pImg: pimg8 },
+    { pImg: pimg9 },
+    { pImg: pimg10 },
+    { pImg: pimg11 },
+    { pImg: pimg12 },
+    { pImg: pimg13 },
+    { pImg: pimg14 },
+];
 
 var settings = {
     dots: false,
@@ -75,7 +45,6 @@ var settings = {
     autoplaySpeed: 0,
     cssEase: "linear",
     arrows: false,
-
     responsive: [
         {
             breakpoint: 1025,
@@ -122,15 +91,14 @@ var settings = {
     ]
 };
 
-
-
-const FeaturePartners = (props) => {
+const FeaturePartners = () => {
+    const { t } = useTranslation(); // استدعاء الترجمة
 
     return (
         <div className="feature_partners_section">
             <div className="container position-relative">
                 <div className="title_text text-white">
-                    Our Featured Partner's
+                    {t('featured_partners_title')}
                 </div>
                 <div className="client_logo_carousel">
                     <Slider {...settings}>

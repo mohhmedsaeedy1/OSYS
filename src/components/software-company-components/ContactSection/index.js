@@ -1,12 +1,14 @@
-import React from 'react'
-import Bg from '../../../images/shapes/shape_title_under_line.svg'
-import ContactForm from '../ContactFrom/ContactForm'
-import shape1 from '../../../images/shapes/shape_line_5.svg'
-import shape2 from '../../../images/shapes/shape_line_6.svg'
-import shape3 from '../../../images/shapes/shape_space_5.svg'
-
+import React from 'react';
+import Bg from '../../../images/shapes/shape_title_under_line.svg';
+import ContactForm from '../ContactFrom/ContactForm';
+import shape1 from '../../../images/shapes/shape_line_5.svg';
+import shape2 from '../../../images/shapes/shape_line_6.svg';
+import shape3 from '../../../images/shapes/shape_space_5.svg';
+import { useTranslation } from 'react-i18next'; // استيراد الترجمة
 
 const ContactSection = (props) => {
+    const { t } = useTranslation(); // استدعاء الترجمة
+
     return (
         <section className="contact_section pb-80 bg-light section_decoration">
             <div className="container">
@@ -15,12 +17,12 @@ const ContactSection = (props) => {
                         <div className="contact_method_box">
                             <div className="heading_block">
                                 <div className="heading_focus_text has_underline d-inline-flex mb-3" style={{ backgroundImage: `url(${Bg})` }}>
-                                    You Are Here
+                                    {t('you_are_here')}
                                 </div>
                                 <h2 className="heading_text mb-0">
-                                    Let's Start
+                                    {t('lets_start')}
                                 </h2>
-                                <p className="heading_description mb-0">Initiating Your Journey to Success and Growth.</p>
+                                <p className="heading_description mb-0">{t('initiate_your_journey')}</p>
                             </div>
                             <ul className="contact_method_list unordered_list_block">
                                 <li>
@@ -44,26 +46,26 @@ const ContactSection = (props) => {
                                         <span className="icon">
                                             <i className="fa-solid fa-location-dot"></i>
                                         </span>
-                                        <span className="text">Sunshine Business Park</span>
+                                        <span className="text">{t('sunshine_business_park')}</span>
                                     </a>
                                 </li>
                             </ul>
                             <ul className="support_step unordered_list_block">
                                 <li>
                                     <span className="serial_number">01</span>
-                                    <span className="text">Share your requirements</span>
+                                    <span className="text">{t('share_requirements')}</span>
                                 </li>
                                 <li>
                                     <span className="serial_number">02</span>
-                                    <span className="text">Discuss them with our experts</span>
+                                    <span className="text">{t('discuss_with_experts')}</span>
                                 </li>
                                 <li>
                                     <span className="serial_number">03</span>
-                                    <span className="text">Get a free quote</span>
+                                    <span className="text">{t('get_free_quote')}</span>
                                 </li>
                                 <li>
                                     <span className="serial_number">04</span>
-                                    <span className="text">Start the project</span>
+                                    <span className="text">{t('start_project')}</span>
                                 </li>
                             </ul>
                         </div>
@@ -72,10 +74,10 @@ const ContactSection = (props) => {
                         <div className="instant_contact_form">
                             <div className="small_title">
                                 <i className="fa-solid fa-envelope-open-text"></i>
-                                Let's Connect!
+                                {t('lets_connect')}
                             </div>
                             <h3 className="form_title">
-                                Send us a message, and we'll promptly discuss your project with you.
+                                {t('send_message')}
                             </h3>
                             <ContactForm />
                         </div>
@@ -90,7 +92,7 @@ const ContactSection = (props) => {
             </div>
             <div className="decoration_item shape_image_3">
                 <img src={shape3} alt="OSYS Shape" />
-            </div> 
+            </div>
         </section>
     )
 }

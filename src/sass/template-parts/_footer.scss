@@ -26,13 +26,13 @@
 			line-height: 17px;
 			margin-bottom: 8px;
 			color: var(--bs-body-color);
-			font-family: 'DroidKufi-Bold';
+			font-family: 'Droid Arabic Kufi';
 		}
 		p {
 			font-size: 20px;
 			font-weight: 700;
 			color: var(--bs-dark);
-			font-family: 'DroidKufi-Bold';
+			font-family: 'Droid Arabic Kufi';
 		}
 	}
 }
@@ -69,7 +69,7 @@
 			font-weight: 600;
 			line-height: 28px;
 			letter-spacing: 1px;
-			font-family: 'DroidKufi-Bold';
+			font-family: 'Droid Arabic Kufi';
 			>a {
 				&:hover {
 					text-decoration: underline;
@@ -83,7 +83,7 @@
 			>li {
 				font-size: 16px;
 				font-weight: 500;
-				font-family: 'DroidKufi-Bold';
+				font-family: 'Droid Arabic Kufi';
 				&:first-child {
 					.icon_list_icon {
 						display: none;
@@ -100,7 +100,7 @@
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 26px;
-		font-family: 'DroidKufi-Bold';
+		font-family: 'Droid Arabic Kufi';
 		a {
 			color: currentColor;
 			&:hover {
@@ -181,7 +181,7 @@
 		color: var(--bs-white);
 		padding: 14px 30px 12px;
 		text-transform: uppercase;
-		font-family: 'DroidKufi-Bold';
+		font-family: 'Droid Arabic Kufi';
 		background-color: var(--bs-primary);
 	}
 }
@@ -387,13 +387,13 @@
 		font-weight: 500;
 		margin-bottom: 20px;
 		color: rgba(255, 255, 255, 0.5);
-		font-family: 'DroidKufi-Bold';
+		font-family: 'Droid Arabic Kufi';
 	}
 	.icon_list {
 		>li {
 			font-weight: 500;
 			line-height: 32px;
-			font-family: 'DroidKufi-Bold';
+			font-family: 'Droid Arabic Kufi';
 			>a {
 				color: var(--bs-white);
 				&:hover {

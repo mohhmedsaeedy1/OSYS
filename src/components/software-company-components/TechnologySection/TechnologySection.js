@@ -1,104 +1,53 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import classnames from 'classnames';
 
-import cnIcon1 from '../../../images/icons/icon_php.svg'
-import cnIcon2 from '../../../images/icons/icon_javascript.svg'
-import cnIcon3 from '../../../images/case/icon_elephent.svg'
-import cnIcon4 from '../../../images/icons/icon_swift.svg'
-import cnIcon5 from '../../../images/icons/icon_typescript.svg'
-import cnIcon6 from '../../../images/icons/icon_python.svg'
-import cnIcon7 from '../../../images/icons/icon_g318.svg'
-import cnIcon8 from '../../../images/icons/icon_java.svg'
-import cnIcon9 from '../../../images/icons/icon_ruby.svg'
-import cnIcon10 from '../../../images/icons/icon_c_plus.svg'
-import cnIcon11 from '../../../images/icons/icon_react_js.svg'
-import cnIcon12 from '../../../images/icons/icon_laravel.svg'
-import Bg from '../../../images/shapes/shape_title_under_line.svg'
-
+import cnIcon1 from '../../../images/icons/icon_php.svg';
+import cnIcon2 from '../../../images/icons/icon_javascript.svg';
+import cnIcon3 from '../../../images/case/icon_elephent.svg';
+import cnIcon4 from '../../../images/icons/icon_swift.svg';
+import cnIcon5 from '../../../images/icons/icon_typescript.svg';
+import cnIcon6 from '../../../images/icons/icon_python.svg';
+import cnIcon7 from '../../../images/icons/icon_g318.svg';
+import cnIcon8 from '../../../images/icons/icon_java.svg';
+import cnIcon9 from '../../../images/icons/icon_ruby.svg';
+import cnIcon10 from '../../../images/icons/icon_c_plus.svg';
+import cnIcon11 from '../../../images/icons/icon_react_js.svg';
+import cnIcon12 from '../../../images/icons/icon_laravel.svg';
+import Bg from '../../../images/shapes/shape_title_under_line.svg';
+import { useTranslation } from 'react-i18next'; // استيراد الترجمة
 
 const TechnologyList = [
-    {
-        Id: '1',
-        sIcon: cnIcon1,
-        title: 'PHP',
-    },
-    {
-        Id: '2',
-        sIcon: cnIcon2,
-        title: 'JavaScript',
-    },
-    {
-        Id: '3',
-        sIcon: cnIcon3,
-        title: 'PostgreSQL',
-    },
-    {
-        Id: '4',
-        sIcon: cnIcon4,
-        title: 'Swift',
-    },
-    {
-        Id: '5',
-        sIcon: cnIcon5,
-        title: 'Typescript',
-    },
-    {
-        Id: '6',
-        sIcon: cnIcon6,
-        title: 'Python',
-    },
-    {
-        Id: '7',
-        sIcon: cnIcon7,
-        title: 'G318',
-    },
-    {
-        Id: '8',
-        sIcon: cnIcon8,
-        title: 'Java',
-    },
-    {
-        Id: '9',
-        sIcon: cnIcon9,
-        title: 'Ruby',
-    },
-    {
-        Id: '10',
-        sIcon: cnIcon10,
-        title: 'C++',
-    },
-    {
-        Id: '11',
-        sIcon: cnIcon11,
-        title: 'React Js',
-    },
-    {
-        Id: '12',
-        sIcon: cnIcon12,
-        title: 'Laraval',
-    },
-]
-
+    { Id: '1', sIcon: cnIcon1, title: 'PHP' },
+    { Id: '2', sIcon: cnIcon2, title: 'JavaScript' },
+    { Id: '3', sIcon: cnIcon3, title: 'PostgreSQL' },
+    { Id: '4', sIcon: cnIcon4, title: 'Swift' },
+    { Id: '5', sIcon: cnIcon5, title: 'Typescript' },
+    { Id: '6', sIcon: cnIcon6, title: 'Python' },
+    { Id: '7', sIcon: cnIcon7, title: 'G318' },
+    { Id: '8', sIcon: cnIcon8, title: 'Java' },
+    { Id: '9', sIcon: cnIcon9, title: 'Ruby' },
+    { Id: '10', sIcon: cnIcon10, title: 'C++' },
+    { Id: '11', sIcon: cnIcon11, title: 'React Js' },
+    { Id: '12', sIcon: cnIcon12, title: 'Laravel' }
+];
 
 const TechnologySection = (props) => {
-
+    const { t } = useTranslation(); // استيراد الترجمة
     const [activeTab, setActiveTab] = useState('1');
 
-    const toggle = tab => {
+    const toggle = (tab) => {
         if (activeTab !== tab) setActiveTab(tab);
-    }
-
+    };
 
     return (
-
         <div className="section_space">
             <div className="heading_block text-center">
                 <div className="heading_focus_text has_underline d-inline-flex" style={{ backgroundImage: `url(${Bg})` }}>
-                    تقنياتنا
+                    {t('our_technologies')}
                 </div>
                 <h2 className="heading_text mb-0">
-                    نحن نستخدم <mark>التقنيات</mark>
+                    {t('we_use')} <mark>{t('technologies')}</mark>
                 </h2>
             </div>
 
@@ -109,7 +58,7 @@ const TechnologySection = (props) => {
                             className={classnames({ active: activeTab === '1' })}
                             onClick={() => { toggle('1'); }}
                         >
-                            منصة الويب
+                            {t('web_platform')}
                         </NavLink>
                     </NavItem>
                     <NavItem>
@@ -117,7 +66,7 @@ const TechnologySection = (props) => {
                             className={classnames({ active: activeTab === '2' })}
                             onClick={() => { toggle('2'); }}
                         >
-                            قواعد البيانات
+                            {t('databases')}
                         </NavLink>
                     </NavItem>
                     <NavItem>
@@ -125,7 +74,7 @@ const TechnologySection = (props) => {
                             className={classnames({ active: activeTab === '3' })}
                             onClick={() => { toggle('3'); }}
                         >
-                            الحوسبة السحابية و التطوير والعمليات
+                            {t('cloud_computing_devops')}
                         </NavLink>
                     </NavItem>
                     <NavItem>
@@ -133,7 +82,7 @@ const TechnologySection = (props) => {
                             className={classnames({ active: activeTab === '4' })}
                             onClick={() => { toggle('4'); }}
                         >
-                            تطبيقات الهاتف المحمول
+                            {t('mobile_apps')}
                         </NavLink>
                     </NavItem>
                     <NavItem>
@@ -141,8 +90,7 @@ const TechnologySection = (props) => {
                             className={classnames({ active: activeTab === '5' })}
                             onClick={() => { toggle('5'); }}
                         >
-
-                            إطارات عمل أخرى
+                            {t('other_frameworks')}
                         </NavLink>
                     </NavItem>
                 </Nav>
@@ -157,7 +105,7 @@ const TechnologySection = (props) => {
                                             <img src={technology.sIcon} alt="" />
                                         </div>
                                         <div className="iconbox_content">
-                                            <h3 className="iconbox_title mb-0">{technology.title}</h3>
+                                            <h3 className="iconbox_title mb-0">{t(technology.title)}</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -173,7 +121,7 @@ const TechnologySection = (props) => {
                                             <img src={technology.sIcon} alt="" />
                                         </div>
                                         <div className="iconbox_content">
-                                            <h3 className="iconbox_title mb-0">{technology.title}</h3>
+                                            <h3 className="iconbox_title mb-0">{t(technology.title)}</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -189,7 +137,7 @@ const TechnologySection = (props) => {
                                             <img src={technology.sIcon} alt="" />
                                         </div>
                                         <div className="iconbox_content">
-                                            <h3 className="iconbox_title mb-0">{technology.title}</h3>
+                                            <h3 className="iconbox_title mb-0">{t(technology.title)}</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -205,7 +153,7 @@ const TechnologySection = (props) => {
                                             <img src={technology.sIcon} alt="" />
                                         </div>
                                         <div className="iconbox_content">
-                                            <h3 className="iconbox_title mb-0">{technology.title}</h3>
+                                            <h3 className="iconbox_title mb-0">{t(technology.title)}</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -221,7 +169,7 @@ const TechnologySection = (props) => {
                                             <img src={technology.sIcon} alt="" />
                                         </div>
                                         <div className="iconbox_content">
-                                            <h3 className="iconbox_title mb-0">{technology.title}</h3>
+                                            <h3 className="iconbox_title mb-0">{t(technology.title)}</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -231,7 +179,7 @@ const TechnologySection = (props) => {
                 </TabContent>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default TechnologySection;

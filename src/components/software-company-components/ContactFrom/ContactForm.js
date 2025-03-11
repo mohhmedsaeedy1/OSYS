@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import SimpleReactValidator from 'simple-react-validator';
+import { useTranslation } from 'react-i18next'; // استيراد الترجمة
 
 const ContactForm = (props) => {
+    const { t } = useTranslation(); // استخدام الترجمة هنا
 
     const [forms, setForms] = useState({
         name: '',
@@ -13,6 +15,7 @@ const ContactForm = (props) => {
     const [validator] = useState(new SimpleReactValidator({
         className: 'errorMessage'
     }));
+
     const changeHandler = e => {
         setForms({ ...forms, [e.target.name]: e.target.value })
         if (validator.allValid()) {
@@ -39,14 +42,13 @@ const ContactForm = (props) => {
     };
 
     return (
-
-
         <form className="xb-item--form contact-from" onSubmit={(e) => submitHandler(e)}>
             <div className="row">
                 <div className="col-md-6">
                     <div className="form-group">
                         <label className="input_title" htmlFor="input_name">
                             <i className="fa-regular fa-user"></i>
+                            {t('name')}
                         </label>
                         <input
                             value={forms.name}
@@ -55,7 +57,7 @@ const ContactForm = (props) => {
                             className="form-control"
                             onBlur={(e) => changeHandler(e)}
                             onChange={(e) => changeHandler(e)}
-                            placeholder="Your Name" />
+                            placeholder={t('your_name')} />
                         {validator.message('name', forms.name, 'required|alpha_space')}
                     </div>
                 </div>
@@ -63,6 +65,7 @@ const ContactForm = (props) => {
                     <div className="form-group">
                         <label className="input_title" htmlFor="input_email">
                             <i className="fa-regular fa-envelope"></i>
+                            {t('email')}
                         </label>
                         <input
                             value={forms.email}
@@ -71,7 +74,7 @@ const ContactForm = (props) => {
                             className="form-control"
                             onBlur={(e) => changeHandler(e)}
                             onChange={(e) => changeHandler(e)}
-                            placeholder="Your Enter" />
+                            placeholder={t('your_email')} />
                         {validator.message('email', forms.email, 'required|email')}
                     </div>
                 </div>
@@ -79,6 +82,7 @@ const ContactForm = (props) => {
                     <div className="form-group">
                         <label className="input_title" htmlFor="input_phone">
                             <i className="fa-regular fa-phone-volume"></i>
+                            {t('phone')}
                         </label>
                         <input
                             value={forms.phone}
@@ -87,7 +91,7 @@ const ContactForm = (props) => {
                             className="form-control"
                             onBlur={(e) => changeHandler(e)}
                             onChange={(e) => changeHandler(e)}
-                            placeholder="Your Phone No." />
+                            placeholder={t('your_phone')} />
                         {validator.message('phone', forms.phone, 'required|phone')}
                     </div>
                 </div>
@@ -95,15 +99,16 @@ const ContactForm = (props) => {
                     <div className="form-group">
                         <label className="input_title" htmlFor="input_company">
                             <i className="fa-regular fa-globe"></i>
+                            {t('company')}
                         </label>
                         <input
                             value={forms.company}
-                            type="company"
+                            type="text"
                             name="company"
                             className="form-control"
                             onBlur={(e) => changeHandler(e)}
                             onChange={(e) => changeHandler(e)}
-                            placeholder="Your Company Name" />
+                            placeholder={t('your_company')} />
                         {validator.message('company', forms.company, 'required')}
                     </div>
                 </div>
@@ -111,6 +116,7 @@ const ContactForm = (props) => {
                     <div className="form-group">
                         <label className="input_title" htmlFor="input_textarea">
                             <i className="fa-regular fa-comments"></i>
+                            {t('message')}
                         </label>
                         <textarea
                             onBlur={(e) => changeHandler(e)}
@@ -119,12 +125,12 @@ const ContactForm = (props) => {
                             type="text"
                             name="message"
                             className="form-control"
-                            placeholder="How can we help you?">
+                            placeholder={t('your_message')}>
                         </textarea>
                         {validator.message('message', forms.message, 'required')}
                     </div>
                     <button type="submit" className="btn btn-primary">
-                        <span className="btn_label" data-text="Send Request">Send Request</span>
+                        <span className="btn_label" data-text={t('send_request')}>{t('send_request')}</span>
                         <span className="btn_icon">
                             <i className="fa-solid fa-arrow-up-right"></i>
                         </span>

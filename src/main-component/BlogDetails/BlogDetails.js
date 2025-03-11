@@ -7,19 +7,19 @@ import Scrollbar from '../../components/scrollbar/scrollbar'
 import Footer from '../../components/footer/Footer';
 import CtaSection from '../../components/CtaSection/CtaSection';
 import BlogSingle from '../../components/BlogDetails/BlogDetails';
-
+import { useTranslation } from 'react-i18next'; // استيراد الترجمة
 
 const BlogDetails = (props) => {
-
     const { slug } = useParams()
+    const { t } = useTranslation(); // استخدام الترجمة
 
     const BlogDetails = blogs.find(item => item.slug === slug)
     return (
         <Fragment>
             <Header />
             <main className="page_content about-page">
-                <PageTitle pageTitle={BlogDetails.title} pagesub={'تفاصيل اكثر عن مدوناتنا 😍'} pageTop={''}/>
-                <BlogSingle/>
+                <PageTitle pageTitle={t('blogTitle', { title: BlogDetails.title })} pagesub={t('blogSubTitle')} pageTop={''} />
+                <BlogSingle />
             </main>
             <CtaSection />
             <Footer />

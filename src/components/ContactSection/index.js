@@ -4,9 +4,11 @@ import icon1 from '../../images/icons/icon_map_mark_2.svg'
 import icon2 from '../../images/icons/icon_calling_2.svg'
 import icon3 from '../../images/icons/icon_mail_3.svg'
 import icon4 from '../../images/icons/icon_calendar_2.svg'
-
+import { useTranslation } from 'react-i18next'; // استيراد الترجمة
 
 const ContactSection = (props) => {
+    const { t } = useTranslation(); // استخدام الترجمة هنا
+
     return (
         <section className="contact_section section_space bg-light">
             <div className="container">
@@ -17,9 +19,9 @@ const ContactSection = (props) => {
                                 <img src={icon1} alt="Map Mark SVG Icon" />
                             </div>
                             <div className="iconbox_content">
-                                <h3 className="iconbox_title">الموقع</h3>
+                                <h3 className="iconbox_title">{t('location')}</h3>
                                 <p className="mb-0">
-                                    مول المروة، ألاردنيه، العاشر من رمضان، الشرقية، مصر
+                                    {t('address')}
                                 </p>
                             </div>
                         </div>
@@ -31,9 +33,9 @@ const ContactSection = (props) => {
                                 <img src={icon2} alt="Calling SVG Icon" />
                             </div>
                             <div className="iconbox_content">
-                                <h3 className="iconbox_title">اتصل بنا</h3>
-                                <p className="mb-0"> المبيعات   +201070005260</p>
-                                <p className="mb-0">خدمة العملاء    +201070005280 </p>
+                                <h3 className="iconbox_title">{t('callUs')}</h3>
+                                <p className="mb-0"> {t('salesPhone')} </p>
+                                <p className="mb-0">{t('supportPhone')} </p>
                             </div>
                         </div>
                     </div>
@@ -43,8 +45,8 @@ const ContactSection = (props) => {
                                 <img src={icon3} alt="User Check SVG Icon" />
                             </div>
                             <div className="iconbox_content">
-                                <h3 className="iconbox_title">البريد الإلكتروني</h3>
-                                <p className="mb-0">info@osysware.com</p>
+                                <h3 className="iconbox_title">{t('email')}</h3>
+                                <p className="mb-0">{t('emailAddress')}</p>
                             </div>
                         </div>
                     </div>
@@ -54,24 +56,15 @@ const ContactSection = (props) => {
                                 <img src={icon4} alt="Calendar SVG Icon" />
                             </div>
                             <div className="iconbox_content">
-                                <h3 className="iconbox_title">قم بزيارتنا بين</h3>
-                                <p className="mb-0">الاحد : الخميس  10.00AM-5.00PM</p>
-                                <p className="mb-0">الجمعه / السبت: مغلق</p>
+                                <h3 className="iconbox_title">{t('visitUsBetween')}</h3>
+                                <p className="mb-0">{t('workingHours')}</p>
+                                <p className="mb-0">{t('weekendClosed')}</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="section_space pb-0">
                     <div className="row justify-content-lg-between">
-                        {/*  <div className="col-lg-7">
-                            <div className="contact_form mb-0">
-                                <h3 className="details_item_info_title mb-1">Send Us A Message</h3>
-                                <p className="mb-5">
-                                    Give us chance to serve and bring magic to your brand.
-                                </p>
-                                <ContactForm />
-                            </div>
-                        </div>*/}
                         <div className="col-lg-12">
                             <div className="gmap_canvas ps-lg-5">
                                 <iframe
@@ -80,7 +73,6 @@ const ContactSection = (props) => {
                                 </iframe>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

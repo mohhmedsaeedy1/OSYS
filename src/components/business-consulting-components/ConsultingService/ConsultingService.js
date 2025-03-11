@@ -1,10 +1,13 @@
-﻿import React from 'react';
+import React from 'react';
+import { useTranslation } from 'react-i18next'; // استدعاء الترجمة
 import Services from '../../../api/service'
 import { Link } from "react-router-dom";
 import Bg from '../../../images/backgrounds/bg_image_3.webp'
 
 
 const ConsultingService = (props) => {
+    const { t } = useTranslation(); // استدعاء الترجمة
+
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     }
@@ -16,10 +19,10 @@ const ConsultingService = (props) => {
                     <div className="col-lg-7">
                         <div className="heading_block text-center">
                             <h2 className="heading_text">
-                                Transformative Solutions Tailored to Your Needs
+                                {t('service_title')}
                             </h2>
                             <p className="heading_description mb-0 text-dark">
-                                Driving growth and innovation through customized strategies designed to meet your business challenges.
+                                {t('service_description')}
                             </p>
                         </div>
                     </div>
@@ -39,7 +42,7 @@ const ConsultingService = (props) => {
                                         </Link>
                                     </h3>
                                     <p className="mb-0">
-                                        {service.description}
+                                        {t('service_card_description')}
                                     </p>
                                 </div>
                             </div>
@@ -49,7 +52,7 @@ const ConsultingService = (props) => {
 
                 <div className="btns_group pb-0">
                     <Link onClick={ClickHandler} className="creative_btn" to="/service">
-                        <span className="btn_label bg-primary">ابدأ الآن Today</span>
+                        <span className="btn_label bg-primary">{t('start_now')}</span>
                         <span className="btn_icon">
                             <i className="bg-primary fa-solid fa-arrow-up-right"></i>
                             <i className="bg-primary fa-solid fa-arrow-up-right"></i>

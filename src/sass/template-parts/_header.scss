@@ -20,6 +20,25 @@
 		}
 	}
 
+	.language-switcher {
+		display: flex;
+		justify-content: flex-end;
+		gap: 10px;
+	}
+
+	.language-button {
+		padding: 10px 15px;
+		font-size: 14px;
+		cursor: pointer;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+
+	.language-button:hover {
+		background-color: #f1f1f1;
+	}
+
 	.header_btns_group {
 		gap: 15px;
 		display: flex;
@@ -66,7 +85,7 @@
 			position: relative;
 			align-items: center;
 			color: var(--bs-dark);
-			font-family: 'DroidKufi-Bold';
+			font-family: 'Droid Arabic Kufi';
 			min-height: 50px;
 			display: flex;
 			align-items: center;
@@ -106,7 +125,7 @@
 				font-weight: 900;
 				margin: 1px 0 0 3px;
 				transition: var(--bs-transition);
-				font-family: "Font DroidKufi-Bold";
+				font-family: "Font Awesome 6 Pro";
 			}
 		}
 	}
@@ -194,7 +213,7 @@
 			font-weight: 500;
 			margin: 29px 0 0;
 			line-height: 28px;
-			font-family: 'DroidKufi-Bold';
+			font-family: 'Droid Arabic Kufi';
 		}
 	}
 
@@ -216,7 +235,7 @@
 			color: var(--bs-dark);
 			display: inline-block;
 			content: attr(data-text);
-			font-family: 'DroidKufi-Bold';
+			font-family: 'Droid Arabic Kufi';
 		}
 
 		a {
@@ -277,7 +296,7 @@
 				line-height: 1;
 				font-size: 20px;
 				font-weight: 600;
-				font-family: 'DroidKufi-Bold';
+				font-family: 'Droid Arabic Kufi';
 
 				a {
 					color: var(--bs-dark);
@@ -311,7 +330,7 @@
 		margin-bottom: 0;
 		color: var(--bs-white);
 		text-transform: uppercase;
-		font-family: 'DroidKufi-Bold';
+		font-family: 'Droid Arabic Kufi';
 	}
 
 	h4 {
@@ -320,7 +339,7 @@
 		font-weight: 700;
 		margin: 10px 0 0;
 		color: var(--bs-white);
-		font-family: 'DroidKufi-Bold';
+		font-family: 'Droid Arabic Kufi';
 	}
 
 	img {

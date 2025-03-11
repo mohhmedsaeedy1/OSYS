@@ -16,6 +16,7 @@
     "i18next-http-backend": "^3.0.2",
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6",
+    "lucide-react": "^0.479.0",
     "react": "^18.0.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-awesome-reveal": "^4.2.5",
@@ -63,5 +64,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
   }
 }

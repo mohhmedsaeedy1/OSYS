@@ -1,16 +1,16 @@
-﻿import React from 'react'
-import blogs from '../../api/blogs'
-import { Link } from 'react-router-dom'
-import Bg from '../../images/shapes/bg_pattern_1.svg'
-import icon1 from '../../images/icons/icon_calendar.svg'
-
-
+import React from 'react';
+import { useTranslation } from 'react-i18next';  // استدعاء الترجمة
+import blogs from '../../api/blogs';
+import { Link } from 'react-router-dom';
+import Bg from '../../images/shapes/bg_pattern_1.svg';
+import icon1 from '../../images/icons/icon_calendar.svg';
 
 const BlogSection = (props) => {
+    const { t } = useTranslation(); // استدعاء الترجمة
 
     const ClickHandler = () => {
         window.scrollTo(10, 0);
-    }
+    };
 
     return (
         <section
@@ -20,11 +20,11 @@ const BlogSection = (props) => {
             <div className="container">
                 <div className="heading_block text-center">
                     <div className="heading_focus_text">
-                        <span className="badge bg-secondary text-white">المدونات</span>
-                        المحدثه
+                        <span className="badge bg-secondary text-white">{t('blogs_section_badge')}</span>
+                        {t('blogs_section_updated')}
                     </div>
                     <h2 className="heading_text mb-0">
-                        أحدث المقالات والمنشورات
+                        {t('blogs_section_title')}
                     </h2>
                 </div>
 
@@ -49,7 +49,7 @@ const BlogSection = (props) => {
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}><i className="fa-regular fa-comment-lines"></i> {blog.comment}</Link>
+                                                <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}><i className="fa-regular fa-comment-lines"></i> {blog.comment} {t('comments')}</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -62,7 +62,7 @@ const BlogSection = (props) => {
                                         <span className="btn_icon">
                                             <i className="fa-solid fa-arrow-up-right"></i>
                                         </span>
-                                        <span className="btn_label">اقرأ المزيد</span>
+                                        <span className="btn_label">{t('read_more')}</span>
                                     </Link>
                                 </div>
                             </div>

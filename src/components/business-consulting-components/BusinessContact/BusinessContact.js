@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next'; // استدعاء الترجمة
 import SimpleReactValidator from 'simple-react-validator';
-import Bg from '../../../images/backgrounds/bg_image_5.webp'
+import Bg from '../../../images/backgrounds/bg_image_5.webp';
 
 const BusinessContact = (props) => {
+
+    const { t } = useTranslation(); // استدعاء الترجمة
 
     const [forms, setForms] = useState({
         name: '',
@@ -15,7 +18,7 @@ const BusinessContact = (props) => {
         className: 'errorMessage'
     }));
     const changeHandler = e => {
-        setForms({ ...forms, [e.target.name]: e.target.value })
+        setForms({ ...forms, [e.target.name]: e.target.value });
         if (validator.allValid()) {
             validator.hideMessages();
         } else {
@@ -40,7 +43,6 @@ const BusinessContact = (props) => {
     };
 
     return (
-
         <section className="calltoaction_section parallaxie" style={{ backgroundImage: `url(${Bg})` }}>
             <div className="container">
                 <div className="row justify-content-lg-end">
@@ -48,10 +50,10 @@ const BusinessContact = (props) => {
                         <div className="instant_contact_form bg-primary shadow-none">
                             <div className="small_title text-white">
                                 <i className="fa-solid fa-envelope-open-text text-white"></i>
-                                Let's Connect!
+                                {t('contact_title')}
                             </div>
                             <h3 className="form_title text-white">
-                                Send us a message, and we'll promptly discuss your project with you.
+                                {t('contact_description')}
                             </h3>
                             <form className="xb-item--form contact-from" onSubmit={(e) => submitHandler(e)}>
                                 <div className="row">
@@ -67,7 +69,7 @@ const BusinessContact = (props) => {
                                                 className="form-control"
                                                 onBlur={(e) => changeHandler(e)}
                                                 onChange={(e) => changeHandler(e)}
-                                                placeholder="Your Name" />
+                                                placeholder={t('your_name')} />
                                             {validator.message('name', forms.name, 'required|alpha_space')}
                                         </div>
                                     </div>
@@ -83,7 +85,7 @@ const BusinessContact = (props) => {
                                                 className="form-control"
                                                 onBlur={(e) => changeHandler(e)}
                                                 onChange={(e) => changeHandler(e)}
-                                                placeholder="Your Enter" />
+                                                placeholder={t('your_email')} />
                                             {validator.message('email', forms.email, 'required|email')}
                                         </div>
                                     </div>
@@ -99,7 +101,7 @@ const BusinessContact = (props) => {
                                                 className="form-control"
                                                 onBlur={(e) => changeHandler(e)}
                                                 onChange={(e) => changeHandler(e)}
-                                                placeholder="Your Phone No." />
+                                                placeholder={t('your_phone')} />
                                             {validator.message('phone', forms.phone, 'required|phone')}
                                         </div>
                                     </div>
@@ -115,7 +117,7 @@ const BusinessContact = (props) => {
                                                 className="form-control"
                                                 onBlur={(e) => changeHandler(e)}
                                                 onChange={(e) => changeHandler(e)}
-                                                placeholder="Your Company Name" />
+                                                placeholder={t('your_company')} />
                                             {validator.message('company', forms.company, 'required')}
                                         </div>
                                     </div>
@@ -131,12 +133,12 @@ const BusinessContact = (props) => {
                                                 type="text"
                                                 name="message"
                                                 className="form-control"
-                                                placeholder="How can we help you?">
+                                                placeholder={t('message_placeholder')}>
                                             </textarea>
                                             {validator.message('message', forms.message, 'required')}
                                         </div>
                                         <button type="submit" className="btn btn-primary">
-                                            <span className="btn_label" data-text="Send Request">Send Request</span>
+                                            <span className="btn_label" data-text={t('send_request')}>{t('send_request')}</span>
                                             <span className="btn_icon">
                                                 <i className="fa-solid fa-arrow-up-right"></i>
                                             </span>
@@ -149,7 +151,6 @@ const BusinessContact = (props) => {
                 </div>
             </div>
         </section>
-
     )
 }
 

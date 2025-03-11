@@ -1,8 +1,10 @@
-﻿import React from 'react';
-import Services from '../../api/service'
+import React from 'react';
+import Services from '../../api/service';
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next'; // استيراد الترجمة
 
 const ServiceSection = (props) => {
+    const { t } = useTranslation(); // استخدام الترجمة
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     }
@@ -12,11 +14,10 @@ const ServiceSection = (props) => {
             <div className="container">
                 <div className="heading_block text-center">
                     <div className="heading_focus_text">
-                        
-                        <span className="badge bg-secondary text-white">تخصصاتنا</span>
+                        <span className="badge bg-secondary text-white">{t('ourSpecialties')}</span> {/* ترجمة العنوان */}
                     </div>
                     <h2 className="heading_text mb-0">
-                        الخدمات المميزة
+                        {t('premiumServices')} {/* ترجمة العنوان */}
                     </h2>
                 </div>
 
@@ -26,10 +27,11 @@ const ServiceSection = (props) => {
                             {service.title ?
                                 <div className="service_block">
                                     <div className="service_image">
-                                        <img src={service.sImg} alt="خدمات إدارة تكنولوجيا المعلومات" />
+                                        <img src={service.sImg} alt={t('serviceImageAlt')} /> {/* ترجمة النص البديل للصورة */}
                                     </div>
                                     <div className="service_content">
-                                        <h3 className="service_title"><Link onClick={ClickHandler} to={`/service-single/${service.slug}`}>{service.title}</Link>
+                                        <h3 className="service_title">
+                                            <Link onClick={ClickHandler} to={`/service-single/${service.slug}`}>{service.title}</Link>
                                         </h3>
 
                                         <div className="links_wrapper">

@@ -9,10 +9,12 @@ import CtaSection from '../../components/CtaSection/CtaSection';
 import PolicySection from './Policy';
 import PartnerSection from '../../components/PartnerSection';
 import offerBanner from '../../images/icons/best_offer.svg.svg';
+import { useTranslation } from 'react-i18next';
 
 const PricingPage = (props) => {
     const [isOpen, setOpen] = useState(false);
     const [isActive, setIsActive] = useState(false); // تعريف الحالة isActive
+    const { t } = useTranslation();  // إضافة الترجمة
 
     const ClickHandler = () => {
         console.log('Button clicked!');
@@ -27,24 +29,20 @@ const PricingPage = (props) => {
         <Fragment>
             <Header />
             <main className="page_content about-page">
-                <PageTitle pageTitle={'خطط اسعارنا'} pagesub={' الاسعار😍'} pageTop={''} />
+                <PageTitle pageTitle={t('pricing_plans')} pagesub={t('our_pricing_plans')} pageTop={''} />
                 <PolicySection />
-                  <section className="pricing_section section_space pb-0 bg-light">
+                <section className="pricing_section section_space pb-0 bg-light">
                     <div className="container">
                         <div className="heading_block text-center">
                             <div className="heading_focus_text mb-2">
-                                
-                                <span className="badge bg-secondary text-white">اسعارنا المتميزه 😍</span>
+                                <span className="badge bg-secondary text-white">{t('our_exclusive_prices')} 😍</span>
                             </div>
                             <h2 className="heading_text mb-0">
-                                افضل خطه للاعمال
+                                {t('best_plan_for_business')}
                             </h2>
                         </div>
                         <div className="pricing_toggle_btn text-center">
-                            {/* <button type="button" onClick={handleToggle} className={isActive ? 'active' : ''}> </button>*/}
-                            {/*   <span>Billed Monthly <small>-10%</small></span>*/}
-                            <span>الفوترة سنويًا <small>-30%</small></span>
-                            
+                            <span>{t('billed_annually')} <small>-30%</small></span>
                         </div>
                         <div className="row justify-content-center">
                             <div className="col-lg-6">
@@ -52,16 +50,16 @@ const PricingPage = (props) => {
                                     <div className="table_head">
                                         <div className="pricing_price_value bg-primary-subtle text-primary">
                                             <span className="pricing_monthly">
-                                                <del>$54</del> $48<small>.6</small> <sub>هتوفر<u>$5.4</u> شهريا</sub>
+                                                <del>$54</del> $48<small>.6</small> <sub>{t('you_save_monthly')} <u>$5.4</u></sub>
                                             </span>
                                             <span className="pricing_annually">
-                                                <del>$180</del> $160<small></small> <sub>هتوفر<u>$20</u> سنويا</sub>
+                                                <del>$180</del> $160<small></small> <sub>{t('you_save_yearly')} <u>$20</u></sub>
                                             </span>
                                         </div>
                                         <div className="pricing_block_title">
-                                            <h3 className="pricing_package_title">الباقة القياسية</h3>
+                                            <h3 className="pricing_package_title">{t('standard_package')}</h3>
                                             <p className="pricing_package_description mb-0">
-                                                اجعل عملك أسهل مع نظام متكامل ومترابط بشكل سليم.
+                                                {t('make_your_business_easier')}
                                             </p>
                                         </div>
                                     </div>
@@ -71,7 +69,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                تطوير البرمجيات.
+                                                {t('software_development')}
                                             </span>
                                         </li>
                                         <li>
@@ -79,7 +77,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                تصميم المنتجات الرقمية.
+                                                {t('digital_product_design')}
                                             </span>
                                         </li>
                                         <li>
@@ -87,7 +85,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                استشارات تقنية المعلومات.
+                                                {t('it_consulting')}
                                             </span>
                                         </li>
                                         <li>
@@ -95,7 +93,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                تطوير المواقع الإلكترونية.
+                                                {t('web_development')}
                                             </span>
                                         </li>
                                         <li>
@@ -103,7 +101,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                خدمات الأمن السيبراني.
+                                                {t('cyber_security')}
                                             </span>
                                         </li>
                                         <li>
@@ -111,46 +109,38 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                خدمات الحوسبة السحابية.
+                                                {t('cloud_computing')}
                                             </span>
                                         </li>
                                     </ul>
 
                                     <div className="text-center mt-4">
                                         <Link onClick={ClickHandler} className="btn btn-outline-light" to="/contact">
-                                            <span className="btn_label" data-text="اشترِ الآن">اشترِ الآن</span>
+                                            <span className="btn_label" data-text={t('buy_now')}>{t('buy_now')}</span>
                                             <span className="btn_icon">
                                                 <i className="fa-solid fa-arrow-up-right"></i>
                                             </span>
                                         </Link>
                                     </div>
-
-
-
-
                                 </div>
                             </div>
                             <div className="col-lg-6">
                                 <div className={`pricing_block ${isActive ? 'active' : ''}`}>
-                                    {/*<div className="best_plan">
-                                        <img src={offerBanner} alt="Best Offer" />
-                                    </div>*/}
                                     <div className="table_head">
                                         <div className="pricing_price_value bg-primary-subtle text-primary">
                                             <span className="pricing_monthly">
-                                                <del>$60</del> $54 <sub> هتوفر  <u>$6</u> شهريا</sub>
+                                                <del>$60</del> $54 <sub>{t('you_save_monthly')}  <u>$6</u></sub>
                                             </span>
                                             <span className="pricing_annually">
-                                                <del>$260</del> $220 <sub> هتوفر   <u>$40</u> سنويا</sub>
+                                                <del>$260</del> $220 <sub>{t('you_save_yearly')}   <u>$40</u></sub>
                                             </span>
                                         </div>
                                         <div className="pricing_block_title">
-                                            <h3 className="pricing_package_title">الباقة المميزة</h3>
+                                            <h3 className="pricing_package_title">{t('premium_package')}</h3>
                                             <p className="pricing_package_description mb-0">
-                                                اجعل عملك أسهل مع نظام متكامل ومترابط بشكل صحيح.
+                                                {t('make_your_business_easier')}
                                             </p>
                                         </div>
-
                                     </div>
                                     <ul className="icon_list unordered_list_block">
                                         <li>
@@ -158,7 +148,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                تطوير البرمجيات.
+                                                {t('software_development')}
                                             </span>
                                         </li>
                                         <li>
@@ -166,7 +156,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                تصميم المنتجات الرقمية.
+                                                {t('digital_product_design')}
                                             </span>
                                         </li>
                                         <li>
@@ -174,7 +164,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                استشارات تقنية المعلومات.
+                                                {t('it_consulting')}
                                             </span>
                                         </li>
                                         <li>
@@ -182,7 +172,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                تطوير المواقع الإلكترونية.
+                                                {t('web_development')}
                                             </span>
                                         </li>
                                         <li>
@@ -190,7 +180,7 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                خدمات الأمن السيبراني.
+                                                {t('cyber_security')}
                                             </span>
                                         </li>
                                         <li>
@@ -198,42 +188,30 @@ const PricingPage = (props) => {
                                                 <i className="fa-regular fa-circle-check"></i>
                                             </span>
                                             <span className="icon_list_text">
-                                                خدمات الحوسبة السحابية.
+                                                {t('cloud_computing')}
                                             </span>
                                         </li>
                                     </ul>
 
                                     <div className="text-center mt-4">
                                         <Link onClick={ClickHandler} className="btn btn-outline-light" to="/contact">
-                                            <span className="btn_label" data-text="اشترِ الآن">اشترِ الآن</span>
+                                            <span className="btn_label" data-text={t('buy_now')}>{t('buy_now')}</span>
                                             <span className="btn_icon">
                                                 <i className="fa-solid fa-arrow-up-right"></i>
                                             </span>
                                         </Link>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section> 
-                {/*<div className="client_logo_section section_space bg-light">
-                    <div className="container">
-                        <div className="heading_block text-center">
-                            <div className="heading_focus_text mb-0">
-                                <span className="badge bg-secondary text-white">Brand We</span>
-                                Work With 🎉
-                            </div>
-                        </div>
-                        <PartnerSection />
-                    </div>
-                </div>*/}
+                </section>
             </main>
             <CtaSection />
             <Footer />
             <Scrollbar />
             <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="7e90gBu4pas" onClose={() => setOpen(false)} />
         </Fragment>
-    )
+    );
 };
 export default PricingPage;

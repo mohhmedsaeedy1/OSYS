@@ -1,14 +1,15 @@
-import React from 'react'
-import blogs from '../../../api/blogs'
-import { Link } from 'react-router-dom'
-import Bg from '../../../images/backgrounds/bg_image_4.webp'
-
+import React from 'react';
+import { useTranslation } from 'react-i18next';  // استدعاء الترجمة
+import blogs from '../../../api/blogs';
+import { Link } from 'react-router-dom';
+import Bg from '../../../images/backgrounds/bg_image_4.webp';
 
 const BusinessBlogSection = (props) => {
+    const { t } = useTranslation(); // استدعاء الترجمة
 
     const ClickHandler = () => {
         window.scrollTo(10, 0);
-    }
+    };
 
     return (
         <section className="blog_section_2 section_space" style={{ backgroundImage: `url(${Bg})` }}>
@@ -17,10 +18,10 @@ const BusinessBlogSection = (props) => {
                     <div className="col-lg-7">
                         <div className="heading_block text-center">
                             <h2 className="heading_text">
-                                Explore Our Latest Perspectives and Expertise
+                                {t('explore_title')}
                             </h2>
                             <p className="heading_description text-dark mb-0">
-                                Stay Informed, Stay Ahead: Discover Fresh Ideas and Strategies
+                                {t('explore_description')}
                             </p>
                         </div>
                     </div>
@@ -32,8 +33,7 @@ const BusinessBlogSection = (props) => {
                             <div className="blog_post_block_2">
                                 <div className="blog_post_image">
                                     <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>
-                                        <img src={blog.screens} alt="
-Blog Post" />
+                                        <img src={blog.screens} alt="Blog Post" />
                                     </Link>
                                 </div>
                                 <div className="blog_post_content">
@@ -48,7 +48,7 @@ Blog Post" />
                                     <ul className="post_meta unordered_list">
                                         <li>
                                             <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>
-                                                By <b>{blog.author}</b>
+                                                {t('by')} <b>{blog.author}</b> {/* الترجمة هنا */}
                                             </Link>
                                         </li>
                                         <li>
@@ -64,7 +64,7 @@ Blog Post" />
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
 export default BusinessBlogSection;

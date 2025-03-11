@@ -1,30 +1,29 @@
-﻿import React from 'react';
-import sIcon1 from '../../images/icons/icon_user_check.svg'
-import sIcon2 from '../../images/icons/icon_headphone.svg'
-import sIcon3 from '../../images/icons/icon_dollar.svg'
+import React from 'react';
+import sIcon1 from '../../images/icons/icon_user_check.svg';
+import sIcon2 from '../../images/icons/icon_headphone.svg';
+import sIcon3 from '../../images/icons/icon_dollar.svg';
+import { useTranslation } from 'react-i18next'; // استيراد الترجمة
 
 const Policy = [
     {
-        title: 'حلول برمجية متخصصة',
-        subTitle: 'في OSYS، نفخر بفريقنا عالي الكفاءة الذي يقدم حلول برمجية مبتكرة ومخصصة لمختلف الصناعات واحتياجات الأعمال الفريدة.',
+        title: 'software_solutions', // مفتاح الترجمة
+        subTitle: 'osys_software_solutions', // مفتاح الترجمة
         icon: sIcon1,
     },
     {
-        title: 'خدمات دعم سريعة',
-        subTitle: 'التزامنا بالكفاءة يضمن دعمًا للعملاء بمستوى ريادي في الصناعة، مع التركيز على الحلول السريعة لضمان رضا العملاء.',
+        title: 'fast_support_services', // مفتاح الترجمة
+        subTitle: 'customer_support_services', // مفتاح الترجمة
         icon: sIcon2,
     },
     {
-        title: 'الاسعار حسب الاستخدام',
-        subTitle: 'نقدم خطط اسعار تنافسية توفر قيمة استثنائية، وندعم نموك بفعالية من خلال أحدث التقنيات.',
+        title: 'pay_as_you_go_pricing', // مفتاح الترجمة
+        subTitle: 'pricing_plans', // مفتاح الترجمة
         icon: sIcon3,
     },
-
-
 ]
 
-
 const PolicySection = (props) => {
+    const { t } = useTranslation(); // استخدام الترجمة هنا
 
     return (
         <section className="policy_section">
@@ -34,12 +33,12 @@ const PolicySection = (props) => {
                         <div className="col-lg-4" key={pitem}>
                             <div className="iconbox_block layout_icon_left">
                                 <div className="iconbox_icon bg-secondary-subtle">
-                                    <img src={policy.icon} alt="Dollar SVG Icon" />
+                                    <img src={policy.icon} alt={t(policy.title + "_alt")} />
                                 </div>
                                 <div className="iconbox_content">
-                                    <h3 className="iconbox_title">{policy.title}</h3>
+                                    <h3 className="iconbox_title">{t(policy.title)}</h3>
                                     <p className="mb-0">
-                                        {policy.subTitle}
+                                        {t(policy.subTitle)}
                                     </p>
                                 </div>
                             </div>

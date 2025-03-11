@@ -6,9 +6,10 @@ import PageTitle from '../../components/pagetitle/PageTitle';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import Footer from '../../components/footer/Footer';
 import CtaSection from '../../components/CtaSection/CtaSection';
+import { useTranslation } from 'react-i18next'; // استيراد useTranslation
 
 const PortfolioPage = (props) => {
-
+    const { t } = useTranslation(); // استخدام الترجمة هنا
     const [activeFilter, setActiveFilter] = useState('all'); // الفلتر النشط
 
     const ClickHandler = () => {
@@ -33,16 +34,16 @@ const PortfolioPage = (props) => {
         <Fragment>
             <Header />
             <main className="page_content about-page">
-                <PageTitle pageTitle={'المنتجات التي نقدمها '} pagesub={'منتجاتنا 😍'} pageTop={''} />
+                <PageTitle pageTitle={t('productsTitle')} pagesub={t('productsSub')} pageTop={''} />
                 <section className="Customers_section section_space bg-light">
                     <div className="container">
                         <div className="filter_elements_nav">
                             <ul className="unordered_list justify-content-center">
-                                <li className={activeFilter === 'all' ? 'active' : ''} onClick={() => handleFilterClick('all')}>جميع المنتجات</li>
-                                <li className={activeFilter === 'التكنولوجيا' ? 'active' : ''} onClick={() => handleFilterClick('التكنولوجيا')}>التكنولوجيا</li>
-                                <li className={activeFilter === 'مكتب المساعدة' ? 'active' : ''} onClick={() => handleFilterClick('مكتب المساعدة')}>مكتب المساعدة</li>
-                                <li className={activeFilter === 'التحليل' ? 'active' : ''} onClick={() => handleFilterClick('التحليل')}>التحليل</li>
-                                <li className={activeFilter === 'التسويق' ? 'active' : ''} onClick={() => handleFilterClick('التسويق')}>التسويق</li>
+                                <li className={activeFilter === 'all' ? 'active' : ''} onClick={() => handleFilterClick('all')}>{t('allProducts')}</li>
+                                <li className={activeFilter === 'التكنولوجيا' ? 'active' : ''} onClick={() => handleFilterClick('التكنولوجيا')}>{t('technology')}</li>
+                                <li className={activeFilter === 'مكتب المساعدة' ? 'active' : ''} onClick={() => handleFilterClick('مكتب المساعدة')}>{t('helpDesk')}</li>
+                                <li className={activeFilter === 'التحليل' ? 'active' : ''} onClick={() => handleFilterClick('التحليل')}>{t('analytics')}</li>
+                                <li className={activeFilter === 'التسويق' ? 'active' : ''} onClick={() => handleFilterClick('التسويق')}>{t('marketing')}</li>
                             </ul>
                         </div>
                         <div className="filter_elements_wrapper row">
@@ -51,7 +52,7 @@ const PortfolioPage = (props) => {
                                     <div className="portfolio_block portfolio_layout_2">
                                         <div className="portfolio_image">
                                             <Link onClick={ClickHandler} className="portfolio_image_wrap bg-light" to={`/portfolio_details/${project.slug}`}>
-                                                <img src={project.pImg} alt="Mobile App Design" />
+                                                <img src={project.pImg} alt={t('projectAltText')} />
                                             </Link>
                                         </div>
                                         <div className="portfolio_content">

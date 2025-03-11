@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import sIcon1 from '../../images/icons/icon_doc.svg'
 import sIcon2 from '../../images/icons/icon_analysis.svg'
 import sIcon3 from '../../images/icons/icon_headphone_2.svg'

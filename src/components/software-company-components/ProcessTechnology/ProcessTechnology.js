@@ -1,11 +1,9 @@
-﻿
 import React, { useState } from 'react';
-import Bg from '../../../images/shapes/shape_title_under_line.svg'
-import shape1 from '../../../images/shapes/shape_line_2.svg'
-import shape2 from '../../../images/shapes/shape_line_3.svg'
-import shape3 from '../../../images/shapes/shape_line_4.svg'
-import shape4 from '../../../images/shapes/shape_space_3.svg'
-
+import Bg from '../../../images/shapes/shape_title_under_line.svg';
+import shape1 from '../../../images/shapes/shape_line_2.svg';
+import shape2 from '../../../images/shapes/shape_line_3.svg';
+import shape3 from '../../../images/shapes/shape_line_4.svg';
+import shape4 from '../../../images/shapes/shape_space_3.svg';
 import {
     Accordion,
     AccordionBody,
@@ -14,8 +12,10 @@ import {
 } from 'reactstrap';
 import TechnologySection from '../TechnologySection/TechnologySection';
 import Testimonial from '../Testimonial/Testimonial';
+import { useTranslation } from 'react-i18next'; // استيراد الترجمة
 
 const FaqSection = (props) => {
+    const { t } = useTranslation(); // استدعاء الترجمة
 
     const [open, setOpen] = useState('1');
     const toggle = (id) => {
@@ -33,60 +33,60 @@ const FaqSection = (props) => {
                     <div className="col-lg-6">
                         <div className="heading_block">
                             <div className="heading_focus_text has_underline d-inline-flex" style={{ backgroundImage: `url(${Bg})` }}>
-                                عملية العمل
+                                {t('work_process')}
                             </div>
                             <h2 className="heading_text mb-0">
-                                <mark>نهجنا</mark>
+                                <mark>{t('our_approach')}</mark>
                             </h2>
                         </div>
                         <Accordion open={open} toggle={toggle} className="accordion" id="service_process_faq">
                             <AccordionItem className="accordion-item">
                                 <AccordionHeader targetId="1">
-                                    01. مرحلة الاكتشاف
+                                    01. {t('discovery_phase')}
                                 </AccordionHeader>
                                 <AccordionBody accordionId="1" className='acc_body'>
                                     <p className="m-0">
-                                        تطبيق تشخيصي وتنبئي قائم على البيانات لتحسين النتائج وتحليل البيانات لدعم التطوير.
+                                        {t('discovery_phase_desc')}
                                     </p>
                                 </AccordionBody>
                             </AccordionItem>
                             <AccordionItem className="accordion-item">
                                 <AccordionHeader targetId="2">
-                                    02. التصميم والتطوير
+                                    02. {t('design_development')}
                                 </AccordionHeader>
                                 <AccordionBody accordionId="2" className='acc_body'>
                                     <p className="m-0">
-                                        تطبيق تشخيصي وتنبئي قائم على البيانات لتحسين النتائج وتحليل البيانات لدعم التطوير.
+                                        {t('design_development_desc')}
                                     </p>
                                 </AccordionBody>
                             </AccordionItem>
                             <AccordionItem className="accordion-item">
                                 <AccordionHeader targetId="3">
-                                    03. الصيانة
+                                    03. {t('maintenance')}
                                 </AccordionHeader>
                                 <AccordionBody accordionId="3" className='acc_body'>
                                     <p className="m-0">
-                                        تطبيق تشخيصي وتنبئي قائم على البيانات لتحسين النتائج وتحليل البيانات لدعم التطوير.
+                                        {t('maintenance_desc')}
                                     </p>
                                 </AccordionBody>
                             </AccordionItem>
                             <AccordionItem className="accordion-item">
                                 <AccordionHeader targetId="4">
-                                    04. النشر والتطبيق
+                                    04. {t('deployment_application')}
                                 </AccordionHeader>
                                 <AccordionBody accordionId="4" className='acc_body'>
                                     <p className="m-0">
-                                        تطبيق تشخيصي وتنبئي قائم على البيانات لتحسين النتائج وتحليل البيانات لدعم التطوير.
+                                        {t('deployment_application_desc')}
                                     </p>
                                 </AccordionBody>
                             </AccordionItem>
                             <AccordionItem className="accordion-item">
                                 <AccordionHeader targetId="5">
-                                    05. الاختبار وضمان الجودة
+                                    05. {t('testing_quality_assurance')}
                                 </AccordionHeader>
                                 <AccordionBody accordionId="5" className='acc_body'>
                                     <p className="m-0">
-                                        تطبيق تشخيصي وتنبئي قائم على البيانات لتحسين النتائج وتحليل البيانات لدعم التطوير.
+                                        {t('testing_quality_assurance_desc')}
                                     </p>
                                 </AccordionBody>
                             </AccordionItem>
@@ -95,11 +95,11 @@ const FaqSection = (props) => {
                     <div className="col-lg-5">
                         <Accordion open={open} toggle={toggle} className="accordion" id="service_process_faq">
                             <ul className="content_layer_group unordered_list_block text-center">
-                                <li><AccordionHeader targetId="1"><span>مرحلة الاكتشاف</span></AccordionHeader></li>
-                                <li><AccordionHeader targetId="2"><span>التصميم والتطوير</span></AccordionHeader></li>
-                                <li><AccordionHeader targetId="3"><span>الصيانة</span></AccordionHeader></li>
-                                <li><AccordionHeader targetId="4"><span>النشر والتطبيق</span></AccordionHeader></li>
-                                <li><AccordionHeader targetId="5"><span>الاختبار وضمان الجودة</span></AccordionHeader></li>
+                                <li><AccordionHeader targetId="1"><span>{t('discovery_phase')}</span></AccordionHeader></li>
+                                <li><AccordionHeader targetId="2"><span>{t('design_development')}</span></AccordionHeader></li>
+                                <li><AccordionHeader targetId="3"><span>{t('maintenance')}</span></AccordionHeader></li>
+                                <li><AccordionHeader targetId="4"><span>{t('deployment_application')}</span></AccordionHeader></li>
+                                <li><AccordionHeader targetId="5"><span>{t('testing_quality_assurance')}</span></AccordionHeader></li>
                             </ul>
                         </Accordion>
                     </div>
@@ -123,4 +123,5 @@ const FaqSection = (props) => {
         </section>
     )
 };
+
 export default FaqSection;

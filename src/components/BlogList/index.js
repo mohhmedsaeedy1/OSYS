@@ -1,7 +1,8 @@
-﻿import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';  // Import useTranslation hook
 import blogs from '../../api/blogs';
 import arrow from '../../images/shapes/shape_arrow_right.svg';
 import arrow2 from '../../images/shapes/shape_arrow_left.svg';
@@ -12,6 +13,7 @@ import bImg2 from '../../images/blog/blog_post_image_5.webp';
 import bImg3 from '../../images/blog/blog_post_image_17.webp';
 
 const BlogList = (props) => {
+    const { t } = useTranslation();  // Destructure 't' from the hook
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const swiperRef = useRef(null);
@@ -57,7 +59,7 @@ const BlogList = (props) => {
                                             >
                                                 <img
                                                     src={image}
-                                                    alt="Blog Post"
+                                                    alt={t('serviceImageAlt')}
                                                     className="blog_image"
                                                     style={{
                                                         width: '100%',
@@ -73,12 +75,12 @@ const BlogList = (props) => {
                                                 <ul className="category_btns_group unordered_list">
                                                     <li>
                                                         <Link onClick={ClickHandler} to={`/blog-single/${blogs[Bitem]?.slug || '#'}`}>
-                                                            الهوية التجارية 🚀
+                                                            {t('category1')}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link onClick={ClickHandler} to={`/blog-single/${blogs[Bitem]?.slug || '#'}`}>
-                                                            تجربة المستخدم (UX) وتصميم الواجهة (UI) 🎨🚀
+                                                            {t('category2')}
                                                         </Link>
                                                     </li>
                                                 </ul>
@@ -97,12 +99,13 @@ const BlogList = (props) => {
                                             </div>
                                             <h3 className="blog_post_title">
                                                 <Link onClick={ClickHandler} to={`/blog-single/${blogs[Bitem]?.slug || '#'}`}>
-                                                    {blogs[Bitem]?.title || 'Blog Title'}
+                                                    {blogs[Bitem]?.title || t('blogTitle')}
                                                 </Link>
                                             </h3>
                                             <p className="mb-0">
-                                                انطلق في رحلة استكشافية ملهمة عبر عالم حلول تكنولوجيا المعلومات، حيث نستكشف أحدث التطورات التقنية التي تعيد تشكيل المشهد الرقمي. 🚀💡
+                                                {t('blogPostDescription')}
                                             </p>
+
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -135,7 +138,7 @@ const BlogList = (props) => {
                                 <div className="blog_post_block image_left_layout" key={Bitem}>
                                     <div className="blog_post_image">
                                         <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`} className="image_wrap">
-                                            <img src={blog.screens} alt="Blog Post" />
+                                            <img src={blog.screens} alt={t('serviceImageAlt')} />
                                         </Link>
                                     </div>
                                     <div className="blog_post_content">
@@ -167,9 +170,7 @@ const BlogList = (props) => {
                                         </h3>
                                         <p>{blog.description}</p>
                                         <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`} className="btn btn-dark">
-                                            <span className="btn_label" data-text="اقرأ المزيد">
-                                                اقرأ المزيد
-                                            </span>
+                                            <span className="btn_label" data-text={t('read_more')}> {t('read_more')} </span>
                                             <span className="btn_icon">
                                                 <i className="fa-solid fa-arrow-up-right"></i>
                                             </span>
@@ -177,18 +178,6 @@ const BlogList = (props) => {
                                     </div>
                                 </div>
                             ))}
-                            {/*    <div className="pagination_wrap pb-0">
-      <ul className="pagination_nav unordered_list justify-content-center">
-        <li><Link onClick={ClickHandler} to={'/blog'}><i className="fa-solid fa-angles-left"></i></Link></li>
-        <li className="active"><Link onClick={ClickHandler} to={'/blog'}>1</Link></li>
-        <li><Link onClick={ClickHandler} to={'/blog'}>2</Link></li>
-        <li><Link onClick={ClickHandler} to={'/blog'}>3</Link></li>
-        <li><Link onClick={ClickHandler} to={'/blog'}>...</Link></li>
-        <li><Link onClick={ClickHandler} to={'/blog'}>10</Link></li>
-        <li><Link onClick={ClickHandler} to={'/blog'}><i className="fa-solid fa-angles-right"></i></Link></li>
-    </ul>
-</div>*/}
-
                         </div>
                         <BlogSidebar />
                     </div>

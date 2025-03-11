@@ -6,6 +6,89 @@ ul.smothscroll {
     z-index: 99;
 }
 
+.language-buttons {
+    position: absolute;
+    top: 10px;
+    /* المسافة من الأعلى */
+    left: 60%;
+    /* وضع الزر في المنتصف */
+    transform: translateX(-50%);
+    /* لضمان أن الزر في المنتصف تماماً */
+    z-index: 1000;
+    /* تأكد أن الزر في المقدمة فوق باقي العناصر */
+}
+
+.language-buttons button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.language-buttons {
+    position: absolute;
+    top: 10px;
+    /* المسافة من الأعلى */
+    right: 20px;
+    /* المسافة من اليمين */
+    z-index: 1000;
+    /* تأكد أن الزر في المقدمة */
+}
+
+.language-buttons .dropdown-toggle {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.language-container {
+    position: relative;
+    /* هذا يضمن أن القائمة ستظهر تحت الكرة الأرضية مباشرة */
+    display: inline-block;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    /* يبدأ من أسفل الزر مباشرة */
+    left: 200%;
+    transform: translateX(-50%);
+    /* يجعلها متمركزة بالضبط */
+    width: 110px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 5px 0;
+    border: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.language-dropdown button {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.language-dropdown button:hover {
+    background-color: #f3f3f3;
+}
+
+.language-buttons .dropdown-menu {
+    text-align: center;
+}
+
 ul.smothscroll a {
     z-index: 1;
     width: 40px;

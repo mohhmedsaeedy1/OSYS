@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,54 +16,27 @@ import pimg11 from '../../../images/clients/client_logo_11.webp'
 import pimg12 from '../../../images/clients/client_logo_12.webp'
 import pimg13 from '../../../images/clients/client_logo_13.webp'
 import pimg14 from '../../../images/clients/client_logo_14.webp'
+import { useTranslation } from 'react-i18next'; // استيراد الدالة لاستخدام الترجمة
 
 const partners = [
-    {
-        pImg: pimg1,
-    },
-    {
-        pImg: pimg2,
-    },
-    {
-        pImg: pimg3,
-    },
-    {
-        pImg: pimg4,
-    },
-    {
-        pImg: pimg5,
-    },
-    {
-        pImg: pimg6,
-    },
-    {
-        pImg: pimg7,
-    },
-    {
-        pImg: pimg8,
-    },
-    {
-        pImg: pimg9,
-    },
-    {
-        pImg: pimg10,
-    },
-    {
-        pImg: pimg11,
-    },
-    {
-        pImg: pimg12,
-    },
-    {
-        pImg: pimg13,
-    },
-    {
-        pImg: pimg14,
-    },
-    
-]
-const group1 = partners.slice(0, 7); // الصور من 0 إلى 6
-const group2 = partners.slice(7, 14); // الصور من 7 إلى 13
+    { pImg: pimg1 },
+    { pImg: pimg2 },
+    { pImg: pimg3 },
+    { pImg: pimg4 },
+    { pImg: pimg5 },
+    { pImg: pimg6 },
+    { pImg: pimg7 },
+    { pImg: pimg8 },
+    { pImg: pimg9 },
+    { pImg: pimg10 },
+    { pImg: pimg11 },
+    { pImg: pimg12 },
+    { pImg: pimg13 },
+    { pImg: pimg14 },
+];
+
+const group1 = partners.slice(0, 7);
+const group2 = partners.slice(7, 14);
 
 var settings = {
     dots: false,
@@ -77,61 +50,24 @@ var settings = {
     arrows: false,
 
     responsive: [
-        {
-            breakpoint: 1025,
-            settings: {
-                slidesToShow: 6,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 991,
-            settings: {
-                slidesToShow: 5,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 767,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 450,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 350,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
+        { breakpoint: 1025, settings: { slidesToShow: 6, slidesToScroll: 1 } },
+        { breakpoint: 991, settings: { slidesToShow: 5, slidesToScroll: 1 } },
+        { breakpoint: 767, settings: { slidesToShow: 4, slidesToScroll: 1 } },
+        { breakpoint: 600, settings: { slidesToShow: 3, slidesToScroll: 1 } },
+        { breakpoint: 450, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+        { breakpoint: 350, settings: { slidesToShow: 1, slidesToScroll: 1 } }
     ]
 };
 
-
-
 const PartnerSection = (props) => {
+    const { t } = useTranslation(); // استخدام الترجمة هنا
 
     return (
         <section className="client_logo_section section_space bg-transparent mb-0">
             <div className="container">
                 <div className="heading_block text-center">
                     <h2 className="heading_text mb-0">
-                        "Brands We Collaborate With"
+                        {t('brandsWeCollaborateWith')}
                     </h2>
                 </div>
                 <div className="client_logo_carousel swiper no_style">

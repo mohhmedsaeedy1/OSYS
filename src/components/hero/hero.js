@@ -1,14 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-import Bg1 from '../../images/shapes/it_solution_hero_bg_1.svg'
-import Bg2 from '../../images/hero/it_solution_hero_image_2.webp'
-import heroImg from '../../images/hero/it_solution_hero_image_1.webp'
-import icon from '../../images/icons/icon_stars_trustpilot.svg'
-import avatar1 from '../../images/avatar/avatar_1.webp'
-import avatar2 from '../../images/avatar/avatar_2.webp'
-import avatar3 from '../../images/avatar/avatar_3.webp'
+import { Link } from 'react-router-dom';
+import Bg1 from '../../images/shapes/it_solution_hero_bg_1.svg';
+import Bg2 from '../../images/hero/it_solution_hero_image_2.webp';
+import heroImg from '../../images/hero/it_solution_hero_image_1.webp';
+import icon from '../../images/icons/icon_stars_trustpilot.svg';
+import avatar1 from '../../images/avatar/avatar_1.webp';
+import avatar2 from '../../images/avatar/avatar_2.webp';
+import avatar3 from '../../images/avatar/avatar_3.webp';
+import { useTranslation } from 'react-i18next'; // استيراد الترجمة
 
 const Hero = () => {
+    const { t } = useTranslation(); // استخدام الترجمة هنا
 
     return (
         <section className="it_solution_hero_section">
@@ -16,18 +18,15 @@ const Hero = () => {
                 <div className="row">
                     <div className="col-lg-7">
                         <div className="it_solution_hero_content" style={{ backgroundImage: `url(${Bg1})` }}>
-                            <div className="heading_focus_text mb-0 d-inline-flex align-items-center">👋 مرحبًا، نحن  <span className="badge bg-secondary text-white"> OSYS</span></div>
-                            <h1>
-                                تُبدع OSYS من خلال حلول رقمية ذكية.
-
-                            </h1>
-                            <p>
-                                في سوق اليوم الديناميكي، تمكّن OSYS الشركات من خلال حلول تكنولوجيا معلومات مبتكرة وفعالة من حيث التكلفة.
-                            </p>
+                            <div className="heading_focus_text mb-0 d-inline-flex align-items-center">
+                                👋 {t('welcome_message')} <span className="badge bg-secondary text-white"> OSYS</span>
+                            </div>
+                            <h1>{t('hero_title')}</h1>
+                            <p>{t('hero_description')}</p>
                             <ul className="btns_group unordered_list p-0 justify-content-start">
                                 <li>
                                     <Link className="btn" to="/pricing">
-                                        <span className="btn_label" data-text="ابدأ الآن">ابدأ الآن</span>
+                                        <span className="btn_label" data-text={t('cta_start_now')}>{t('cta_start_now')}</span>
                                         <span className="btn_icon">
                                             <i className="fa-solid fa-arrow-up-right"></i>
                                         </span>
@@ -36,10 +35,10 @@ const Hero = () => {
                                 <li>
                                     <div className="review_short_info">
                                         <div className="d-flex">
-                                            <img src={icon} alt="OSYS - Trustpilot Review" />
+                                            <img src={icon} alt={t('trustpilot_review_alt')} />
                                             <span>4.8</span>
                                         </div>
-                                        <div className="review_counter">تقييم <b>200+</b> أكثر من</div>
+                                        <div className="review_counter">{t('review_count')} <b>200+</b> {t('reviews')}</div>
                                     </div>
                                 </li>
                             </ul>
@@ -48,27 +47,17 @@ const Hero = () => {
                     <div className="col-lg-5">
                         <ul className="it_solution_hero_images unordered_list">
                             <li>
-                                <img src={heroImg} alt="OSYS - IT Solution - Hero" />
+                                <img src={heroImg} alt={t('hero_image_alt')} />
                             </li>
                             <li>
                                 <div className="worldwide_clients">
                                     <div className="counter_value">150+</div>
-                                    <p>
-                                        لدينا في دول العالم العديد من العملاء.
-                                    </p>
+                                    <p>{t('global_clients')}</p>
                                     <ul className="avatar_group unordered_list">
-                                        <li>
-                                            <img src={avatar1} alt="OSYS - Avatar" />
-                                        </li>
-                                        <li>
-                                            <img src={avatar2} alt="OSYS - Avatar" />
-                                        </li>
-                                        <li>
-                                            <img src={avatar3} alt="OSYS - Avatar" />
-                                        </li>
-                                        <li>
-                                            5k+
-                                        </li>
+                                        <li><img src={avatar1} alt={t('avatar_alt')} /></li>
+                                        <li><img src={avatar2} alt={t('avatar_alt')} /></li>
+                                        <li><img src={avatar3} alt={t('avatar_alt')} /></li>
+                                        <li>5k+</li>
                                     </ul>
                                 </div>
                             </li>
@@ -76,19 +65,19 @@ const Hero = () => {
                                 <ul className="categories unordered_list_block">
                                     <li>
                                         <Link to="/service-single/IT-Management-Services">
-                                            <span>نظام ERP</span>
+                                            <span>{t('erp_system')}</span>
                                             <i className="fa-solid fa-plus"></i>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="/service-single/IT-Management-Services">
                                             <i className="fa-solid fa-plus"></i>
-                                            <span>تطوير الويب</span>
+                                            <span>{t('web_development')}</span>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="/service-single/IT-Management-Services">
-                                            <span>التحليلات والتحسينات</span>
+                                            <span>{t('analytics_and_improvements')}</span>
                                             <i className="fa-solid fa-plus"></i>
                                         </Link>
                                     </li>
@@ -145,9 +134,7 @@ const Hero = () => {
                                                     <tspan className="business_growth-unit-58">%</tspan>
                                                 </text>
                                             </svg>
-                                            <p>
-                                                احصل على 88% من أفضل الخدمات ونمو الأعمال.
-                                            </p>
+                                            <p>{t('business_growth')}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -157,7 +144,7 @@ const Hero = () => {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
 export default Hero;

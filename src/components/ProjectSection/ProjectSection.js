@@ -1,12 +1,15 @@
 import React from 'react';
-import Project from '../../api/project'
+import Project from '../../api/project';
 import { Link } from "react-router-dom";
 import { Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { useTranslation } from 'react-i18next'; // استيراد الترجمة
 
 const ProjectSection = (props) => {
+    const { t } = useTranslation(); // استخدام الترجمة هنا
+
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     }
@@ -18,19 +21,19 @@ const ProjectSection = (props) => {
                     <div className="row align-items-end">
                         <div className="col-lg-7">
                             <div className="heading_focus_text">
-                                <span className="badge bg-secondary text-white">Crafting</span>
-                                Success With 😍 Project
+                                <span className="badge bg-secondary text-white">{t('crafting')}</span>
+                                {t('successWith')} 😍 {t('project')}
                             </div>
                             <h2 className="heading_text">
-                                Our Recent Best Works
+                                {t('ourRecentBestWorks')}
                             </h2>
                             <p className="heading_description mb-0">
-                                Our recent projects highlight our expertise in delivering tailored solutions that meet the unique needs and objectives of our clients,custom software.
+                                {t('recentProjectsDescription')}
                             </p>
                         </div>
                         <div className="col-lg-5 d-none d-lg-flex justify-content-end">
                             <Link onClick={ClickHandler} to={'/portfolio'} className="btn btn-primary">
-                                <span className="btn_label" data-text="All Works">All Works</span>
+                                <span className="btn_label" data-text={t('allWorks')}>{t('allWorks')}</span>
                                 <span className="btn_icon">
                                     <i className="fa-solid fa-arrow-up-right"></i>
                                 </span>
@@ -41,7 +44,6 @@ const ProjectSection = (props) => {
             </div>
             <div className="portfolio_carousel">
                 <Swiper
-                    // install Swiper modules
                     modules={[Pagination, A11y]}
                     slidesPerView={1}
                     loop={true}
@@ -57,7 +59,6 @@ const ProjectSection = (props) => {
                         },
                     }}
                 >
-
                     {Project.slice(0, 5).map((project, prj) => (
                         <SwiperSlide key={prj}>
                             <div className="portfolio_block" >
@@ -76,7 +77,7 @@ const ProjectSection = (props) => {
                                         <li><Link onClick={ClickHandler} to={`/portfolio_details/${project.slug}`}>{project.sub}</Link></li>
                                     </ul>
                                     <Link onClick={ClickHandler} className="btn btn-outline-light" to={`/portfolio_details/${project.slug}`}>
-                                        <span className="btn_label" data-text="Explore">Explore</span>
+                                        <span className="btn_label" data-text={t('explore')}>{t('explore')}</span>
                                         <span className="btn_icon">
                                             <i className="fa-solid fa-arrow-up-right"></i>
                                         </span>
@@ -90,7 +91,7 @@ const ProjectSection = (props) => {
             <div className="container text-center d-block d-lg-none">
                 <div className="btns_group pb-0">
                     <Link onClick={ClickHandler} className="btn btn-primary" to="/pricing">
-                        <span className="btn_label" data-text="All Works">All Works</span>
+                        <span className="btn_label" data-text={t('allWorks')}>{t('allWorks')}</span>
                         <span className="btn_icon">
                             <i className="fa-solid fa-arrow-up-right"></i>
                         </span>

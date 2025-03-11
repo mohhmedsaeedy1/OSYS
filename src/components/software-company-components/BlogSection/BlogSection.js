@@ -1,14 +1,14 @@
-import React from 'react'
-import blogs from '../../../api/blogs'
-import { Link } from 'react-router-dom'
-import Bg from '../../../images/shapes/shape_title_under_line.svg'
-import icon1 from '../../../images/icons/icon_calendar.svg'
-import shape1 from '../../../images/shapes/shape_line_7.svg'
-import shape2 from '../../../images/shapes/shape_angle_4.webp'
-
-
+import React from 'react';
+import blogs from '../../../api/blogs';
+import { Link } from 'react-router-dom';
+import Bg from '../../../images/shapes/shape_title_under_line.svg';
+import icon1 from '../../../images/icons/icon_calendar.svg';
+import shape1 from '../../../images/shapes/shape_line_7.svg';
+import shape2 from '../../../images/shapes/shape_angle_4.webp';
+import { useTranslation } from 'react-i18next'; // استيراد الترجمة
 
 const BlogSection = (props) => {
+    const { t } = useTranslation(); // استخدام الترجمة
 
     const ClickHandler = () => {
         window.scrollTo(10, 0);
@@ -19,10 +19,10 @@ const BlogSection = (props) => {
             <div className="container">
                 <div className="heading_block text-center">
                     <div className="heading_focus_text has_underline d-inline-flex" style={{ backgroundImage: `url(${Bg})` }}>
-                        Our Articles
+                        {t('ourArticles')} {/* ترجمة العنوان */}
                     </div>
                     <h2 className="heading_text mb-0">
-                        Latest <mark>Articles</mark>
+                        {t('latest')} <mark>{t('articles')}</mark> {/* ترجمة العنوان */}
                     </h2>
                 </div>
 
@@ -45,7 +45,7 @@ const BlogSection = (props) => {
                                     <ul className="post_meta unordered_list">
                                         <li>
                                             <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>
-                                                <i className="fa-regular fa-circle-user"></i> By <b>{blog.author}</b>
+                                                <i className="fa-regular fa-circle-user"></i> {t('by')} <b>{blog.author}</b>
                                             </Link>
                                         </li>
                                         <li>
@@ -65,8 +65,7 @@ const BlogSection = (props) => {
                 </div>
             </div>
             <div className="decoration_item shape_image_1">
-                <img src={shape1} alt="
-Shape" />
+                <img src={shape1} alt="Shape" />
             </div>
             <div className="decoration_item shape_image_2">
                 <img src={shape2} alt="OSYS Shape Angle" />
