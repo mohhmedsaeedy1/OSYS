@@ -36,25 +36,25 @@ const Testimonial = () => {
             sub: t("testimonials.testimonial1.sub"),
             country: t("testimonials.testimonial1.country")
         }
-        // ,
-        // {
-        //     id: '02',
-        //     tImg: tImg2,
-        //     Title: t("testimonials.testimonial2.title"),
-        //     Des: t("testimonials.testimonial2.description"),
-        //     Name: t("testimonials.testimonial2.name"),
-        //     sub: t("testimonials.testimonial2.sub"),
-        //     country: t("testimonials.testimonial2.country"),
-        // },
-        // {
-        //     id: '03',
-        //     tImg: tImg3,
-        //     Title: t("testimonials.testimonial3.title"),
-        //     Des: t("testimonials.testimonial3.description"),
-        //     Name: t("testimonials.testimonial3.name"),
-        //     sub: t("testimonials.testimonial3.sub"),
-        //     country: t("testimonials.testimonial3.country"),
-        // }
+        ,
+        {
+            id: '02',
+            tImg: tImg2,
+            Title: t("testimonials.testimonial2.title"),
+            Des: t("testimonials.testimonial2.description"),
+            Name: t("testimonials.testimonial2.name"),
+            sub: t("testimonials.testimonial2.sub"),
+            country: t("testimonials.testimonial2.country"),
+        },
+        {
+            id: '03',
+            tImg: tImg3,
+            Title: t("testimonials.testimonial3.title"),
+            Des: t("testimonials.testimonial3.description"),
+            Name: t("testimonials.testimonial3.name"),
+            sub: t("testimonials.testimonial3.sub"),
+            country: t("testimonials.testimonial3.country"),
+        }
     ];
 
     return (
@@ -133,14 +133,14 @@ const Testimonial = () => {
                             ))}
                         </Swiper>
 
-                        {/* <div className="carousel_arrows_nav">
+                        <div className="carousel_arrows_nav">
                             <button ref={prevRef} type="button" className="r1cc-swiper-button-prev">
                                 <i className="fa-solid fa-arrow-left"></i>
                             </button>
                             <button ref={nextRef} type="button" className="r1cc-swiper-button-next">
                                 <i className="fa-solid fa-arrow-right"></i>
                             </button>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>

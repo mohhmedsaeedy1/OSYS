@@ -146,7 +146,7 @@ const Footer = () => {
                                     <h3 className="footer_info_title">{t("our_products")}</h3>
                                     <ul className="icon_list unordered_list_block">
                                         <li><Link onClick={ClickHandler} to="/portfolio">{t("case_studies")}</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/pricing">{t("our_prices")}</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/pricing">{t("our prices")}</Link></li>
                                         <li><Link onClick={ClickHandler} to="/service">{t("features")}</Link></li>
                                         <li><Link onClick={ClickHandler} to="/about">{t("overview")}</Link></li>
                                         <li><Link onClick={ClickHandler} to="/">{t("new_releases")}</Link></li>

@@ -21,6 +21,9 @@
   "itManagementServices": "IT Management Services",
   "dataTrackingSecurity": "Data Tracking Security",
   "websiteDevelopment": "Website Development",
+  "it Management Services": "IT Management Services",
+  "data Tracking Security": "Data Tracking Security",
+  "website Development": "Website Development",
   "crmSolutions": "CRM Solutions",
   "blog": "Blog",
   "contact": "Contact Us",
@@ -803,11 +806,6 @@
   "smart_planning_description": "Ensuring business agility and structured execution methodologies.",
   "change_management_description": "Implementing structured change management processes.",
   "performance_metrics_description": "Defining key performance indicators for business success.",
-  "IT-Management-Services": "IT Management Services",
-  "Data-Tracking-and-Security": "Data Tracking and Security",
-  "Website-Development": "Website Development",
-  "Modern-Technology-Solution": "Modern Technology Solution",
-  "UI-UX-Design-Services": "UI/UX Design Services",
   "Custom-Software-Development": "Custom Software Development",
   "Audit-&-IT-Consulting-Services": "Audit & IT Consulting Services",
   "Web-Application-Design-and-Development": "Web Application Design and Development",
@@ -858,105 +856,7 @@
       "description": "The solutions provided by the team have proven highly successful...",
       "name": "David Johnson",
       "sub": "CTO, InnovateTech",
-      "country": "New York, USA",
-      "services": {
-        "service1": {
-          "title": "IT Management Services",
-          "thumb1": "Strategy",
-          "thumb2": "Consultation",
-          "description": "We provide advanced IT management solutions tailored to your business needs."
-        },
-        "service2": {
-          "title": "Data Tracking and Security",
-          "thumb1": "Management",
-          "thumb2": "Transfer",
-          "description": "Our services ensure secure data tracking and protection against cyber threats."
-        },
-        "service3": {
-          "title": "Website Development",
-          "thumb1": "Landing Page",
-          "thumb2": "Plugins",
-          "description": "We create high-performance websites optimized for speed and user experience."
-        },
-        "service4": {
-          "title": "Modern Technology Solution",
-          "thumb1": "Consultation",
-          "thumb2": "Solution",
-          "description": "Leverage the latest tech innovations for seamless business operations."
-        },
-        "service5": {
-          "title": "UI/UX Design Services",
-          "thumb1": "Website",
-          "thumb2": "Mobile App",
-          "description": "Enhancing digital experiences with intuitive and engaging UI/UX designs."
-        },
-        "service6": {
-          "title": "Custom Software Development",
-          "feature1": "Software architecture design",
-          "feature2": "System integration services",
-          "feature3": "Data migration services",
-          "feature4": "Legacy app modernization"
-        },
-        "service7": {
-          "title": "Audit & IT Consulting Services",
-          "feature1": "TechGuard Audit",
-          "feature2": "CyberSafe Audit & IT Consulting",
-          "feature3": "AssuranceEdge & IT Consulting",
-          "feature4": "IT Sentry Audit & IT Consulting"
-        },
-        "service8": {
-          "title": "Web Application Design and Development",
-          "feature1": "Web app development services",
-          "feature2": "Web portal development services",
-          "feature3": "Website development services",
-          "feature4": "Offshore web development"
-        },
-        "service9": {
-          "title": "Mobile App Design and Development",
-          "feature1": "Android development services",
-          "feature2": "iOS app development services",
-          "feature3": "Mobile application design services",
-          "feature4": "Enterprise mobile app development"
-        },
-        "service10": {
-          "title": "Best UI/UX Design Services",
-          "feature1": "PixelPerfection UI/UX Design",
-          "feature2": "DesignCraft UI/UX Design",
-          "feature3": "CreativeWave UI/UX Design",
-          "feature4": "InterfaceGenius UI/UX Design"
-        },
-        "service11": {
-          "title": "Maintenance and Customer Support",
-          "feature1": "CareCraft Maintenance",
-          "feature2": "FixItPro Maintenance",
-          "feature3": "TechCare Maintenance",
-          "feature4": "AssistEdge Maintenance"
-        },
-        "service12": {
-          "title": "Strategic Planning and Execution",
-          "description": "We provide strategic plans tailored to align with your vision, ensuring effective execution and delivering measurable success."
-        },
-        "service13": {
-          "title": "Business Process Optimization",
-          "description": "We streamline workflows and processes to improve efficiency, reduce costs, and enhance overall organizational performance."
-        },
-        "service14": {
-          "title": "Digital Transformation Consulting",
-          "description": "We empower businesses to embrace cutting-edge technologies, modernize operations, and achieve a seamless digital evolution."
-        },
-        "service15": {
-          "title": "Strategic Planning and Execution",
-          "description": "We deliver bespoke strategic planning solutions designed to align with your business vision and objectives, enabling seamless execution."
-        },
-        "service16": {
-          "title": "Change Management Solutions",
-          "description": "Our change management solutions help organizations adapt effectively to transformations, ensuring minimal disruption and maximum value realization."
-        },
-        "service17": {
-          "title": "Performance Metrics and KPI Development",
-          "description": "We develop tailored performance measurement frameworks and KPIs that align with your goals to track progress, ensure accountability, and drive growth."
-        }
-      }
+      "country": "New York, USA"
     }
   }
 }
