@@ -9,6 +9,7 @@
     "@mui/material": "^5.11.0",
     "@mui/styled-engine-sc": "^5.11.0",
     "@studio-freight/react-lenis": "^0.0.37",
+    "ajv": "^8.17.1",
     "bootstrap": "^5.3.3",
     "gsap": "^3.12.3",
     "i18next": "^24.2.2",
